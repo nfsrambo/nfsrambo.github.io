@@ -1,0 +1,19 @@
+{
+  "category": "indicators",
+  "displayName": "Technical Indicators",
+  "chunkIndex": 2,
+  "totalChunks": 2,
+  "items": [
+    "/indicators/t3-moving-average",
+    "/indicators/vidya",
+    "/indicators/vortex-indicator",
+    "/indicators/wave-trend",
+    "/indicators/williams-alligator",
+    "/indicators/williams-fractals",
+    "/indicators/williams-percent-range",
+    "/indicators/zlema"
+  ],
+  "parentPath": "/indicators",
+  "chunkType": "children_list",
+  "total_pages": 68
+}

@@ -1,0 +1,4102 @@
+[
+  {
+    "name": "indicators",
+    "path": "/indicators",
+    "depth": 1,
+    "breadcrumb": ["Home", "Technical Indicators"],
+    "total_pages": 70,
+    "child_pattern": "/indicators/{slug}",
+    "groups": [
+      {
+        "id": "momentum",
+        "name": "Momentum Oscillators",
+        "description": "Indicators that measure the speed and strength of price movements",
+        "icon": "TrendingUpOutline",
+        "children": [
+          "/indicators/rsi",
+          "/indicators/stochastic",
+          "/indicators/cci",
+          "/indicators/mfi",
+          "/indicators/ultimate-oscillator",
+          "/indicators/relative-vigor-index",
+          "/indicators/chande-momentum-oscillator",
+          "/indicators/coppock-curve",
+          "/indicators/relative-strength-index-ma",
+          "/indicators/rainbow-oscillator",
+          "/indicators/awesome-oscillator"
+        ]
+      },
+      {
+        "id": "moving-averages",
+        "name": "Moving Averages",
+        "description": "Indicators that smooth price data to identify trends",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/indicators/sma",
+          "/indicators/ema",
+          "/indicators/wma",
+          "/indicators/hma",
+          "/indicators/kama",
+          "/indicators/frama",
+          "/indicators/t3-moving-average",
+          "/indicators/vidya",
+          "/indicators/zlema",
+          "/indicators/median-price",
+          "/indicators/typical-price"
+        ]
+      },
+      {
+        "id": "trend",
+        "name": "Trend Indicators",
+        "description": "Indicators that help identify and confirm market trends",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/indicators/adx",
+          "/indicators/ichimoku",
+          "/indicators/parabolic-sar",
+          "/indicators/aroon",
+          "/indicators/super-trend",
+          "/indicators/vortex-indicator",
+          "/indicators/wave-trend",
+          "/indicators/zigzag",
+          "/indicators/instantaneous-trend"
+        ]
+      },
+      {
+        "id": "volatility",
+        "name": "Volatility Indicators",
+        "description": "Indicators that measure price volatility and market uncertainty",
+        "icon": "WaveOutline",
+        "children": [
+          "/indicators/atr",
+          "/indicators/bollinger-bands",
+          "/indicators/keltner-channels",
+          "/indicators/donchian-channels",
+          "/indicators/chaikin-volatility",
+          "/indicators/standard-deviation",
+          "/indicators/mass-index",
+          "/indicators/ehlers-mesa",
+          "/indicators/ehlers-cyclic-analysis",
+          "/indicators/hilbert-transform"
+        ]
+      },
+      {
+        "id": "volume",
+        "name": "Volume Indicators",
+        "description": "Indicators that analyze trading volume patterns",
+        "icon": "SpeakerWaveOutline",
+        "children": [
+          "/indicators/obv",
+          "/indicators/chaikin-money-flow",
+          "/indicators/money-flow-index",
+          "/indicators/accumulation-distribution",
+          "/indicators/force-index",
+          "/indicators/ease-of-movement",
+          "/indicators/vwap",
+          "/indicators/anchored-vwap"
+        ]
+      },
+      {
+        "id": "fibonacci",
+        "name": "Fibonacci Indicators",
+        "description": "Indicators based on Fibonacci ratios and sequences",
+        "icon": "NumberedListOutline",
+        "children": [
+          "/indicators/fibonacci-retracement",
+          "/indicators/fibonacci-extensions",
+          "/indicators/fibonacci-time-zones"
+        ]
+      },
+      {
+        "id": "advanced-math",
+        "name": "Advanced Mathematical Indicators",
+        "description": "Complex mathematical and statistical indicators",
+        "icon": "CalculatorOutline",
+        "children": [
+          "/indicators/demark-sequential",
+          "/indicators/ehlers-fisher-transform",
+          "/indicators/kst-oscillator",
+          "/indicators/detrended-price-oscillator",
+          "/indicators/price-roc",
+          "/indicators/trix",
+          "/indicators/schaff-trend-cycle",
+          "/indicators/sine-wave-indicator"
+        ]
+      },
+      {
+        "id": "pattern",
+        "name": "Pattern Recognition",
+        "description": "Indicators that identify chart patterns and formations",
+        "icon": "CircleStackOutline",
+        "children": [
+          "/indicators/williams-alligator",
+          "/indicators/williams-fractals",
+          "/indicators/williams-percent-range",
+          "/indicators/elder-ray-index",
+          "/indicators/leading-span",
+          "/indicators/lagging-span"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Technical Indicators",
+        "position": "header"
+      },
+      {
+        "from": "/calculators",
+        "anchor": "Indicator Calculators",
+        "position": "related"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/risk",
+        "anchor": "Risk Metrics for Indicators",
+        "position": "footer"
+      },
+      {
+        "to": "/trading",
+        "anchor": "Trading Strategies",
+        "position": "sidebar"
+      },
+      {
+        "to": "/code",
+        "anchor": "Indicator Code",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 8,
+      "total_indicators": 70,
+      "grouped_indicators": 70,
+      "ungrouped_indicators": 0
+    }
+  },
+  {
+    "name": "volumeProfile",
+    "path": "/volume-profile",
+    "depth": 1,
+    "breadcrumb": ["Home", "Volume Profile"],
+    "total_pages": 40,
+    "child_pattern": "/volume-profile/{slug}",
+    "groups": [
+      {
+        "id": "core-concepts",
+        "name": "Core Volume Profile Concepts",
+        "description": "Fundamental volume profile concepts and structures",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/volume-profile/volume-profile",
+          "/volume-profile/market-profile-tpo",
+          "/volume-profile/volume-point-of-control",
+          "/volume-profile/value-area-high",
+          "/volume-profile/value-area-low",
+          "/volume-profile/value-area-70",
+          "/volume-profile/initial-balance",
+          "/volume-profile/developing-poc"
+        ]
+      },
+      {
+        "id": "volume-distribution",
+        "name": "Volume Distribution Analysis",
+        "description": "Analyzing how volume is distributed across price levels",
+        "icon": "PresentationChartBarOutline",
+        "children": [
+          "/volume-profile/high-volume-nodes",
+          "/volume-profile/low-volume-nodes",
+          "/volume-profile/volume-gap",
+          "/volume-profile/volume-cluster",
+          "/volume-profile/thin-volume",
+          "/volume-profile/single-print",
+          "/volume-profile/double-distribution",
+          "/volume-profile/poor-high-low",
+          "/volume-profile/excess-high-low"
+        ]
+      },
+      {
+        "id": "volume-types",
+        "name": "Volume Profile Types",
+        "description": "Different types of volume profile calculations",
+        "icon": "TableCellsOutline",
+        "children": [
+          "/volume-profile/session-volume-profile",
+          "/volume-profile/tick-volume-profile",
+          "/volume-profile/volume-by-price",
+          "/volume-profile/anchored-volume-profile",
+          "/volume-profile/volume-weighted-average-price",
+          "/volume-profile/footprint-chart"
+        ]
+      },
+      {
+        "id": "order-flow",
+        "name": "Order Flow Analysis",
+        "description": "Understanding order flow through volume analysis",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/volume-profile/order-flow-imbalance",
+          "/volume-profile/cumulative-delta",
+          "/volume-profile/delta-divergence",
+          "/volume-profile/delta-reversal",
+          "/volume-profile/absorption-analysis",
+          "/volume-profile/exhaustion-detection",
+          "/volume-profile/stacked-imbalance"
+        ]
+      },
+      {
+        "id": "volume-delta",
+        "name": "Volume Delta Analysis",
+        "description": "Analyzing aggressive and passive volume",
+        "icon": "PlusMinusOutline",
+        "children": [
+          "/volume-profile/volume-delta",
+          "/volume-profile/bid-ask-volume",
+          "/volume-profile/volume-by-bid-ask",
+          "/volume-profile/volume-by-aggressor",
+          "/volume-profile/passive-volume",
+          "/volume-profile/aggressive-volume"
+        ]
+      },
+      {
+        "id": "advanced-detection",
+        "name": "Advanced Market Detection",
+        "description": "Detecting sophisticated market behaviors",
+        "icon": "MagnifyingGlassCircleOutline",
+        "children": [
+          "/volume-profile/iceberg-detection",
+          "/volume-profile/spoofing-detection",
+          "/volume-profile/wash-trading-detection"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Volume Profile",
+        "position": "header"
+      },
+      {
+        "from": "/trading",
+        "anchor": "Volume Trading",
+        "position": "related"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/order-flow",
+        "anchor": "Order Flow Analysis",
+        "position": "content"
+      },
+      {
+        "to": "/indicators/vwap",
+        "anchor": "VWAP Indicator",
+        "position": "sidebar"
+      },
+      {
+        "to": "/code/volume-profile",
+        "anchor": "Volume Profile Code",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 6,
+      "total_pages": 40,
+      "grouped_pages": 40,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "orderFlow",
+    "path": "/order-flow",
+    "depth": 1,
+    "breadcrumb": ["Home", "Order Flow"],
+    "total_pages": 36,
+    "child_pattern": "/order-flow/{slug}",
+    "groups": [
+      {
+        "id": "delta-analysis",
+        "name": "Delta & Volume Analysis",
+        "description": "Analyzing delta patterns and volume relationships",
+        "icon": "PlusMinusOutline",
+        "children": [
+          "/order-flow/cumulative-volume-delta",
+          "/order-flow/volume-weighted-delta",
+          "/order-flow/tick-weighted-delta",
+          "/order-flow/delta-per-bar",
+          "/order-flow/delta-divergence",
+          "/order-flow/cumulative-delta-divergence",
+          "/order-flow/delta-reversal-patterns"
+        ]
+      },
+      {
+        "id": "imbalance-analysis",
+        "name": "Imbalance & Pressure Analysis",
+        "description": "Measuring order flow imbalance and pressure",
+        "icon": "ScaleOutline",
+        "children": [
+          "/order-flow/order-flow-imbalance-ratio",
+          "/order-flow/order-flow-pressure",
+          "/order-flow/stacked-imbalance",
+          "/order-flow/microstructure-imbalance",
+          "/order-flow/order-book-imbalance",
+          "/order-flow/trade-flow-imbalance"
+        ]
+      },
+      {
+        "id": "order-flow-behavior",
+        "name": "Order Flow Behavior Patterns",
+        "description": "Understanding market participant behavior through order flow",
+        "icon": "UserGroupOutline",
+        "children": [
+          "/order-flow/aggressor-analysis",
+          "/order-flow/passive-analysis",
+          "/order-flow/liquidity-provider-analysis",
+          "/order-flow/liquidity-taker-analysis",
+          "/order-flow/absorption",
+          "/order-flow/absorption-ratio",
+          "/order-flow/exhaustion"
+        ]
+      },
+      {
+        "id": "market-manipulation",
+        "name": "Market Manipulation Detection",
+        "description": "Identifying manipulative and predatory trading patterns",
+        "icon": "ShieldExclamationOutline",
+        "children": [
+          "/order-flow/iceberg-detection",
+          "/order-flow/spoofing-detection",
+          "/order-flow/liquidity-grabs",
+          "/order-flow/stop-hunting",
+          "/order-flow/quote-stuffing-detection",
+          "/order-flow/latency-arbitrage-detection",
+          "/order-flow/pinging-detection",
+          "/order-flow/order-anticipation"
+        ]
+      },
+      {
+        "id": "order-book-dynamics",
+        "name": "Order Book & Microstructure",
+        "description": "Analyzing order book dynamics and market microstructure",
+        "icon": "BookOpenOutline",
+        "children": [
+          "/order-flow/limit-order-book-dynamics",
+          "/order-flow/market-order-analysis",
+          "/order-flow/bid-ask-spread-dynamics",
+          "/order-flow/order-book-depth",
+          "/order-flow/time-sales",
+          "/order-flow/tape-reading",
+          "/order-flow/micro-price",
+          "/order-flow/order-to-trade-ratio"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Order Flow",
+        "position": "header"
+      },
+      {
+        "from": "/volume-profile",
+        "anchor": "Volume Analysis",
+        "position": "related"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/trading",
+        "anchor": "Order Flow Trading",
+        "position": "content"
+      },
+      {
+        "to": "/execution",
+        "anchor": "Algorithmic Execution",
+        "position": "sidebar"
+      },
+      {
+        "to": "/code/cumulative-delta",
+        "anchor": "Cumulative Delta Code",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 5,
+      "total_pages": 36,
+      "grouped_pages": 36,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "models",
+    "path": "/models",
+    "depth": 1,
+    "breadcrumb": ["Home", "Financial Models"],
+    "total_pages": 117,
+    "child_pattern": "/models/{slug}",
+    "groups": [
+      {
+        "id": "option-pricing",
+        "name": "Option Pricing Models",
+        "description": "Mathematical models for pricing options and derivatives",
+        "icon": "CurrencyDollarOutline",
+        "children": [
+          "/models/black-scholes",
+          "/models/monte-carlo",
+          "/models/binomial-model",
+          "/models/trinomial-model"
+        ]
+      },
+      {
+        "id": "volatility-models",
+        "name": "Volatility Models",
+        "description": "Models for forecasting and analyzing volatility",
+        "icon": "WaveOutline",
+        "children": [
+          "/models/garch",
+          "/models/egarch",
+          "/models/tarch",
+          "/models/gjr-garch",
+          "/models/heston-model",
+          "/models/bates-model",
+          "/models/sabr-model",
+          "/models/rough-volatility",
+          "/models/bergomi-model",
+          "/models/rough-heston"
+        ]
+      },
+      {
+        "id": "yield-curve",
+        "name": "Yield Curve & Interest Rate Models",
+        "description": "Models for interest rates and yield curve dynamics",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/models/vasicek-model",
+          "/models/cox-ingersoll-ross",
+          "/models/hjm-model",
+          "/models/libor-market-model",
+          "/models/affine-term-structure",
+          "/models/heston-hull-white",
+          "/models/duffie-kan",
+          "/models/nelson-siegel",
+          "/models/dynamic-nelson-siegel",
+          "/models/svensson-model"
+        ]
+      },
+      {
+        "id": "factor-models",
+        "name": "Factor Models",
+        "description": "Multi-factor asset pricing models",
+        "icon": "ListBulletOutline",
+        "children": [
+          "/models/capm",
+          "/models/icapm",
+          "/models/fama-french-3-factor",
+          "/models/fama-french-5-factor",
+          "/models/carhart-4-factor",
+          "/models/q-factor-model",
+          "/models/stambaugh-yuan"
+        ]
+      },
+      {
+        "id": "time-series",
+        "name": "Time Series Models",
+        "description": "Classical and modern time series forecasting models",
+        "icon": "ChartLineOutline",
+        "children": [
+          "/models/arima",
+          "/models/sarima",
+          "/models/prophet",
+          "/models/vector-autoregression",
+          "/models/structural-var",
+          "/models/bayesian-var",
+          "/models/tvp-var",
+          "/models/dynamic-factor-model",
+          "/models/nowcasting-model",
+          "/models/mixed-frequency-data",
+          "/models/panel-var",
+          "/models/bayesian-structural-time-series"
+        ]
+      },
+      {
+        "id": "deep-learning",
+        "name": "Deep Learning Models",
+        "description": "Neural network architectures for financial forecasting",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/models/lstm",
+          "/models/gru",
+          "/models/bilstm",
+          "/models/transformer-time-series",
+          "/models/informer",
+          "/models/autoformer",
+          "/models/fedformer",
+          "/models/patchtst",
+          "/models/timesnet",
+          "/models/n-beats",
+          "/models/deepar",
+          "/models/tft",
+          "/models/neural-prophet",
+          "/models/etsformer",
+          "/models/dlinear",
+          "/models/filternet",
+          "/models/micn",
+          "/models/crossformer",
+          "/models/stationary-transformer"
+        ]
+      },
+      {
+        "id": "state-space",
+        "name": "State Space & Filtering Models",
+        "description": "State estimation and filtering methods",
+        "icon": "CircleStackOutline",
+        "children": [
+          "/models/kalman-filter",
+          "/models/extended-kalman-filter",
+          "/models/unscented-kalman-filter",
+          "/models/particle-filter",
+          "/models/hidden-markov-model"
+        ]
+      },
+      {
+        "id": "copula-dependence",
+        "name": "Copula & Dependence Models",
+        "description": "Models for capturing dependence structures",
+        "icon": "LinkOutline",
+        "children": [
+          "/models/copula-models",
+          "/models/gaussian-copula",
+          "/models/student-t-copula",
+          "/models/clayton-copula",
+          "/models/gumbel-copula",
+          "/models/frank-copula",
+          "/models/vine-copula",
+          "/models/dynamic-copula"
+        ]
+      },
+      {
+        "id": "levy-process",
+        "name": "Lévy Process Models",
+        "description": "Jump and heavy-tailed process models",
+        "icon": "ArrowRightOutline",
+        "children": [
+          "/models/levy-process",
+          "/models/variance-gamma",
+          "/models/nig-distribution",
+          "/models/merton-model"
+        ]
+      },
+      {
+        "id": "signal-processing",
+        "name": "Signal Processing Models",
+        "description": "Transform and decomposition methods",
+        "icon": "SignalOutline",
+        "children": [
+          "/models/wavelet-transform",
+          "/models/hilbert-huang-transform",
+          "/models/empirical-mode-decomposition",
+          "/models/singular-spectrum-analysis"
+        ]
+      },
+      {
+        "id": "advanced-ml",
+        "name": "Advanced ML Models",
+        "description": "Cutting-edge machine learning approaches",
+        "icon": "BeakerOutline",
+        "children": [
+          "/models/gaussian-process",
+          "/models/neural-ode",
+          "/models/neural-sde",
+          "/models/score-based-model",
+          "/models/diffusion-model",
+          "/models/normalizing-flow",
+          "/models/variational-autoencoder"
+        ]
+      },
+      {
+        "id": "attention-mechanisms",
+        "name": "Attention Mechanisms",
+        "description": "Attention-based model components",
+        "icon": "EyeOutline",
+        "children": [
+          "/models/attention-mechanism",
+          "/models/self-attention",
+          "/models/cross-attention",
+          "/models/multi-head-attention"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Financial Models",
+        "position": "header"
+      },
+      {
+        "from": "/calculators",
+        "anchor": "Model Calculators",
+        "position": "related"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/forecasting",
+        "anchor": "Forecasting Methods",
+        "position": "content"
+      },
+      {
+        "to": "/risk",
+        "anchor": "Model Risk",
+        "position": "sidebar"
+      },
+      {
+        "to": "/code",
+        "anchor": "Model Implementations",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 12,
+      "total_pages": 117,
+      "grouped_pages": 117,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "risk",
+    "path": "/risk",
+    "depth": 1,
+    "breadcrumb": ["Home", "Risk Metrics"],
+    "total_pages": 55,
+    "child_pattern": "/risk/{slug}",
+    "groups": [
+      {
+        "id": "performance-ratios",
+        "name": "Risk-Adjusted Performance Ratios",
+        "description": "Metrics that evaluate returns relative to risk taken",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/risk/sharpe-ratio",
+          "/risk/sortino-ratio",
+          "/risk/calmar-ratio",
+          "/risk/sterling-ratio",
+          "/risk/burke-ratio",
+          "/risk/omega-ratio",
+          "/risk/treynor-ratio",
+          "/risk/information-ratio",
+          "/risk/modigliani-risk-adjusted-performance"
+        ]
+      },
+      {
+        "id": "drawdown-metrics",
+        "name": "Drawdown & Pain Metrics",
+        "description": "Metrics measuring portfolio declines and recovery",
+        "icon": "ArrowTrendingDownOutline",
+        "children": [
+          "/risk/maximum-drawdown",
+          "/risk/average-drawdown",
+          "/risk/recovery-factor",
+          "/risk/ulcer-index",
+          "/risk/pain-index",
+          "/risk/gain-to-pain-ratio",
+          "/risk/martin-ratio"
+        ]
+      },
+      {
+        "id": "value-at-risk",
+        "name": "Value at Risk (VaR) Methods",
+        "description": "Different approaches to calculating VaR and related metrics",
+        "icon": "ExclamationTriangleOutline",
+        "children": [
+          "/risk/value-at-risk",
+          "/risk/conditional-value-at-risk",
+          "/risk/marginal-var",
+          "/risk/incremental-var",
+          "/risk/component-var",
+          "/risk/liquidity-adjusted-var",
+          "/risk/copula-var"
+        ]
+      },
+      {
+        "id": "extreme-value",
+        "name": "Extreme Value Theory",
+        "description": "Statistical methods for extreme events and tail risk",
+        "icon": "SignalOutline",
+        "children": [
+          "/risk/extreme-value-theory",
+          "/risk/pot-over-threshold",
+          "/risk/block-maxima",
+          "/risk/tail-dependency"
+        ]
+      },
+      {
+        "id": "alpha-beta",
+        "name": "Alpha, Beta & Capture Ratios",
+        "description": "Market relationship and performance attribution metrics",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/risk/beta",
+          "/risk/alpha",
+          "/risk/jensens-alpha",
+          "/risk/upside-capture-ratio",
+          "/risk/downside-capture-ratio",
+          "/risk/bias-ratio"
+        ]
+      },
+      {
+        "id": "concentration",
+        "name": "Concentration & Systemic Risk",
+        "description": "Measures of portfolio concentration and systemic impact",
+        "icon": "CircleStackOutline",
+        "children": [
+          "/risk/herfindahl-index",
+          "/risk/concentration-risk",
+          "/risk/systemic-risk-index",
+          "/risk/network-risk",
+          "/risk/contagion-risk"
+        ]
+      },
+      {
+        "id": "stress-testing",
+        "name": "Stress Testing & Scenario Analysis",
+        "description": "Framework for testing portfolio resilience",
+        "icon": "BeakerOutline",
+        "children": [
+          "/risk/stress-testing-framework",
+          "/risk/reverse-stress-testing",
+          "/risk/scenario-analysis"
+        ]
+      },
+      {
+        "id": "risk-framework",
+        "name": "Risk Management Framework",
+        "description": "Governance and allocation frameworks",
+        "icon": "DocumentTextOutline",
+        "children": [
+          "/risk/coverage-ratio",
+          "/risk/risk-appetite-framework",
+          "/risk/risk-budgeting",
+          "/risk/risk-attribution",
+          "/risk/risk-parity",
+          "/risk/risk-factor-analysis",
+          "/risk/principal-component-risk"
+        ]
+      },
+      {
+        "id": "risk-types",
+        "name": "Types of Financial Risk",
+        "description": "Specific risk categories in financial markets",
+        "icon": "ShieldExclamationOutline",
+        "children": [
+          "/risk/correlation-risk",
+          "/risk/volatility-risk",
+          "/risk/tail-risk",
+          "/risk/liquidity-risk",
+          "/risk/counterparty-risk",
+          "/risk/operational-risk",
+          "/risk/model-risk"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Risk Metrics",
+        "position": "header"
+      },
+      {
+        "from": "/portfolio",
+        "anchor": "Portfolio Risk",
+        "position": "related"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/portfolio",
+        "anchor": "Portfolio Optimization",
+        "position": "content"
+      },
+      {
+        "to": "/models",
+        "anchor": "Risk Models",
+        "position": "sidebar"
+      },
+      {
+        "to": "/calculators",
+        "anchor": "Risk Calculators",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 9,
+      "total_pages": 55,
+      "grouped_pages": 55,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "portfolio",
+    "path": "/portfolio",
+    "depth": 1,
+    "breadcrumb": ["Home", "Portfolio Management"],
+    "total_pages": 54,
+    "child_pattern": "/portfolio/{slug}",
+    "groups": [
+      {
+        "id": "position-sizing",
+        "name": "Position Sizing Strategies",
+        "description": "Methods for determining optimal position sizes",
+        "icon": "CalculatorOutline",
+        "children": [
+          "/portfolio/kelly-criterion",
+          "/portfolio/fractional-kelly",
+          "/portfolio/half-kelly",
+          "/portfolio/position-sizing",
+          "/portfolio/optimal-f",
+          "/portfolio/secure-f"
+        ]
+      },
+      {
+        "id": "optimization-methods",
+        "name": "Portfolio Optimization Methods",
+        "description": "Mathematical approaches to optimize portfolio allocation",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/portfolio/portfolio-optimization",
+          "/portfolio/mean-variance-optimization",
+          "/portfolio/mean-cvar-optimization",
+          "/portfolio/maximum-diversification",
+          "/portfolio/most-diversified-portfolio",
+          "/portfolio/robust-optimization",
+          "/portfolio/regret-minimization",
+          "/portfolio/worst-case-optimization",
+          "/portfolio/bayesian-optimization",
+          "/portfolio/multi-period-optimization",
+          "/portfolio/stochastic-programming",
+          "/portfolio/robust-stochastic-optimization"
+        ]
+      },
+      {
+        "id": "risk-parity",
+        "name": "Risk Parity & Equal Risk",
+        "description": "Allocating risk equally across portfolio components",
+        "icon": "ScaleOutline",
+        "children": [
+          "/portfolio/risk-parity",
+          "/portfolio/equal-risk-contribution",
+          "/portfolio/hierarchical-risk-parity",
+          "/portfolio/hierarchical-clustering",
+          "/portfolio/risk-budgeting"
+        ]
+      },
+      {
+        "id": "black-litterman",
+        "name": "Black-Litterman & Bayesian Methods",
+        "description": "Views-based and Bayesian portfolio optimization",
+        "icon": "EyeOutline",
+        "children": [
+          "/portfolio/black-litterman",
+          "/portfolio/robust-black-litterman"
+        ]
+      },
+      {
+        "id": "efficient-frontier",
+        "name": "Efficient Frontier & Modern Portfolio Theory",
+        "description": "Classical portfolio theory and frontier analysis",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/portfolio/markowitz-efficient-frontier",
+          "/portfolio/post-modern-portfolio-theory"
+        ]
+      },
+      {
+        "id": "rebalancing",
+        "name": "Rebalancing Strategies",
+        "description": "Methods for maintaining target portfolio allocations",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/portfolio/rebalancing",
+          "/portfolio/calendar-rebalancing",
+          "/portfolio/percentage-rebalancing",
+          "/portfolio/threshold-rebalancing"
+        ]
+      },
+      {
+        "id": "asset-allocation",
+        "name": "Asset Allocation Strategies",
+        "description": "Strategic and tactical asset allocation approaches",
+        "icon": "PieChartOutline",
+        "children": [
+          "/portfolio/tactical-asset-allocation",
+          "/portfolio/dynamic-asset-allocation",
+          "/portfolio/constant-mix-strategy",
+          "/portfolio/constant-proportion-portfolio-insurance",
+          "/portfolio/bucket-strategy",
+          "/portfolio/ladder-strategy",
+          "/portfolio/barbell-strategy"
+        ]
+      },
+      {
+        "id": "factor-investing",
+        "name": "Factor Investing & Smart Beta",
+        "description": "Factor-based and smart beta strategies",
+        "icon": "ListBulletOutline",
+        "children": [
+          "/portfolio/factor-investing",
+          "/portfolio/smart-beta",
+          "/portfolio/factor-timing"
+        ]
+      },
+      {
+        "id": "online-portfolio",
+        "name": "Online & Sequential Portfolio Selection",
+        "description": "Algorithms for sequential portfolio optimization",
+        "icon": "ClockOutline",
+        "children": [
+          "/portfolio/online-portfolio-selection",
+          "/portfolio/universal-portfolio",
+          "/portfolio/eg-strategy",
+          "/portfolio/anticor-strategy",
+          "/portfolio/olmar-strategy",
+          "/portfolio/rmr-strategy"
+        ]
+      },
+      {
+        "id": "machine-learning",
+        "name": "Machine Learning Portfolio Optimization",
+        "description": "ML and deep learning approaches to portfolio management",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/portfolio/reinforcement-learning-portfolio",
+          "/portfolio/deep-portfolio-optimization",
+          "/portfolio/graph-portfolio-theory"
+        ]
+      },
+      {
+        "id": "simulation-testing",
+        "name": "Simulation & Scenario Testing",
+        "description": "Monte Carlo and stress testing for portfolios",
+        "icon": "BeakerOutline",
+        "children": [
+          "/portfolio/monte-carlo-portfolio-simulation",
+          "/portfolio/scenario-optimization",
+          "/portfolio/stress-test-optimization"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Portfolio Management",
+        "position": "header"
+      },
+      {
+        "from": "/risk",
+        "anchor": "Risk-Adjusted Returns",
+        "position": "content"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/risk",
+        "anchor": "Risk Metrics",
+        "position": "sidebar"
+      },
+      {
+        "to": "/trading",
+        "anchor": "Trading Strategies",
+        "position": "footer"
+      },
+      {
+        "to": "/calculators",
+        "anchor": "Portfolio Calculators",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 11,
+      "total_pages": 54,
+      "grouped_pages": 54,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "forecasting",
+    "path": "/forecasting",
+    "depth": 1,
+    "breadcrumb": ["Home", "Forecasting"],
+    "total_pages": 155,
+    "child_pattern": "/forecasting/{slug}",
+    "groups": [
+      {
+        "id": "classical-time-series",
+        "name": "Classical Time Series Models",
+        "description": "Traditional statistical methods for time series forecasting",
+        "icon": "ChartLineOutline",
+        "children": [
+          "/forecasting/moving-average",
+          "/forecasting/exponential-smoothing",
+          "/forecasting/holt-winters",
+          "/forecasting/seasonal-decomposition",
+          "/forecasting/arima",
+          "/forecasting/sarima",
+          "/forecasting/sarimax",
+          "/forecasting/varima",
+          "/forecasting/vecm",
+          "/forecasting/ecm",
+          "/forecasting/trend-extrapolation"
+        ]
+      },
+      {
+        "id": "state-space",
+        "name": "State Space & Kalman Filter Methods",
+        "description": "State estimation and filtering approaches",
+        "icon": "CircleStackOutline",
+        "children": [
+          "/forecasting/state-space-models",
+          "/forecasting/kalman-filter",
+          "/forecasting/bayesian-structural-time-series",
+          "/forecasting/dynamic-harmonic-regression",
+          "/forecasting/kalman-filter-adaptive",
+          "/forecasting/particle-filter-forecast",
+          "/forecasting/ensemble-kalman-filter",
+          "/forecasting/unscented-kalman-filter",
+          "/forecasting/extended-kalman-filter",
+          "/forecasting/cubature-kalman-filter"
+        ]
+      },
+      {
+        "id": "signal-processing",
+        "name": "Signal Processing & Decomposition",
+        "description": "Spectral and decomposition methods for signals",
+        "icon": "SignalOutline",
+        "children": [
+          "/forecasting/fourier-transform",
+          "/forecasting/wavelet-transform",
+          "/forecasting/empirical-mode-decomposition",
+          "/forecasting/hilbert-huang-transform",
+          "/forecasting/singular-spectrum-analysis",
+          "/forecasting/multivariate-singular-spectrum-analysis"
+        ]
+      },
+      {
+        "id": "machine-learning",
+        "name": "Machine Learning Models",
+        "description": "ML algorithms for forecasting applications",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/forecasting/gaussian-process",
+          "/forecasting/bayesian-ridge-regression",
+          "/forecasting/bayesian-lasso",
+          "/forecasting/random-forest",
+          "/forecasting/xgboost",
+          "/forecasting/lightgbm",
+          "/forecasting/catboost",
+          "/forecasting/machine-learning-ensemble",
+          "/forecasting/stacking-ensemble",
+          "/forecasting/blending-ensemble",
+          "/forecasting/bayesian-model-averaging"
+        ]
+      },
+      {
+        "id": "deep-learning",
+        "name": "Deep Learning & Neural Networks",
+        "description": "Neural network architectures for forecasting",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/forecasting/lstm",
+          "/forecasting/gru",
+          "/forecasting/bilstm",
+          "/forecasting/transformer-time-series",
+          "/forecasting/informer",
+          "/forecasting/autoformer",
+          "/forecasting/fedformer",
+          "/forecasting/patchtst",
+          "/forecasting/timesnet",
+          "/forecasting/n-beats",
+          "/forecasting/deepar",
+          "/forecasting/tft",
+          "/forecasting/neural-prophet",
+          "/forecasting/etsformer",
+          "/forecasting/dlinear",
+          "/forecasting/filternet",
+          "/forecasting/micn",
+          "/forecasting/crossformer",
+          "/forecasting/stationary-transformer",
+          "/forecasting/bayesian-neural-network",
+          "/forecasting/variational-autoencoder",
+          "/forecasting/diffusion-model",
+          "/forecasting/score-based-model",
+          "/forecasting/normalizing-flow",
+          "/forecasting/neural-ode",
+          "/forecasting/neural-sde"
+        ]
+      },
+      {
+        "id": "attention",
+        "name": "Attention Mechanisms",
+        "description": "Attention-based forecasting components",
+        "icon": "EyeOutline",
+        "children": [
+          "/forecasting/attention-mechanism",
+          "/forecasting/self-attention"
+        ]
+      },
+      {
+        "id": "prophet",
+        "name": "Prophet & Modern Forecasting",
+        "description": "Modern open-source forecasting frameworks",
+        "icon": "CalendarOutline",
+        "children": ["/forecasting/prophet"]
+      },
+      {
+        "id": "volatility-forecasting",
+        "name": "Volatility Forecasting",
+        "description": "Models for predicting volatility",
+        "icon": "WaveOutline",
+        "children": [
+          "/forecasting/arch",
+          "/forecasting/garch-family",
+          "/forecasting/egarch",
+          "/forecasting/tarch",
+          "/forecasting/power-garch",
+          "/forecasting/component-garch",
+          "/forecasting/realized-garch",
+          "/forecasting/heavy-model",
+          "/forecasting/range-based-volatility",
+          "/forecasting/parkinson-volatility",
+          "/forecasting/garman-klass-volatility",
+          "/forecasting/rogers-satchell-volatility",
+          "/forecasting/yang-zhang-volatility",
+          "/forecasting/midas",
+          "/forecasting/har-rv",
+          "/forecasting/har-cj",
+          "/forecasting/realized-kernel",
+          "/forecasting/machine-learning-volatility",
+          "/forecasting/deep-volatility",
+          "/forecasting/volatility-transformers"
+        ]
+      },
+      {
+        "id": "regime-switching",
+        "name": "Regime Switching & Nonlinear Models",
+        "description": "Models for changing market regimes",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/forecasting/regime-switching",
+          "/forecasting/markov-switching",
+          "/forecasting/hidden-markov-forecast",
+          "/forecasting/threshold-autoregression",
+          "/forecasting/smooth-transition-ar",
+          "/forecasting/self-exciting-threshold-ar",
+          "/forecasting/lstar-model",
+          "/forecasting/estar-model"
+        ]
+      },
+      {
+        "id": "time-varying",
+        "name": "Time-Varying Parameter Models",
+        "description": "Models with time-varying coefficients",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/forecasting/tv-ar",
+          "/forecasting/tv-var",
+          "/forecasting/tvp-var",
+          "/forecasting/tvp-svar",
+          "/forecasting/bayesian-tvp",
+          "/forecasting/adaptive-filtering",
+          "/forecasting/recursive-least-squares"
+        ]
+      },
+      {
+        "id": "copula-forecasting",
+        "name": "Copula & Dependence Forecasting",
+        "description": "Forecasting with copula models",
+        "icon": "LinkOutline",
+        "children": [
+          "/forecasting/copula-forecasting",
+          "/forecasting/vine-copula-forecast",
+          "/forecasting/conditional-copula"
+        ]
+      },
+      {
+        "id": "continuous-time",
+        "name": "Continuous Time & Stochastic Processes",
+        "description": "Stochastic process models for forecasting",
+        "icon": "ArrowRightOutline",
+        "children": [
+          "/forecasting/levy-process-forecast",
+          "/forecasting/variance-gamma-forecast",
+          "/forecasting/nig-forecast",
+          "/forecasting/rough-volatility-forecast",
+          "/forecasting/fractional-brownian-motion",
+          "/forecasting/fractional-ornstein-uhlenbeck",
+          "/forecasting/heston-forecast",
+          "/forecasting/bates-forecast",
+          "/forecasting/sabr-forecast",
+          "/forecasting/bergomi-forecast",
+          "/forecasting/rough-heston-forecast",
+          "/forecasting/malliavin-calculus",
+          "/forecasting/wick-ito-integral",
+          "/forecasting/rough-path-theory"
+        ]
+      },
+      {
+        "id": "advanced-neural",
+        "name": "Advanced Neural & Graph Models",
+        "description": "Graph-based and spatio-temporal neural models",
+        "icon": "NetworkOutline",
+        "children": [
+          "/forecasting/graph-neural-network-forecast",
+          "/forecasting/temporal-graph-network",
+          "/forecasting/spatio-temporal-forecast"
+        ]
+      },
+      {
+        "id": "functional-analysis",
+        "name": "Functional Data Analysis",
+        "description": "Functional approaches to forecasting",
+        "icon": "FunctionOutline",
+        "children": [
+          "/forecasting/functional-data-analysis",
+          "/forecasting/functional-autoregression",
+          "/forecasting/functional-arima",
+          "/forecasting/functional-garch",
+          "/forecasting/fda-volatility"
+        ]
+      },
+      {
+        "id": "high-frequency",
+        "name": "High Frequency & Tick Data",
+        "description": "Forecasting with tick-by-tick data",
+        "icon": "ClockOutline",
+        "children": [
+          "/forecasting/high-frequency-forecast",
+          "/forecasting/tick-by-tick-forecast",
+          "/forecasting/duration-models",
+          "/forecasting/acd-models",
+          "/forecasting/scd-models",
+          "/forecasting/autoregressive-conditional-duration",
+          "/forecasting/multiplicative-error-models",
+          "/forecasting/midas-high-frequency",
+          "/forecasting/realized-measures",
+          "/forecasting/bipower-variation",
+          "/forecasting/realized-semivariance",
+          "/forecasting/realized-quadratic-variation",
+          "/forecasting/high-frequency-covariance",
+          "/forecasting/lead-lag-detection"
+        ]
+      },
+      {
+        "id": "market-microstructure",
+        "name": "Market Microstructure Forecasting",
+        "description": "Order flow and microstructure predictions",
+        "icon": "DocumentMagnifyingGlassOutline",
+        "children": [
+          "/forecasting/order-flow-forecast",
+          "/forecasting/liquidity-forecast",
+          "/forecasting/slippage-forecast",
+          "/forecasting/transaction-cost-forecast",
+          "/forecasting/microstructure-noise",
+          "/forecasting/price-impact-model",
+          "/forecasting/optimal-execution-forecast",
+          "/forecasting/order-book-imbalance-forecast",
+          "/forecasting/limit-order-book-forecast",
+          "/forecasting/depth-forecast",
+          "/forecasting/queue-length-forecast",
+          "/forecasting/order-arrival-rate",
+          "/forecasting/cancelation-rate",
+          "/forecasting/spread-forecast"
+        ]
+      },
+      {
+        "id": "market-anomalies",
+        "name": "Market Anomalies & Risk Signals",
+        "description": "Anomaly detection and risk forecasting",
+        "icon": "ExclamationTriangleOutline",
+        "children": [
+          "/forecasting/volatility-arbitrage-signal",
+          "/forecasting/statistical-arbitrage-signal",
+          "/forecasting/momentum-crash-forecast",
+          "/forecasting/bubble-detection",
+          "/forecasting/crash-forecasting"
+        ]
+      },
+      {
+        "id": "structural-break",
+        "name": "Structural Break Detection",
+        "description": "Methods for detecting structural changes",
+        "icon": "ArrowDownRightOutline",
+        "children": [
+          "/forecasting/regime-change-detection",
+          "/forecasting/structural-break-forecast",
+          "/forecasting/chow-test",
+          "/forecasting/cusum-test",
+          "/forecasting/mosums-test",
+          "/forecasting/fluctuation-test"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Forecasting",
+        "position": "header"
+      },
+      {
+        "from": "/models",
+        "anchor": "Time Series Models",
+        "position": "related"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/models",
+        "anchor": "Statistical Models",
+        "position": "content"
+      },
+      {
+        "to": "/trading",
+        "anchor": "Forecast Trading",
+        "position": "sidebar"
+      },
+      {
+        "to": "/code",
+        "anchor": "Forecasting Code",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 18,
+      "total_pages": 155,
+      "grouped_pages": 155,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "trading",
+    "path": "/trading",
+    "depth": 1,
+    "breadcrumb": ["Home", "Trading Strategies"],
+    "total_pages": 48,
+    "child_pattern": "/trading/{slug}",
+    "groups": [
+      {
+        "id": "market-microstructure",
+        "name": "Market Microstructure & Execution",
+        "description": "Understanding market mechanics and execution strategies",
+        "icon": "DocumentTextOutline",
+        "children": [
+          "/trading/order-book-analysis",
+          "/trading/market-microstructure",
+          "/trading/bid-ask-spread",
+          "/trading/limit-order-book",
+          "/trading/market-depth",
+          "/trading/liquidity-analysis",
+          "/trading/transaction-cost-analysis",
+          "/trading/slippage-estimation",
+          "/trading/implementation-shortfall",
+          "/trading/twap",
+          "/trading/vwap-algorithm",
+          "/trading/iceberg-orders",
+          "/trading/dark-pools",
+          "/trading/smart-order-routing"
+        ]
+      },
+      {
+        "id": "market-making",
+        "name": "Market Making & Liquidity Provision",
+        "description": "Strategies for providing liquidity and capturing spreads",
+        "icon": "ScaleOutline",
+        "children": [
+          "/trading/market-making",
+          "/trading/avellaneda-stoikov",
+          "/trading/market-maker-pnl",
+          "/trading/inventory-management",
+          "/trading/quote-placement",
+          "/trading/spread-capture"
+        ]
+      },
+      {
+        "id": "arbitrage",
+        "name": "Arbitrage Strategies",
+        "description": "Exploiting price discrepancies across markets",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/trading/statistical-arbitrage",
+          "/trading/cointegration",
+          "/trading/johansen-test",
+          "/trading/engle-granger",
+          "/trading/pairs-trading",
+          "/trading/copula-pairs",
+          "/trading/kalman-filter-pairs",
+          "/trading/basket-trading",
+          "/trading/cross-asset-arbitrage",
+          "/trading/momentum-arbitrage",
+          "/trading/event-arbitrage",
+          "/trading/fusion-arbitrage",
+          "/trading/options-arbitrage",
+          "/trading/volatility-arbitrage",
+          "/trading/calendar-arbitrage",
+          "/trading/etf-arbitrage",
+          "/trading/futures-arbitrage",
+          "/trading/risk-arbitrage",
+          "/trading/merger-arbitrage",
+          "/trading/dividend-arbitrage",
+          "/trading/tax-arbitrage",
+          "/trading/structured-product-arbitrage"
+        ]
+      },
+      {
+        "id": "trend-following",
+        "name": "Trend Following & Momentum Strategies",
+        "description": "Strategies that follow market trends and momentum",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/trading/momentum-trading",
+          "/trading/trend-following",
+          "/trading/breakout-trading",
+          "/trading/pullback-trading",
+          "/trading/reversal-trading",
+          "/trading/gap-trading",
+          "/trading/opening-range-breakout",
+          "/trading/end-of-day-reversal",
+          "/trading/trend-continuation-strategy",
+          "/trading/trend-reversal-strategy",
+          "/trading/retracement-trading"
+        ]
+      },
+      {
+        "id": "mean-reversion",
+        "name": "Mean Reversion Strategies",
+        "description": "Strategies based on price returning to the mean",
+        "icon": "ArrowLeftRightOutline",
+        "children": ["/trading/mean-reversion"]
+      },
+      {
+        "id": "factor-models",
+        "name": "Factor Models & Smart Beta",
+        "description": "Multi-factor and risk-based investment strategies",
+        "icon": "ListBulletOutline",
+        "children": [
+          "/trading/alpha-factor-modeling",
+          "/trading/multi-factor-model",
+          "/trading/factor-investing",
+          "/trading/smart-beta",
+          "/trading/factor-timing",
+          "/trading/factor-rotation",
+          "/trading/risk-factor-analysis",
+          "/trading/barra-model",
+          "/trading/fama-french-implementation",
+          "/trading/carhart-4-factor-trading",
+          "/trading/novy-marx-momentum",
+          "/trading/q-factor-model-trading",
+          "/trading/stambaugh-yuan-trading"
+        ]
+      },
+      {
+        "id": "pattern-recognition",
+        "name": "Pattern Recognition & Harmonic Trading",
+        "description": "Identifying chart patterns for trading signals",
+        "icon": "CircleStackOutline",
+        "children": [
+          "/trading/elliott-wave-theory",
+          "/trading/elliott-wave-trading",
+          "/trading/wolfe-wave-trading",
+          "/trading/gartley-pattern",
+          "/trading/bat-pattern",
+          "/trading/crab-pattern",
+          "/trading/butterfly-pattern",
+          "/trading/shark-pattern",
+          "/trading/cypher-pattern",
+          "/trading/abcd-pattern",
+          "/trading/three-drives-pattern",
+          "/trading/head-and-shoulders",
+          "/trading/double-top-bottom",
+          "/trading/triple-top-bottom",
+          "/trading/flag-pattern-trading",
+          "/trading/pennant-pattern-trading",
+          "/trading/wedge-pattern-trading",
+          "/trading/triangle-pattern-trading"
+        ]
+      },
+      {
+        "id": "indicator-strategies",
+        "name": "Indicator-Based Trading Strategies",
+        "description": "Strategies using technical indicators for signals",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/trading/bollinger-band-mean-reversion",
+          "/trading/keltner-channel-strategy",
+          "/trading/donchian-channel-breakout",
+          "/trading/ichimoku-cloud-trading",
+          "/trading/parabolic-sar-trading",
+          "/trading/super-trend-strategy",
+          "/trading/vortex-indicator-strategy",
+          "/trading/wave-trend-strategy",
+          "/trading/alligator-strategy",
+          "/trading/fractal-trading",
+          "/trading/zigzag-pattern-trading"
+        ]
+      },
+      {
+        "id": "volume-strategies",
+        "name": "Volume-Based Trading Strategies",
+        "description": "Strategies using volume analysis for confirmation",
+        "icon": "SpeakerWaveOutline",
+        "children": [
+          "/trading/volume-weighted-strategy",
+          "/trading/volume-confirmation-strategy",
+          "/trading/on-balance-volume-strategy",
+          "/trading/money-flow-strategy",
+          "/trading/chaikin-money-flow-strategy",
+          "/trading/accumulation-distribution-trading",
+          "/trading/force-index-strategy",
+          "/trading/ease-of-movement-strategy",
+          "/trading/keltner-volume-strategy",
+          "/trading/vwap-reversion",
+          "/trading/vwap-momentum",
+          "/trading/anchored-vwap-strategy"
+        ]
+      },
+      {
+        "id": "fibonacci",
+        "name": "Fibonacci Trading Strategies",
+        "description": "Strategies using Fibonacci ratios and levels",
+        "icon": "NumberedListOutline",
+        "children": [
+          "/trading/fibonacci-trading",
+          "/trading/fibonacci-retracement-strategy",
+          "/trading/fibonacci-extension-strategy",
+          "/trading/fibonacci-time-zone-strategy"
+        ]
+      },
+      {
+        "id": "time-based",
+        "name": "Time-Based & Session Trading",
+        "description": "Strategies based on time and trading sessions",
+        "icon": "ClockOutline",
+        "children": [
+          "/trading/multi-timeframe-trading",
+          "/trading/inter-timeframe-analysis",
+          "/trading/opening-drive-strategy",
+          "/trading/london-breakout",
+          "/trading/new-york-breakout",
+          "/trading/asian-session-trading",
+          "/trading/pre-market-strategy",
+          "/trading/after-hours-trading",
+          "/trading/opening-price-strategy",
+          "/trading/closing-price-strategy",
+          "/trading/first-hour-strategy",
+          "/trading/last-hour-strategy",
+          "/trading/midday-strategy",
+          "/trading/overnight-position-trading",
+          "/trading/intraday-vs-swing"
+        ]
+      },
+      {
+        "id": "event-driven",
+        "name": "Event-Driven & News Trading",
+        "description": "Strategies based on news and economic events",
+        "icon": "MegaphoneOutline",
+        "children": [
+          "/trading/news-based-trading",
+          "/trading/sentiment-trading",
+          "/trading/social-media-trading",
+          "/trading/earnings-announcement-trading",
+          "/trading/fomc-trading",
+          "/trading/nfp-trading",
+          "/trading/cpi-trading"
+        ]
+      },
+      {
+        "id": "high-frequency",
+        "name": "High Frequency & Scalping",
+        "description": "Ultra-short term and latency-sensitive strategies",
+        "icon": "BoltOutline",
+        "children": [
+          "/trading/scalping-strategy",
+          "/trading/hft-strategy",
+          "/trading/latency-arbitrage-trading",
+          "/trading/co-location-trading",
+          "/trading/proxy-trading"
+        ]
+      },
+      {
+        "id": "machine-learning",
+        "name": "Machine Learning & Dimensionality Reduction",
+        "description": "ML approaches for trading signal generation",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/trading/principal-component-trading",
+          "/trading/independent-component-analysis",
+          "/trading/sparse-pca-trading",
+          "/trading/autoencoder-trading",
+          "/trading/regime-switching-trading",
+          "/trading/markov-regime-trading",
+          "/trading/hidden-markov-trading",
+          "/trading/regime-detection"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Trading Strategies",
+        "position": "header"
+      },
+      {
+        "from": "/indicators",
+        "anchor": "Indicator Strategies",
+        "position": "cta"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/execution",
+        "anchor": "Order Execution",
+        "position": "content"
+      },
+      {
+        "to": "/order-flow",
+        "anchor": "Order Flow Analysis",
+        "position": "sidebar"
+      },
+      {
+        "to": "/code",
+        "anchor": "Trading Code",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 13,
+      "total_pages": 155,
+      "grouped_pages": 155,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "options",
+    "path": "/options",
+    "depth": 1,
+    "breadcrumb": ["Home", "Options Trading"],
+    "total_pages": 58,
+    "child_pattern": "/options/{slug}",
+    "groups": [
+      {
+        "id": "option-greeks",
+        "name": "Option Greeks & Sensitivities",
+        "description": "Risk measures and sensitivities of option prices",
+        "icon": "ChartLineOutline",
+        "children": [
+          "/options/option-greeks",
+          "/options/delta",
+          "/options/gamma",
+          "/options/theta",
+          "/options/vega",
+          "/options/rho",
+          "/options/charm-decay",
+          "/options/vanna-volatility",
+          "/options/volga-volatility",
+          "/options/speed-hedging",
+          "/options/zomma-hedging",
+          "/options/ultima-hedging",
+          "/options/color-hedging"
+        ]
+      },
+      {
+        "id": "volatility",
+        "name": "Volatility Analysis",
+        "description": "Understanding and analyzing volatility in options",
+        "icon": "WaveOutline",
+        "children": [
+          "/options/implied-volatility",
+          "/options/historical-volatility",
+          "/options/volatility-smile",
+          "/options/volatility-surface",
+          "/options/volatility-term-structure",
+          "/options/volatility-cone",
+          "/options/volatility-risk-premium",
+          "/options/volatility-cone-analysis",
+          "/options/volatility-regime-detection",
+          "/options/volatility-forecasting-options",
+          "/options/realized-volatility-trading",
+          "/options/implied-vs-realized"
+        ]
+      },
+      {
+        "id": "basic-strategies",
+        "name": "Basic Options Strategies",
+        "description": "Foundational options trading strategies",
+        "icon": "DocumentTextOutline",
+        "children": [
+          "/options/option-strategies",
+          "/options/covered-call",
+          "/options/protective-put",
+          "/options/collar",
+          "/options/married-put",
+          "/options/put-call-parity",
+          "/options/synthetic-positions",
+          "/options/synthetic-long",
+          "/options/synthetic-short",
+          "/options/synthetic-future",
+          "/options/option-replication"
+        ]
+      },
+      {
+        "id": "spread-strategies",
+        "name": "Spread Strategies",
+        "description": "Advanced spread and combination strategies",
+        "icon": "ArrowRightLeftOutline",
+        "children": [
+          "/options/vertical-spread",
+          "/options/calendar-spread",
+          "/options/diagonal-spread",
+          "/options/horizontal-spread",
+          "/options/vertical-spread-advanced",
+          "/options/diagonal-spread-advanced",
+          "/options/calendar-spread-advanced",
+          "/options/calendar-vertical-spread",
+          "/options/long-calendar-spread",
+          "/options/short-calendar-spread",
+          "/options/ratio-spread",
+          "/options/back-spread",
+          "/options/back-ratio-spread",
+          "/options/ratio-vertical-spread",
+          "/options/long-put-spread"
+        ]
+      },
+      {
+        "id": "neutral-strategies",
+        "name": "Neutral & Non-Directional Strategies",
+        "description": "Strategies that profit from low or sideways volatility",
+        "icon": "PlusMinusOutline",
+        "children": [
+          "/options/iron-condor",
+          "/options/iron-butterfly",
+          "/options/butterfly-spread",
+          "/options/condor",
+          "/options/seagull",
+          "/options/butterfly-with-skew",
+          "/options/condor-with-skew",
+          "/options/iron-condor-advanced",
+          "/options/iron-butterfly-advanced",
+          "/options/condor-advanced",
+          "/options/seagull-advanced",
+          "/options/jade-lizard",
+          "/options/twisted-sister",
+          "/options/box-spread"
+        ]
+      },
+      {
+        "id": "directional-strategies",
+        "name": "Directional Strategies",
+        "description": "Strategies with directional bias",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/options/straddle",
+          "/options/strangle",
+          "/options/strip",
+          "/options/strap",
+          "/options/risk-reversal",
+          "/options/risk-reversal-advanced",
+          "/options/collar-advanced",
+          "/options/zero-cost-collar",
+          "/options/reverse-colar",
+          "/options/covered-strangle",
+          "/options/protected-strangle"
+        ]
+      },
+      {
+        "id": "exotic-options",
+        "name": "Exotic Options",
+        "description": "Non-standard option types and structures",
+        "icon": "BeakerOutline",
+        "children": [
+          "/options/exotic-options",
+          "/options/barrier-options",
+          "/options/asian-options",
+          "/options/binary-options",
+          "/options/american-options",
+          "/options/european-options",
+          "/options/bermudan-options",
+          "/options/lookback-options",
+          "/options/cliquet-options",
+          "/options/rainbow-options",
+          "/options/basket-options",
+          "/options/compound-options",
+          "/options/chooser-options",
+          "/options/forward-start-options",
+          "/options/quantos",
+          "/options/weather-derivatives"
+        ]
+      },
+      {
+        "id": "volatility-derivatives",
+        "name": "Volatility Derivatives",
+        "description": "Trading volatility products and derivatives",
+        "icon": "SignalOutline",
+        "children": [
+          "/options/volatility-swaps",
+          "/options/variance-swaps",
+          "/options/correlation-swaps",
+          "/options/dispersion-trading",
+          "/options/vix-options",
+          "/options/vix-futures",
+          "/options/vix-options-strategies",
+          "/options/vix-calendar-spread",
+          "/options/vix-iron-condor",
+          "/options/vix-straddle",
+          "/options/vix-strangle",
+          "/options/volatility-etf-options",
+          "/options/volatility-etf-trading",
+          "/options/uvxy-options",
+          "/options/svxy-options"
+        ]
+      },
+      {
+        "id": "advanced-hedging",
+        "name": "Advanced Hedging Techniques",
+        "description": "Sophisticated risk management strategies",
+        "icon": "ShieldCheckOutline",
+        "children": [
+          "/options/gamma-scalping",
+          "/options/delta-hedging",
+          "/options/theta-decay",
+          "/options/vega-risk",
+          "/options/vega-hedging",
+          "/options/charm-hedging",
+          "/options/vanna-hedging",
+          "/options/volga-hedging",
+          "/options/delta-gamma-hedging",
+          "/options/delta-vega-hedging",
+          "/options/gamma-vega-hedging",
+          "/options/gamma-theta-trading",
+          "/options/vega-theta-trading",
+          "/options/static-hedging",
+          "/options/dynamic-hedging"
+        ]
+      },
+      {
+        "id": "options-analytics",
+        "name": "Options Analytics & Metrics",
+        "description": "Analytical tools for options analysis",
+        "icon": "CalculatorOutline",
+        "children": [
+          "/options/put-call-ratio",
+          "/options/put-call-open-interest",
+          "/options/put-call-volume-ratio",
+          "/options/option-implied-distribution",
+          "/options/risk-neutral-density",
+          "/options/state-price-density",
+          "/options/max-pain-theory",
+          "/options/pin-risk",
+          "/options/gamma-exposure",
+          "/options/gamma-risk",
+          "/options/vanna-exposure",
+          "/options/volga-exposure",
+          "/options/spot-vol-correlation"
+        ]
+      },
+      {
+        "id": "underlying-assets",
+        "name": "Options on Underlying Assets",
+        "description": "Options on different asset classes",
+        "icon": "CurrencyDollarOutline",
+        "children": [
+          "/options/options-on-futures",
+          "/options/futures-options-strategies",
+          "/options/options-on-etfs",
+          "/options/options-on-index",
+          "/options/spx-options",
+          "/options/spy-options",
+          "/options/qqq-options",
+          "/options/dia-options",
+          "/options/iwm-options",
+          "/options/e-mini-options",
+          "/options/treasury-options",
+          "/options/commodity-options",
+          "/options/crude-oil-options",
+          "/options/gold-options",
+          "/options/silver-options",
+          "/options/natural-gas-options",
+          "/options/agricultural-options",
+          "/options/currency-options",
+          "/options/fx-options",
+          "/options/crypto-options",
+          "/options/bitcoin-options",
+          "/options/ethereum-options",
+          "/options/altcoin-options",
+          "/options/interest-rate-options",
+          "/options/bond-options",
+          "/options/swaption",
+          "/options/cap-floor",
+          "/options/interest-rate-collar"
+        ]
+      },
+      {
+        "id": "structured-products",
+        "name": "Structured Products",
+        "description": "Complex structured financial products",
+        "icon": "CircleStackOutline",
+        "children": [
+          "/options/range-accrual",
+          "/options/target-redemption",
+          "/options/auto-callable",
+          "/options/structured-notes",
+          "/options/equity-linked-notes"
+        ]
+      },
+      {
+        "id": "employee-options",
+        "name": "Employee Stock Options (ESO)",
+        "description": "ESO valuation and exercise strategies",
+        "icon": "BriefcaseOutline",
+        "children": [
+          "/options/personal-stock-options",
+          "/options/employee-stock-options",
+          "/options/eso-valuation",
+          "/options/eso-exercise-strategy"
+        ]
+      },
+      {
+        "id": "corporate-actions",
+        "name": "Corporate Actions & Derivatives",
+        "description": "Warrants, rights, and convertible instruments",
+        "icon": "DocumentMagnifyingGlassOutline",
+        "children": [
+          "/options/warrants",
+          "/options/rights-issuance",
+          "/options/convertible-bonds",
+          "/options/convertible-arbitrage"
+        ]
+      },
+      {
+        "id": "credit-options",
+        "name": "Credit Options",
+        "description": "Credit derivative options",
+        "icon": "ShieldExclamationOutline",
+        "children": [
+          "/options/credit-options",
+          "/options/cds-options",
+          "/options/cds-index-options"
+        ]
+      },
+      {
+        "id": "arbitrage-strategies",
+        "name": "Options Arbitrage",
+        "description": "Arbitrage strategies in options markets",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/options/calendar-arbitrage-options",
+          "/options/butterfly-arbitrage",
+          "/options/box-arbitrage",
+          "/options/conversion-arbitrage",
+          "/options/reversal-arbitrage",
+          "/options/jelly-roll",
+          "/options/volatility-arbitrage-options",
+          "/options/volatility-trading-strategies",
+          "/options/volatility-straddle-strategy",
+          "/options/volatility-strangle-strategy",
+          "/options/volatility-iron-condor",
+          "/options/term-structure-arbitrage"
+        ]
+      },
+      {
+        "id": "carry-roll",
+        "name": "Carry & Roll Strategies",
+        "description": "Carry and roll yield strategies",
+        "icon": "ClockOutline",
+        "children": [
+          "/options/carry-trade-options",
+          "/options/roll-yield-options"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Options Trading",
+        "position": "header"
+      },
+      {
+        "from": "/models",
+        "anchor": "Option Pricing Models",
+        "position": "related"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/models/black-scholes",
+        "anchor": "Black-Scholes Model",
+        "position": "content"
+      },
+      {
+        "to": "/risk",
+        "anchor": "Options Risk",
+        "position": "sidebar"
+      },
+      {
+        "to": "/calculators",
+        "anchor": "Options Calculators",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 17,
+      "total_pages": 236,
+      "grouped_pages": 236,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "execution",
+    "path": "/execution",
+    "depth": 1,
+    "breadcrumb": ["Home", "Execution Algorithms"],
+    "total_pages": 36,
+    "child_pattern": "/execution/{slug}",
+    "groups": [
+      {
+        "id": "performance-benchmarks",
+        "name": "Performance Benchmarks",
+        "description": "Latency and performance benchmarking for execution systems",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/execution/latency-benchmarks",
+          "/execution/throughput-benchmarks",
+          "/execution/websocket-performance",
+          "/execution/fix-protocol"
+        ]
+      },
+      {
+        "id": "order-management",
+        "name": "Order Management",
+        "description": "Core order management operations for trading execution",
+        "icon": "DocumentTextOutline",
+        "children": [
+          "/execution/order-entry",
+          "/execution/order-cancel",
+          "/execution/order-modify"
+        ]
+      },
+      {
+        "id": "basic-order-types",
+        "name": "Basic Order Types",
+        "description": "Fundamental order types for trade execution",
+        "icon": "ListBulletOutline",
+        "children": [
+          "/execution/order-types",
+          "/execution/market-order",
+          "/execution/limit-order",
+          "/execution/stop-order",
+          "/execution/stop-limit-order"
+        ]
+      },
+      {
+        "id": "advanced-order-types",
+        "name": "Advanced Order Types",
+        "description": "Sophisticated order types for specialized strategies",
+        "icon": "CogOutline",
+        "children": [
+          "/execution/trailing-stop",
+          "/execution/pegged-order",
+          "/execution/hidden-order",
+          "/execution/iceberg-order"
+        ]
+      },
+      {
+        "id": "scheduled-execution",
+        "name": "Scheduled Execution Algorithms",
+        "description": "Algorithms that execute based on time and volume schedules",
+        "icon": "ClockOutline",
+        "children": [
+          "/execution/twap-order",
+          "/execution/vwap-order",
+          "/execution/percent-of-volume",
+          "/execution/implementation-shortfall-algorithm",
+          "/execution/arrival-price-algorithm",
+          "/execution/volume-weighted-algorithm",
+          "/execution/time-weighted-algorithm",
+          "/execution/participation-weighted-algorithm"
+        ]
+      },
+      {
+        "id": "intelligent-execution",
+        "name": "Intelligent & Adaptive Execution",
+        "description": "Advanced algorithms using AI, ML, and adaptive strategies",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/execution/adaptive-algorithm",
+          "/execution/machine-learning-execution",
+          "/execution/reinforcement-learning-execution"
+        ]
+      },
+      {
+        "id": "infrastructure",
+        "name": "Execution Infrastructure",
+        "description": "Infrastructure and access methods for execution",
+        "icon": "ServerStackOutline",
+        "children": [
+          "/execution/co-location",
+          "/execution/proximity-hosting",
+          "/execution/direct-market-access",
+          "/execution/sponsored-access",
+          "/execution/algorithmic-sponsorship"
+        ]
+      },
+      {
+        "id": "risk-controls",
+        "name": "Risk Controls & Monitoring",
+        "description": "Risk management systems and trading controls",
+        "icon": "ShieldCheckOutline",
+        "children": [
+          "/execution/risk-controls",
+          "/execution/circuit-breakers",
+          "/execution/position-limits",
+          "/execution/order-velocity-checks"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Execution Algorithms",
+        "position": "header"
+      },
+      {
+        "from": "/trading",
+        "anchor": "Trade Execution",
+        "position": "cta"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/trading/market-making",
+        "anchor": "Market Making",
+        "position": "content"
+      },
+      {
+        "to": "/benchmarks",
+        "anchor": "Execution Benchmarks",
+        "position": "sidebar"
+      },
+      {
+        "to": "/code",
+        "anchor": "Execution Code",
+        "position": "cta"
+      }
+    ],
+    "metadata": {
+      "total_groups": 8,
+      "total_pages": 36,
+      "grouped_pages": 36,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "calculators",
+    "path": "/calculators",
+    "depth": 1,
+    "breadcrumb": ["Home", "Calculators"],
+    "total_pages": 180,
+    "child_pattern": "/calculators/{slug}",
+    "groups": [
+      {
+        "id": "portfolio-optimization",
+        "name": "Portfolio Optimization Calculators",
+        "description": "Calculators for portfolio allocation and optimization",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/calculators/markowitz-optimization",
+          "/calculators/efficient-frontier",
+          "/calculators/black-litterman-weights",
+          "/calculators/risk-parity-weights",
+          "/calculators/hierarchical-risk-parity-weights",
+          "/calculators/maximum-diversification-weights",
+          "/calculators/mean-cvar-optimization",
+          "/calculators/treynor-black-model",
+          "/calculators/merton-portfolio-problem",
+          "/calculators/consumption-portfolio-choice"
+        ]
+      },
+      {
+        "id": "factor-models",
+        "name": "Factor Model Calculators",
+        "description": "Calculators for multi-factor models",
+        "icon": "ListBulletOutline",
+        "children": [
+          "/calculators/fama-french-three-factor",
+          "/calculators/fama-french-five-factor",
+          "/calculators/carhart-four-factor",
+          "/calculators/q-factor-model",
+          "/calculators/barra-factor-model"
+        ]
+      },
+      {
+        "id": "option-pricing",
+        "name": "Option Pricing Calculators",
+        "description": "Calculators for pricing options and derivatives",
+        "icon": "CurrencyDollarOutline",
+        "children": [
+          "/calculators/black-scholes-pricer",
+          "/calculators/option-implied-distribution",
+          "/calculators/risk-neutral-density-calculator",
+          "/calculators/state-price-density-calculator",
+          "/calculators/max-pain-calculator"
+        ]
+      },
+      {
+        "id": "option-greeks",
+        "name": "Option Greeks Calculators",
+        "description": "Calculators for option sensitivities and Greeks",
+        "icon": "ChartLineOutline",
+        "children": [
+          "/calculators/option-vega-sensitivity",
+          "/calculators/option-gamma-sensitivity",
+          "/calculators/option-theta-sensitivity",
+          "/calculators/option-rho-sensitivity",
+          "/calculators/option-charm-sensitivity",
+          "/calculators/option-vanna-sensitivity",
+          "/calculators/option-volga-sensitivity",
+          "/calculators/option-speed-sensitivity",
+          "/calculators/option-zomma-sensitivity",
+          "/calculators/option-color-sensitivity",
+          "/calculators/option-ultima-sensitivity"
+        ]
+      },
+      {
+        "id": "option-analytics",
+        "name": "Options Analytics Calculators",
+        "description": "Analytical tools for options analysis",
+        "icon": "CalculatorOutline",
+        "children": [
+          "/calculators/gamma-exposure-calculator",
+          "/calculators/vanna-exposure-calculator",
+          "/calculators/volga-exposure-calculator",
+          "/calculators/put-call-ratio-calculator",
+          "/calculators/put-call-open-interest-calculator",
+          "/calculators/option-leverage-calculator",
+          "/calculators/option-probability-calculator",
+          "/calculators/option-expected-value-calculator",
+          "/calculators/option-risk-calculator",
+          "/calculators/early-exercise-calculator"
+        ]
+      },
+      {
+        "id": "parameter-estimation",
+        "name": "Parameter Estimation Calculators",
+        "description": "Calculators for model parameter estimation",
+        "icon": "WrenchOutline",
+        "children": [
+          "/calculators/sabr-parameters",
+          "/calculators/heston-parameters",
+          "/calculators/garch-parameters"
+        ]
+      },
+      {
+        "id": "volatility-calculators",
+        "name": "Volatility Calculators",
+        "description": "Calculators for volatility estimation and forecasting",
+        "icon": "WaveOutline",
+        "children": [
+          "/calculators/ewma-volatility",
+          "/calculators/ewma-correlation",
+          "/calculators/ewma-covariance",
+          "/calculators/garch-family-calculator",
+          "/calculators/egarch-calculator",
+          "/calculators/tarch-calculator",
+          "/calculators/gjr-garch-calculator",
+          "/calculators/power-garch-calculator",
+          "/calculators/component-garch-calculator",
+          "/calculators/realized-volatility-calculator",
+          "/calculators/realized-kernel-calculator",
+          "/calculators/bipower-variation-calculator",
+          "/calculators/realized-semivariance-calculator",
+          "/calculators/range-volatility-calculator",
+          "/calculators/parkinson-volatility-calculator",
+          "/calculators/garman-klass-volatility-calculator",
+          "/calculators/rogers-satchell-volatility-calculator",
+          "/calculators/yang-zhang-volatility-calculator",
+          "/calculators/high-low-volatility-calculator",
+          "/calculators/overnight-volatility-calculator",
+          "/calculators/intraday-volatility-calculator",
+          "/calculators/volatility-forecast-calculator"
+        ]
+      },
+      {
+        "id": "volatility-derivatives",
+        "name": "Volatility Derivatives Calculators",
+        "description": "Calculators for pricing volatility products",
+        "icon": "SignalOutline",
+        "children": [
+          "/calculators/variance-swap-pricing",
+          "/calculators/volatility-swap-pricing",
+          "/calculators/correlation-swap-pricing",
+          "/calculators/dispersion-trade-calculator",
+          "/calculators/vix-forecast-calculator",
+          "/calculators/vix-futures-calculator"
+        ]
+      },
+      {
+        "id": "volume-profile",
+        "name": "Volume Profile Calculators",
+        "description": "Calculators for volume profile analysis",
+        "icon": "SpeakerWaveOutline",
+        "children": [
+          "/calculators/volume-weighted-average-price",
+          "/calculators/anchored-vwap",
+          "/calculators/volume-profile-poc",
+          "/calculators/volume-profile-value-area",
+          "/calculators/cumulative-delta"
+        ]
+      },
+      {
+        "id": "rolling-metrics",
+        "name": "Rolling Metrics Calculators",
+        "description": "Calculators for rolling risk and performance metrics",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/calculators/rolling-sharpe-ratio",
+          "/calculators/rolling-sortino-ratio",
+          "/calculators/rolling-beta",
+          "/calculators/rolling-alpha",
+          "/calculators/rolling-var",
+          "/calculators/rolling-cvar",
+          "/calculators/rolling-maximum-drawdown",
+          "/calculators/rolling-calmar-ratio",
+          "/calculators/rolling-omega-ratio",
+          "/calculators/rolling-information-ratio",
+          "/calculators/rolling-treynor-ratio",
+          "/calculators/rolling-upside-capture",
+          "/calculators/rolling-downside-capture",
+          "/calculators/rolling-volatility",
+          "/calculators/rolling-correlation",
+          "/calculators/rolling-covariance",
+          "/calculators/rolling-skewness",
+          "/calculators/rolling-kurtosis",
+          "/calculators/rolling-autocorrelation",
+          "/calculators/rolling-hurst-exponent",
+          "/calculators/rolling-half-life",
+          "/calculators/rolling-mean-reversion-speed"
+        ]
+      },
+      {
+        "id": "beta-estimation",
+        "name": "Beta Estimation Calculators",
+        "description": "Advanced beta calculation methods",
+        "icon": "ScaleOutline",
+        "children": [
+          "/calculators/kalman-filter-beta",
+          "/calculators/state-space-beta",
+          "/calculators/bayesian-beta",
+          "/calculators/robust-beta"
+        ]
+      },
+      {
+        "id": "monte-carlo",
+        "name": "Monte Carlo Calculators",
+        "description": "Monte Carlo simulation tools",
+        "icon": "BeakerOutline",
+        "children": [
+          "/calculators/monte-carlo-var",
+          "/calculators/monte-carlo-cvar",
+          "/calculators/monte-carlo-expected-shortfall",
+          "/calculators/monte-carlo-option-greeks",
+          "/calculators/monte-carlo-portfolio",
+          "/calculators/monte-carlo-retirement",
+          "/calculators/monte-carlo-risk",
+          "/calculators/monte-carlo-optimization"
+        ]
+      },
+      {
+        "id": "bayesian-statistics",
+        "name": "Bayesian Statistics Calculators",
+        "description": "Bayesian inference and updating tools",
+        "icon": "CircleStackOutline",
+        "children": [
+          "/calculators/bootstrap-calculator",
+          "/calculators/jackknife-calculator",
+          "/calculators/bayesian-update-calculator",
+          "/calculators/conjugate-prior-calculator",
+          "/calculators/mcmc-calculator",
+          "/calculators/hierarchical-bayesian-calculator",
+          "/calculators/sequential-bayesian-calculator"
+        ]
+      },
+      {
+        "id": "filtering",
+        "name": "Filtering Calculators",
+        "description": "State estimation and filtering tools",
+        "icon": "FunnelOutline",
+        "children": [
+          "/calculators/ensemble-kalman-filter-calculator",
+          "/calculators/unscented-kalman-filter-calculator",
+          "/calculators/extended-kalman-filter-calculator",
+          "/calculators/cubature-kalman-filter-calculator",
+          "/calculators/particle-filter-calculator",
+          "/calculators/hidden-markov-calculator",
+          "/calculators/regime-switching-calculator",
+          "/calculators/markov-switching-calculator"
+        ]
+      },
+      {
+        "id": "nonlinear-models",
+        "name": "Nonlinear & Threshold Models",
+        "description": "Nonlinear time series model calculators",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/calculators/threshold-autoregression-calculator",
+          "/calculators/smooth-transition-calculator",
+          "/calculators/self-exciting-threshold-calculator",
+          "/calculators/lstar-calculator",
+          "/calculators/estar-calculator",
+          "/calculators/tv-ar-calculator",
+          "/calculators/tv-var-calculator",
+          "/calculators/adaptive-filtering-calculator",
+          "/calculators/recursive-least-squares-calculator"
+        ]
+      },
+      {
+        "id": "fractal-entropy",
+        "name": "Fractal & Entropy Calculators",
+        "description": "Fractal analysis and entropy measures",
+        "icon": "WaveOutline",
+        "children": [
+          "/calculators/fractional-integration-calculator",
+          "/calculators/hurst-exponent-calculator",
+          "/calculators/fractal-dimension-calculator",
+          "/calculators/lyapunov-exponent-calculator",
+          "/calculators/entropy-calculator",
+          "/calculators/shannon-entropy-calculator",
+          "/calculators/renyi-entropy-calculator",
+          "/calculators/tsallis-entropy-calculator"
+        ]
+      },
+      {
+        "id": "information-theory",
+        "name": "Information Theory & Divergence",
+        "description": "Information-theoretic measures and divergences",
+        "icon": "InformationCircleOutline",
+        "children": [
+          "/calculators/kullback-leibler-divergence",
+          "/calculators/jensen-shannon-divergence",
+          "/calculators/wasserstein-distance",
+          "/calculators/earth-movers-distance",
+          "/calculators/optimal-transport-calculator"
+        ]
+      },
+      {
+        "id": "copula-calculators",
+        "name": "Copula Calculators",
+        "description": "Copula-based dependence calculators",
+        "icon": "LinkOutline",
+        "children": [
+          "/calculators/coh-integration-calculator",
+          "/calculators/schmidt-copula-calculator",
+          "/calculators/vine-copula-calculator",
+          "/calculators/conditional-copula-calculator",
+          "/calculators/copula-entropy-calculator"
+        ]
+      },
+      {
+        "id": "causality-dependence",
+        "name": "Causality & Dependence Measures",
+        "description": "Causal inference and dependence measures",
+        "icon": "ArrowRightLeftOutline",
+        "children": [
+          "/calculators/transfer-entropy-calculator",
+          "/calculators/granger-causality-calculator",
+          "/calculators/convergent-cross-mapping",
+          "/calculators/pearson-correlation-calculator",
+          "/calculators/spearman-correlation-calculator",
+          "/calculators/kendall-tau-calculator",
+          "/calculators/mutual-information-calculator",
+          "/calculators/partial-correlation-calculator",
+          "/calculators/partial-mutual-information",
+          "/calculators/maximal-information-coefficient",
+          "/calculators/distance-correlation-calculator"
+        ]
+      },
+      {
+        "id": "dimensionality-reduction",
+        "name": "Dimensionality Reduction Calculators",
+        "description": "PCA and manifold learning calculators",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/calculators/principal-component-calculator",
+          "/calculators/independent-component-calculator",
+          "/calculators/sparse-pca-calculator",
+          "/calculators/kernel-pca-calculator",
+          "/calculators/autoencoder-calculator",
+          "/calculators/tsne-calculator",
+          "/calculators/umap-calculator",
+          "/calculators/isomap-calculator"
+        ]
+      },
+      {
+        "id": "clustering",
+        "name": "Clustering Calculators",
+        "description": "Cluster analysis and grouping tools",
+        "icon": "CircleStackOutline",
+        "children": [
+          "/calculators/spectral-clustering-calculator",
+          "/calculators/hierarchical-clustering-calculator",
+          "/calculators/kmeans-calculator",
+          "/calculators/dbscan-calculator",
+          "/calculators/gaussian-mixture-calculator",
+          "/calculators/bayesian-clustering-calculator"
+        ]
+      },
+      {
+        "id": "changepoint-detection",
+        "name": "Change Point Detection Calculators",
+        "description": "Structural break and change point detection",
+        "icon": "ArrowDownRightOutline",
+        "children": [
+          "/calculators/changepoint-detection-calculator",
+          "/calculators/structural-break-calculator",
+          "/calculators/cusum-calculator",
+          "/calculators/mosums-calculator",
+          "/calculators/chow-test-calculator",
+          "/calculators/fluctuation-test-calculator",
+          "/calculators/bai-perron-calculator"
+        ]
+      },
+      {
+        "id": "fixed-income",
+        "name": "Fixed Income Calculators",
+        "description": "Bond and interest rate calculators",
+        "icon": "CurrencyDollarOutline",
+        "children": [
+          "/calculators/stress-testing-scenario-analysis",
+          "/calculators/time-value-of-money",
+          "/calculators/amortization-calculator",
+          "/calculators/yield-curve-calculator",
+          "/calculators/bond-pricing-calculator",
+          "/calculators/duration-convexity-calculator",
+          "/calculators/vasicek-bond-pricing",
+          "/calculators/cox-ingersoll-ross-bond-pricing",
+          "/calculators/interest-rate-swap-calculator",
+          "/calculators/cds-pricing-calculator"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Calculators",
+        "position": "header"
+      },
+      {
+        "from": "/indicators",
+        "anchor": "Indicator Calculators",
+        "position": "cta"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/indicators",
+        "anchor": "Indicator Guides",
+        "position": "content"
+      },
+      {
+        "to": "/models",
+        "anchor": "Financial Models",
+        "position": "sidebar"
+      },
+      {
+        "to": "/code",
+        "anchor": "Calculator Code",
+        "position": "footer"
+      }
+    ],
+    "metadata": {
+      "total_groups": 22,
+      "total_pages": 180,
+      "grouped_pages": 180,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "comparisons",
+    "path": "/compare",
+    "depth": 1,
+    "breadcrumb": ["Home", "Comparisons"],
+    "total_pages": 268,
+    "child_pattern": "/compare/{slug}",
+    "groups": [
+      {
+        "id": "momentum-oscillators",
+        "name": "Momentum Oscillator Comparisons",
+        "description": "Comparing momentum-based technical indicators",
+        "icon": "ChartLineOutline",
+        "children": [
+          "/compare/rsi-vs-macd",
+          "/compare/rsi-vs-stochastic",
+          "/compare/rsi-vs-cci",
+          "/compare/rsi-vs-mfi",
+          "/compare/rsi-vs-williams-r",
+          "/compare/rsi-vs-ultimate-oscillator",
+          "/compare/macd-vs-stochastic",
+          "/compare/macd-vs-awesome-oscillator",
+          "/compare/macd-vs-ppo",
+          "/compare/stochastic-vs-cci",
+          "/compare/stochastic-vs-williams-r",
+          "/compare/cci-vs-mfi"
+        ]
+      },
+      {
+        "id": "volatility-bands",
+        "name": "Volatility & Band Comparisons",
+        "description": "Comparing volatility-based indicators and bands",
+        "icon": "WaveOutline",
+        "children": [
+          "/compare/bollinger-bands-vs-keltner-channels",
+          "/compare/bollinger-bands-vs-donchian-channels",
+          "/compare/bollinger-bands-vs-standard-deviation",
+          "/compare/atr-vs-bollinger-bands",
+          "/compare/atr-vs-keltner-channels"
+        ]
+      },
+      {
+        "id": "moving-averages",
+        "name": "Moving Average Comparisons",
+        "description": "Comparing different types of moving averages",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/compare/ema-vs-sma",
+          "/compare/ema-vs-wma",
+          "/compare/hma-vs-wma",
+          "/compare/hma-vs-kama",
+          "/compare/kama-vs-frama",
+          "/compare/ichimoku-vs-sma",
+          "/compare/ichimoku-vs-adx"
+        ]
+      },
+      {
+        "id": "trend-indicators",
+        "name": "Trend & Direction Comparisons",
+        "description": "Comparing trend-following and directional indicators",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/compare/parabolic-sar-vs-super-trend",
+          "/compare/adx-vs-vortex-indicator",
+          "/compare/adx-vs-dm",
+          "/compare/vwap-vs-anchored-vwap",
+          "/compare/vwap-vs-volume-weighted-average-price"
+        ]
+      },
+      {
+        "id": "volume-indicators",
+        "name": "Volume & Profile Comparisons",
+        "description": "Comparing volume-based indicators and profiles",
+        "icon": "SpeakerWaveOutline",
+        "children": [
+          "/compare/obv-vs-chaikin-money-flow",
+          "/compare/obv-vs-volume-profile",
+          "/compare/volume-profile-vs-market-profile",
+          "/compare/volume-profile-vs-footprint",
+          "/compare/volume-profile-vs-volume-by-price",
+          "/compare/market-profile-vs-volume-profile",
+          "/compare/cumulative-delta-vs-volume-delta",
+          "/compare/cumulative-delta-vs-delta-divergence",
+          "/compare/delta-divergence-vs-regular-divergence",
+          "/compare/order-flow-imbalance-vs-stacked-imbalance",
+          "/compare/iceberg-detection-vs-spoofing-detection",
+          "/compare/iceberg-detection-vs-liquidity-grabs",
+          "/compare/absorption-analysis-vs-exhaustion-detection",
+          "/compare/absorption-analysis-vs-order-flow-pressure"
+        ]
+      },
+      {
+        "id": "fibonacci-pattern",
+        "name": "Fibonacci & Pattern Comparisons",
+        "description": "Comparing Fibonacci tools and chart patterns",
+        "icon": "NumberedListOutline",
+        "children": [
+          "/compare/fibonacci-retracement-vs-extension",
+          "/compare/fibonacci-retracement-vs-harmonic-patterns",
+          "/compare/elliott-wave-vs-fibonacci",
+          "/compare/zigzag-vs-renko",
+          "/compare/renko-vs-kagi-charts",
+          "/compare/renko-vs-point-and-figure",
+          "/compare/kagi-vs-point-and-figure"
+        ]
+      },
+      {
+        "id": "risk-metrics",
+        "name": "Risk Metric Comparisons",
+        "description": "Comparing risk-adjusted performance metrics",
+        "icon": "ShieldCheckOutline",
+        "children": [
+          "/compare/sharpe-vs-sortino",
+          "/compare/sharpe-vs-calmar",
+          "/compare/sharpe-vs-omega",
+          "/compare/sharpe-vs-treynor",
+          "/compare/sortino-vs-calmar",
+          "/compare/sortino-vs-omega",
+          "/compare/calmar-vs-sterling",
+          "/compare/calmar-vs-burke",
+          "/compare/var-vs-cvar",
+          "/compare/var-vs-expected-shortfall",
+          "/compare/var-vs-liquidity-adjusted-var",
+          "/compare/cvar-vs-tail-var",
+          "/compare/cvar-vs-expected-shortfall",
+          "/compare/maximum-drawdown-vs-ulcer-index",
+          "/compare/maximum-drawdown-vs-pain-index",
+          "/compare/ulcer-index-vs-pain-index",
+          "/compare/treynor-ratio-vs-jensens-alpha",
+          "/compare/treynor-ratio-vs-information-ratio",
+          "/compare/information-ratio-vs-sharpe",
+          "/compare/alpha-vs-beta"
+        ]
+      },
+      {
+        "id": "factor-models",
+        "name": "Factor Model Comparisons",
+        "description": "Comparing multi-factor asset pricing models",
+        "icon": "ListBulletOutline",
+        "children": [
+          "/compare/capm-vs-fama-french-3-factor",
+          "/compare/fama-french-3-factor-vs-5-factor",
+          "/compare/fama-french-vs-carhart-4-factor",
+          "/compare/carhart-4-factor-vs-q-factor-model",
+          "/compare/q-factor-model-vs-stambaugh-yuan"
+        ]
+      },
+      {
+        "id": "option-pricing",
+        "name": "Option Pricing Model Comparisons",
+        "description": "Comparing option pricing and valuation models",
+        "icon": "CurrencyDollarOutline",
+        "children": [
+          "/compare/black-scholes-vs-heston",
+          "/compare/black-scholes-vs-binomial-model",
+          "/compare/black-scholes-vs-monte-carlo",
+          "/compare/black-scholes-vs-trinomial-model",
+          "/compare/heston-vs-bates-model",
+          "/compare/heston-vs-sabr",
+          "/compare/heston-vs-bergomi",
+          "/compare/sabr-vs-bates",
+          "/compare/binomial-model-vs-trinomial-model",
+          "/compare/monte-carlo-vs-finite-difference",
+          "/compare/american-vs-european-options",
+          "/compare/american-vs-bermudan-options",
+          "/compare/barrier-vs-asian-options",
+          "/compare/barrier-vs-lookback-options",
+          "/compare/asian-vs-basket-options",
+          "/compare/vanilla-vs-exotic-options"
+        ]
+      },
+      {
+        "id": "option-greeks",
+        "name": "Option Greeks Comparisons",
+        "description": "Comparing option Greeks and sensitivities",
+        "icon": "ChartPieOutline",
+        "children": [
+          "/compare/delta-vs-gamma",
+          "/compare/delta-vs-theta",
+          "/compare/delta-vs-vega",
+          "/compare/gamma-vs-vega",
+          "/compare/gamma-vs-theta",
+          "/compare/theta-vs-vega",
+          "/compare/theta-vs-rho",
+          "/compare/vega-vs-rho",
+          "/compare/charm-vs-vanna",
+          "/compare/vanna-vs-volga",
+          "/compare/speed-vs-zomma",
+          "/compare/color-vs-ultima"
+        ]
+      },
+      {
+        "id": "volatility-comparisons",
+        "name": "Volatility Comparisons",
+        "description": "Comparing volatility measures and structures",
+        "icon": "SignalOutline",
+        "children": [
+          "/compare/implied-volatility-vs-historical-volatility",
+          "/compare/implied-volatility-vs-realized-volatility",
+          "/compare/volatility-smile-vs-volatility-surface",
+          "/compare/volatility-term-structure-vs-volatility-cone",
+          "/compare/volatility-risk-premium-vs-vix"
+        ]
+      },
+      {
+        "id": "option-strategies",
+        "name": "Option Strategy Comparisons",
+        "description": "Comparing options trading strategies",
+        "icon": "DocumentTextOutline",
+        "children": [
+          "/compare/covered-call-vs-protective-put",
+          "/compare/covered-call-vs-collar",
+          "/compare/protective-put-vs-married-put",
+          "/compare/iron-condor-vs-iron-butterfly",
+          "/compare/iron-condor-vs-condor",
+          "/compare/iron-butterfly-vs-butterfly-spread",
+          "/compare/butterfly-spread-vs-vertical-spread",
+          "/compare/vertical-spread-vs-horizontal-spread",
+          "/compare/calendar-spread-vs-diagonal-spread",
+          "/compare/straddle-vs-strangle",
+          "/compare/straddle-vs-strip",
+          "/compare/straddle-vs-strap",
+          "/compare/strangle-vs-risk-reversal",
+          "/compare/risk-reversal-vs-seagull",
+          "/compare/covered-call-vs-cash-secured-put"
+        ]
+      },
+      {
+        "id": "time-series",
+        "name": "Time Series Model Comparisons",
+        "description": "Comparing time series forecasting models",
+        "icon": "ClockOutline",
+        "children": [
+          "/compare/arima-vs-sarima",
+          "/compare/arima-vs-sarimax",
+          "/compare/arima-vs-lstm",
+          "/compare/arima-vs-prophet",
+          "/compare/sarima-vs-varima",
+          "/compare/varima-vs-vecm"
+        ]
+      },
+      {
+        "id": "deep-learning",
+        "name": "Deep Learning Comparisons",
+        "description": "Comparing neural network architectures",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/compare/lstm-vs-gru",
+          "/compare/lstm-vs-bilstm",
+          "/compare/lstm-vs-transformer",
+          "/compare/lstm-vs-informer",
+          "/compare/gru-vs-bilstm",
+          "/compare/transformer-vs-autoformer",
+          "/compare/autoformer-vs-fedformer",
+          "/compare/informer-vs-patchtst",
+          "/compare/patchtst-vs-timesnet",
+          "/compare/timesnet-vs-n-beats",
+          "/compare/n-beats-vs-deepar",
+          "/compare/deepar-vs-tft",
+          "/compare/tft-vs-neural-prophet"
+        ]
+      },
+      {
+        "id": "garch-comparisons",
+        "name": "GARCH Family Comparisons",
+        "description": "Comparing volatility forecasting models",
+        "icon": "WaveOutline",
+        "children": [
+          "/compare/garch-vs-egarch",
+          "/compare/garch-vs-tarch",
+          "/compare/garch-vs-gjr-garch",
+          "/compare/egarch-vs-tarch",
+          "/compare/egarch-vs-gjr-garch",
+          "/compare/tarch-vs-power-garch",
+          "/compare/power-garch-vs-component-garch",
+          "/compare/component-garch-vs-realized-garch"
+        ]
+      },
+      {
+        "id": "filtering-methods",
+        "name": "Filtering Method Comparisons",
+        "description": "Comparing state estimation and filtering methods",
+        "icon": "FunnelOutline",
+        "children": [
+          "/compare/kalman-filter-vs-particle-filter",
+          "/compare/kalman-filter-vs-hmm",
+          "/compare/kalman-filter-vs-extended-kalman-filter",
+          "/compare/particle-filter-vs-unscented-kalman-filter",
+          "/compare/hmm-vs-markov-switching"
+        ]
+      },
+      {
+        "id": "signal-processing",
+        "name": "Signal Processing Comparisons",
+        "description": "Comparing transform and decomposition methods",
+        "icon": "SignalOutline",
+        "children": [
+          "/compare/fourier-transform-vs-wavelet-transform",
+          "/compare/fourier-transform-vs-hilbert-transform",
+          "/compare/wavelet-transform-vs-hilbert-huang-transform",
+          "/compare/empirical-mode-decomposition-vs-singular-spectrum-analysis",
+          "/compare/ssa-vs-mssa"
+        ]
+      },
+      {
+        "id": "machine-learning",
+        "name": "Machine Learning Comparisons",
+        "description": "Comparing ML algorithms for financial applications",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/compare/gaussian-process-vs-bayesian-ridge",
+          "/compare/bayesian-ridge-vs-bayesian-lasso",
+          "/compare/random-forest-vs-xgboost",
+          "/compare/xgboost-vs-lightgbm",
+          "/compare/lightgbm-vs-catboost",
+          "/compare/random-forest-vs-gbm"
+        ]
+      },
+      {
+        "id": "position-sizing",
+        "name": "Position Sizing Comparisons",
+        "description": "Comparing position sizing and Kelly methods",
+        "icon": "CalculatorOutline",
+        "children": [
+          "/compare/kelly-vs-optimal-f",
+          "/compare/kelly-vs-fractional-kelly",
+          "/compare/kelly-vs-half-kelly",
+          "/compare/optimal-f-vs-secure-f"
+        ]
+      },
+      {
+        "id": "portfolio-optimization",
+        "name": "Portfolio Optimization Comparisons",
+        "description": "Comparing portfolio allocation methods",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/compare/mean-variance-vs-risk-parity",
+          "/compare/mean-variance-vs-black-litterman",
+          "/compare/mean-variance-vs-maximum-diversification",
+          "/compare/risk-parity-vs-hierarchical-risk-parity",
+          "/compare/risk-parity-vs-most-diversified-portfolio",
+          "/compare/risk-parity-vs-equal-risk-contribution",
+          "/compare/black-litterman-vs-treysor-black",
+          "/compare/markowitz-vs-black-litterman",
+          "/compare/markowitz-vs-post-modern-portfolio",
+          "/compare/efficient-frontier-vs-markowitz",
+          "/compare/efficient-frontier-vs-mean-cvar",
+          "/compare/mean-variance-vs-mean-cvar"
+        ]
+      },
+      {
+        "id": "asset-allocation",
+        "name": "Asset Allocation Comparisons",
+        "description": "Comparing asset allocation strategies",
+        "icon": "PieChartOutline",
+        "children": [
+          "/compare/constant-mix-vs-cppi",
+          "/compare/cppi-vs-tipps",
+          "/compare/tactical-asset-allocation-vs-dynamic-asset-allocation",
+          "/compare/tactical-asset-allocation-vs-strategic-asset-allocation"
+        ]
+      },
+      {
+        "id": "execution-algorithms",
+        "name": "Execution Algorithm Comparisons",
+        "description": "Comparing order execution algorithms",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/compare/twap-vs-vwap",
+          "/compare/twap-vs-iceberg-order",
+          "/compare/twap-vs-pov",
+          "/compare/vwap-vs-twap",
+          "/compare/vwap-vs-arrival-price",
+          "/compare/implementation-shortfall-vs-arrival-price",
+          "/compare/implementation-shortfall-vs-participation-weighted"
+        ]
+      },
+      {
+        "id": "market-making",
+        "name": "Market Making Comparisons",
+        "description": "Comparing market making strategies",
+        "icon": "ScaleOutline",
+        "children": [
+          "/compare/avellaneda-stoikov-vs-spread-capture",
+          "/compare/avellaneda-stoikov-vs-market-making",
+          "/compare/avellaneda-stoikov-vs-hft-market-making"
+        ]
+      },
+      {
+        "id": "arbitrage-strategies",
+        "name": "Arbitrage Strategy Comparisons",
+        "description": "Comparing arbitrage trading strategies",
+        "icon": "ArrowRightLeftOutline",
+        "children": [
+          "/compare/pairs-trading-vs-statistical-arbitrage",
+          "/compare/pairs-trading-vs-basket-trading",
+          "/compare/pairs-trading-vs-cross-asset-arbitrage",
+          "/compare/statistical-arbitrage-vs-index-arbitrage",
+          "/compare/cointegration-vs-correlation",
+          "/compare/cointegration-vs-copula",
+          "/compare/johansen-test-vs-engle-granger",
+          "/compare/copula-vs-vine-copula",
+          "/compare/gaussian-copula-vs-student-t-copula",
+          "/compare/clayton-copula-vs-gumbel-copula",
+          "/compare/frank-copula-vs-joe-copula",
+          "/compare/risk-arbitrage-vs-merger-arbitrage",
+          "/compare/dividend-arbitrage-vs-tax-arbitrage",
+          "/compare/volatility-arbitrage-vs-dispersion-trading",
+          "/compare/volatility-swaps-vs-variance-swaps",
+          "/compare/variance-swaps-vs-correlation-swaps",
+          "/compare/etf-arbitrage-vs-futures-arbitrage",
+          "/compare/options-arbitrage-vs-convertible-arbitrage"
+        ]
+      },
+      {
+        "id": "trading-strategies",
+        "name": "Trading Strategy Comparisons",
+        "description": "Comparing directional trading strategies",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/compare/mean-reversion-vs-momentum-trading",
+          "/compare/mean-reversion-vs-trend-following",
+          "/compare/trend-following-vs-breakout-trading",
+          "/compare/trend-following-vs-pullback-trading",
+          "/compare/breakout-trading-vs-reversal-trading",
+          "/compare/momentum-trading-vs-mean-reversion",
+          "/compare/opening-range-breakout-vs-end-of-day-reversal",
+          "/compare/gap-trading-vs-fade-the-gap"
+        ]
+      },
+      {
+        "id": "market-microstructure",
+        "name": "Market Microstructure Comparisons",
+        "description": "Comparing market structure and execution concepts",
+        "icon": "DocumentTextOutline",
+        "children": [
+          "/compare/order-book-analysis-vs-market-microstructure",
+          "/compare/limit-order-book-vs-market-order-book",
+          "/compare/bid-ask-spread-vs-effective-spread",
+          "/compare/liquidity-analysis-vs-transaction-cost-analysis",
+          "/compare/slippage-estimation-vs-market-impact",
+          "/compare/dark-pools-vs-lit-markets",
+          "/compare/smart-order-routing-vs-direct-market-access"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Comparisons",
+        "position": "header"
+      },
+      {
+        "from": "/indicators",
+        "anchor": "Compare Indicators",
+        "position": "cta"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/indicators/rsi",
+        "anchor": "RSI Details",
+        "position": "content"
+      },
+      {
+        "to": "/indicators/macd",
+        "anchor": "MACD Details",
+        "position": "content"
+      },
+      {
+        "to": "/risk/sharpe-ratio",
+        "anchor": "Sharpe Ratio Details",
+        "position": "content"
+      }
+    ],
+    "metadata": {
+      "total_groups": 26,
+      "total_pages": 268,
+      "grouped_pages": 268,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "benchmarks",
+    "path": "/benchmarks",
+    "depth": 1,
+    "breadcrumb": ["Home", "Benchmarks"],
+    "total_pages": 235,
+    "child_pattern": "/benchmarks/{slug}",
+    "groups": [
+      {
+        "id": "indicator-performance",
+        "name": "Indicator Performance Benchmarks",
+        "description": "Performance comparisons of technical indicator calculations",
+        "icon": "ChartLineOutline",
+        "children": [
+          "/benchmarks/rsi-python-vs-rust",
+          "/benchmarks/rsi-python-vs-cpp",
+          "/benchmarks/rsi-python-vs-go",
+          "/benchmarks/rsi-python-vs-julia",
+          "/benchmarks/rsi-rust-vs-cpp",
+          "/benchmarks/rsi-rust-vs-go",
+          "/benchmarks/rsi-cpp-vs-go",
+          "/benchmarks/rsi-python-numpy-vs-pandas",
+          "/benchmarks/rsi-python-ta-lib-vs-custom",
+          "/benchmarks/macd-python-vs-rust",
+          "/benchmarks/macd-python-vs-cpp",
+          "/benchmarks/macd-go-vs-rust",
+          "/benchmarks/macd-rust-vs-cpp",
+          "/benchmarks/atr-python-vs-rust",
+          "/benchmarks/atr-performance-comparison",
+          "/benchmarks/adx-calculation-speed",
+          "/benchmarks/adx-python-vs-rust",
+          "/benchmarks/bollinger-bands-performance",
+          "/benchmarks/bollinger-python-vs-rust",
+          "/benchmarks/stochastic-calculation-speed",
+          "/benchmarks/stochastic-python-vs-rust",
+          "/benchmarks/ichimoku-calculation-time",
+          "/benchmarks/ichimoku-python-vs-rust",
+          "/benchmarks/sma-calculation-speed",
+          "/benchmarks/sma-python-vs-rust",
+          "/benchmarks/ema-calculation-speed",
+          "/benchmarks/ema-python-vs-rust",
+          "/benchmarks/vwap-calculation-performance",
+          "/benchmarks/vwap-python-vs-rust",
+          "/benchmarks/anchored-vwap-performance",
+          "/benchmarks/parabolic-sar-calculation",
+          "/benchmarks/cci-calculation-speed",
+          "/benchmarks/mfi-calculation-performance",
+          "/benchmarks/obv-calculation-speed",
+          "/benchmarks/chaikin-money-flow-performance",
+          "/benchmarks/keltner-channels-calculation",
+          "/benchmarks/donchian-channels-performance",
+          "/benchmarks/fibonacci-retracement-speed",
+          "/benchmarks/zigzag-calculation-performance",
+          "/benchmarks/zigzag-python-vs-rust"
+        ]
+      },
+      {
+        "id": "volume-profile-performance",
+        "name": "Volume Profile Performance Benchmarks",
+        "description": "Performance of volume profile and order flow calculations",
+        "icon": "SpeakerWaveOutline",
+        "children": [
+          "/benchmarks/volume-profile-calculation",
+          "/benchmarks/volume-profile-python-vs-rust",
+          "/benchmarks/volume-profile-cpp-vs-rust",
+          "/benchmarks/market-profile-tpo-calculation",
+          "/benchmarks/footprint-chart-generation",
+          "/benchmarks/cumulative-delta-performance",
+          "/benchmarks/cumulative-delta-python-vs-rust",
+          "/benchmarks/cumulative-delta-cpp-vs-rust",
+          "/benchmarks/delta-divergence-detection",
+          "/benchmarks/order-flow-imbalance-calculation",
+          "/benchmarks/stacked-imbalance-detection",
+          "/benchmarks/iceberg-detection-algorithm",
+          "/benchmarks/spoofing-detection-performance",
+          "/benchmarks/wash-trading-detection"
+        ]
+      },
+      {
+        "id": "option-pricing-performance",
+        "name": "Option Pricing Performance Benchmarks",
+        "description": "Performance of option pricing model calculations",
+        "icon": "CurrencyDollarOutline",
+        "children": [
+          "/benchmarks/black-scholes-python-vs-rust",
+          "/benchmarks/black-scholes-python-vs-cpp",
+          "/benchmarks/black-scholes-cpp-vs-rust",
+          "/benchmarks/black-scholes-julia-vs-rust",
+          "/benchmarks/black-scholes-numba-vs-cython",
+          "/benchmarks/binomial-tree-python-vs-rust",
+          "/benchmarks/binomial-tree-cpp-vs-rust",
+          "/benchmarks/trinomial-tree-performance",
+          "/benchmarks/heston-model-calculation",
+          "/benchmarks/heston-python-vs-rust",
+          "/benchmarks/heston-cpp-vs-rust",
+          "/benchmarks/sabr-model-calculation",
+          "/benchmarks/sabr-python-vs-rust",
+          "/benchmarks/fourier-option-pricing",
+          "/benchmarks/monte-carlo-option-pricing",
+          "/benchmarks/monte-carlo-python-vs-rust",
+          "/benchmarks/monte-carlo-cpp-vs-rust",
+          "/benchmarks/monte-carlo-parallel-performance",
+          "/benchmarks/finite-difference-option-pricing",
+          "/benchmarks/american-option-pricing-speed",
+          "/benchmarks/barrier-option-pricing",
+          "/benchmarks/asian-option-pricing-mc"
+        ]
+      },
+      {
+        "id": "volatility-benchmarks",
+        "name": "Volatility Calculation Benchmarks",
+        "description": "Performance of volatility and smile calculations",
+        "icon": "WaveOutline",
+        "children": [
+          "/benchmarks/implied-volatility-calculation",
+          "/benchmarks/implied-volatility-python-vs-rust",
+          "/benchmarks/volatility-smile-fitting",
+          "/benchmarks/volatility-surface-interpolation"
+        ]
+      },
+      {
+        "id": "option-greeks-performance",
+        "name": "Option Greeks Performance Benchmarks",
+        "description": "Performance of option Greeks calculations",
+        "icon": "ChartPieOutline",
+        "children": [
+          "/benchmarks/option-greeks-python-vs-rust",
+          "/benchmarks/option-greeks-cpp-vs-rust",
+          "/benchmarks/option-greeks-go-vs-rust",
+          "/benchmarks/delta-calculation-speed",
+          "/benchmarks/gamma-calculation-speed",
+          "/benchmarks/theta-calculation-speed",
+          "/benchmarks/vega-calculation-speed",
+          "/benchmarks/vanna-volga-calculation",
+          "/benchmarks/speed-zomma-calculation",
+          "/benchmarks/color-ultima-calculation"
+        ]
+      },
+      {
+        "id": "risk-metrics-performance",
+        "name": "Risk Metrics Performance Benchmarks",
+        "description": "Performance of risk metric calculations",
+        "icon": "ShieldCheckOutline",
+        "children": [
+          "/benchmarks/sharpe-ratio-calculation",
+          "/benchmarks/sortino-ratio-calculation",
+          "/benchmarks/calmar-ratio-calculation",
+          "/benchmarks/var-calculation-time",
+          "/benchmarks/var-python-vs-rust",
+          "/benchmarks/var-cpp-vs-rust",
+          "/benchmarks/var-historical-vs-parametric",
+          "/benchmarks/var-monte-carlo-vs-historical",
+          "/benchmarks/cvar-calculation-time",
+          "/benchmarks/cvar-python-vs-rust",
+          "/benchmarks/expected-shortfall-calculation",
+          "/benchmarks/maximum-drawdown-calculation",
+          "/benchmarks/max-drawdown-python-vs-rust",
+          "/benchmarks/rolling-sharpe-calculation",
+          "/benchmarks/rolling-var-calculation",
+          "/benchmarks/rolling-beta-calculation"
+        ]
+      },
+      {
+        "id": "garch-performance",
+        "name": "GARCH Family Performance Benchmarks",
+        "description": "Performance of GARCH volatility models",
+        "icon": "SignalOutline",
+        "children": [
+          "/benchmarks/garch-calculation-speed",
+          "/benchmarks/garch-python-vs-rust",
+          "/benchmarks/garch-cpp-vs-rust",
+          "/benchmarks/egarch-calculation-speed",
+          "/benchmarks/tarch-calculation-speed",
+          "/benchmarks/gjr-garch-performance",
+          "/benchmarks/power-garch-calculation",
+          "/benchmarks/component-garch-performance",
+          "/benchmarks/realized-garch-calculation",
+          "/benchmarks/har-rv-calculation",
+          "/benchmarks/realized-kernel-performance",
+          "/benchmarks/bipower-variation-calculation",
+          "/benchmarks/realized-semivariance-speed"
+        ]
+      },
+      {
+        "id": "volatility-estimators",
+        "name": "Volatility Estimator Benchmarks",
+        "description": "Performance of volatility estimator calculations",
+        "icon": "ChartLineOutline",
+        "children": [
+          "/benchmarks/range-volatility-calculation",
+          "/benchmarks/parkinson-volatility-speed",
+          "/benchmarks/garman-klass-calculation",
+          "/benchmarks/rogers-satchell-performance",
+          "/benchmarks/yang-zhang-calculation",
+          "/benchmarks/ewma-volatility-speed"
+        ]
+      },
+      {
+        "id": "deep-learning-performance",
+        "name": "Deep Learning Performance Benchmarks",
+        "description": "Training and inference speed of neural networks",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/benchmarks/lstm-training-speed",
+          "/benchmarks/lstm-python-vs-rust",
+          "/benchmarks/lstm-tensorflow-vs-pytorch",
+          "/benchmarks/lstm-vs-gru-training",
+          "/benchmarks/gru-training-speed",
+          "/benchmarks/bilstm-training-performance",
+          "/benchmarks/transformer-training-speed",
+          "/benchmarks/transformer-vs-lstm-inference",
+          "/benchmarks/informer-training-speed",
+          "/benchmarks/autoformer-performance",
+          "/benchmarks/fedformer-calculation",
+          "/benchmarks/patchtst-training-speed",
+          "/benchmarks/timesnet-performance",
+          "/benchmarks/n-beats-calculation",
+          "/benchmarks/deepar-training-speed",
+          "/benchmarks/tft-performance",
+          "/benchmarks/neural-prophet-calculation",
+          "/benchmarks/etsformer-performance",
+          "/benchmarks/dlinear-calculation",
+          "/benchmarks/filternet-performance",
+          "/benchmarks/micn-calculation",
+          "/benchmarks/crossformer-performance",
+          "/benchmarks/stationary-transformer-speed"
+        ]
+      },
+      {
+        "id": "time-series-performance",
+        "name": "Time Series Model Performance Benchmarks",
+        "description": "Performance of time series model fitting",
+        "icon": "ClockOutline",
+        "children": [
+          "/benchmarks/arima-fitting-speed",
+          "/benchmarks/arima-python-vs-rust",
+          "/benchmarks/sarima-fitting-time",
+          "/benchmarks/sarimax-calculation",
+          "/benchmarks/varima-performance",
+          "/benchmarks/vecm-calculation-speed"
+        ]
+      },
+      {
+        "id": "filtering-performance",
+        "name": "Filtering Method Performance Benchmarks",
+        "description": "Performance of state estimation filters",
+        "icon": "FunnelOutline",
+        "children": [
+          "/benchmarks/kalman-filter-python-vs-rust",
+          "/benchmarks/kalman-filter-cpp-vs-rust",
+          "/benchmarks/kalman-filter-julia-vs-rust",
+          "/benchmarks/particle-filter-performance",
+          "/benchmarks/unscented-kalman-filter-speed",
+          "/benchmarks/extended-kalman-filter-performance",
+          "/benchmarks/hidden-markov-model-speed",
+          "/benchmarks/hmm-python-vs-rust",
+          "/benchmarks/markov-switching-calculation",
+          "/benchmarks/regime-switching-detection"
+        ]
+      },
+      {
+        "id": "signal-transform-performance",
+        "name": "Signal Transform Performance Benchmarks",
+        "description": "Performance of transform and decomposition methods",
+        "icon": "SignalOutline",
+        "children": [
+          "/benchmarks/fourier-transform-speed",
+          "/benchmarks/fft-python-vs-rust",
+          "/benchmarks/fft-cpp-vs-rust",
+          "/benchmarks/wavelet-transform-performance",
+          "/benchmarks/wavelet-python-vs-rust",
+          "/benchmarks/hilbert-transform-speed",
+          "/benchmarks/empirical-mode-decomposition-speed",
+          "/benchmarks/emd-python-vs-rust",
+          "/benchmarks/singular-spectrum-analysis-speed",
+          "/benchmarks/ssa-python-vs-rust"
+        ]
+      },
+      {
+        "id": "ml-performance",
+        "name": "Machine Learning Performance Benchmarks",
+        "description": "Performance of ML algorithm training and inference",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/benchmarks/gaussian-process-calculation",
+          "/benchmarks/bayesian-ridge-speed",
+          "/benchmarks/bayesian-lasso-performance",
+          "/benchmarks/random-forest-training",
+          "/benchmarks/xgboost-training-speed",
+          "/benchmarks/lightgbm-performance",
+          "/benchmarks/catboost-calculation"
+        ]
+      },
+      {
+        "id": "portfolio-optimization-performance",
+        "name": "Portfolio Optimization Performance Benchmarks",
+        "description": "Performance of portfolio optimization algorithms",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/benchmarks/efficient-frontier-optimization",
+          "/benchmarks/efficient-frontier-python-vs-rust",
+          "/benchmarks/markowitz-optimization-speed",
+          "/benchmarks/mean-cvar-optimization",
+          "/benchmarks/black-litterman-optimization",
+          "/benchmarks/black-litterman-python-vs-rust",
+          "/benchmarks/risk-parity-allocation",
+          "/benchmarks/risk-parity-python-vs-rust",
+          "/benchmarks/hierarchical-risk-parity-speed",
+          "/benchmarks/maximum-diversification-calculation"
+        ]
+      },
+      {
+        "id": "position-sizing-performance",
+        "name": "Position Sizing Performance Benchmarks",
+        "description": "Performance of position sizing calculations",
+        "icon": "CalculatorOutline",
+        "children": [
+          "/benchmarks/kelly-criterion-calculation",
+          "/benchmarks/optimal-f-calculation",
+          "/benchmarks/fractional-kelly-speed"
+        ]
+      },
+      {
+        "id": "arbitrage-performance",
+        "name": "Arbitrage Strategy Performance Benchmarks",
+        "description": "Performance of arbitrage detection and calculation",
+        "icon": "ArrowRightLeftOutline",
+        "children": [
+          "/benchmarks/pairs-trading-throughput",
+          "/benchmarks/pairs-trading-python-vs-rust",
+          "/benchmarks/pairs-trading-cpp-vs-rust",
+          "/benchmarks/cointegration-test-speed",
+          "/benchmarks/johansen-test-performance",
+          "/benchmarks/engle-granger-calculation",
+          "/benchmarks/copula-calculation-speed",
+          "/benchmarks/copula-python-vs-rust",
+          "/benchmarks/vine-copula-performance"
+        ]
+      },
+      {
+        "id": "execution-performance",
+        "name": "Execution Algorithm Performance Benchmarks",
+        "description": "Performance of execution and order handling",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/benchmarks/twap-execution-latency",
+          "/benchmarks/vwap-execution-speed",
+          "/benchmarks/implementation-shortfall-calculation",
+          "/benchmarks/arrival-price-algorithm-speed",
+          "/benchmarks/iceberg-order-simulation",
+          "/benchmarks/smart-order-routing-latency",
+          "/benchmarks/order-book-processing-speed",
+          "/benchmarks/market-data-parsing-latency",
+          "/benchmarks/websocket-throughput",
+          "/benchmarks/fix-protocol-latency",
+          "/benchmarks/order-entry-latency",
+          "/benchmarks/market-order-execution-speed",
+          "/benchmarks/limit-order-placement-latency",
+          "/benchmarks/order-cancel-speed",
+          "/benchmarks/co-location-latency",
+          "/benchmarks/direct-market-access-speed"
+        ]
+      },
+      {
+        "id": "market-making-performance",
+        "name": "Market Making Performance Benchmarks",
+        "description": "Performance of market making algorithms",
+        "icon": "ScaleOutline",
+        "children": [
+          "/benchmarks/market-making-latency",
+          "/benchmarks/market-making-python-vs-rust",
+          "/benchmarks/market-making-cpp-vs-rust",
+          "/benchmarks/avellaneda-stoikov-calculation",
+          "/benchmarks/inventory-management-speed",
+          "/benchmarks/quote-placement-optimization",
+          "/benchmarks/spread-capture-performance"
+        ]
+      },
+      {
+        "id": "system-performance",
+        "name": "System Performance Benchmarks",
+        "description": "Low-level system and infrastructure benchmarks",
+        "icon": "ServerStackOutline",
+        "children": [
+          "/benchmarks/memory-allocation-performance",
+          "/benchmarks/garbage-collection-impact",
+          "/benchmarks/zero-copy-vs-traditional",
+          "/benchmarks/simd-optimization-gains",
+          "/benchmarks/parallelization-scaling",
+          "/benchmarks/multi-threading-performance",
+          "/benchmarks/async-vs-sync-processing",
+          "/benchmarks/io-bound-vs-cpu-bound",
+          "/benchmarks/cache-efficiency-comparison",
+          "/benchmarks/branch-prediction-impact",
+          "/benchmarks/compiler-optimization-levels",
+          "/benchmarks/linker-optimization-gains",
+          "/benchmarks/binary-size-comparison",
+          "/benchmarks/startup-time-benchmark",
+          "/benchmarks/cold-start-performance",
+          "/benchmarks/memory-footprint-comparison",
+          "/benchmarks/cpu-usage-benchmark",
+          "/benchmarks/battery-consumption-benchmark"
+        ]
+      },
+      {
+        "id": "network-database",
+        "name": "Network & Database Benchmarks",
+        "description": "Performance of network, database, and serialization",
+        "icon": "NetworkOutline",
+        "children": [
+          "/benchmarks/network-latency-benchmark",
+          "/benchmarks/database-query-performance",
+          "/benchmarks/redis-vs-postgres-latency",
+          "/benchmarks/parquet-vs-csv-performance",
+          "/benchmarks/arrow-vs-protobuf-speed",
+          "/benchmarks/json-vs-messagepack-performance",
+          "/benchmarks/compression-algorithm-speed",
+          "/benchmarks/encryption-overhead-benchmark",
+          "/benchmarks/hashing-algorithm-performance"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Benchmarks",
+        "position": "header"
+      },
+      {
+        "from": "/code",
+        "anchor": "Code Performance",
+        "position": "related"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/code/rsi/python",
+        "anchor": "Python Implementation",
+        "position": "content"
+      },
+      {
+        "to": "/code/rsi/rust",
+        "anchor": "Rust Implementation",
+        "position": "content"
+      },
+      {
+        "to": "/code",
+        "anchor": "All Implementations",
+        "position": "footer"
+      }
+    ],
+    "metadata": {
+      "total_groups": 19,
+      "total_pages": 235,
+      "grouped_pages": 235,
+      "ungrouped_pages": 0
+    }
+  },
+  {
+    "name": "examples",
+    "path": "/examples",
+    "depth": 1,
+    "breadcrumb": ["Home", "Examples"],
+    "total_pages": 230,
+    "child_pattern": "/examples/{slug}",
+    "groups": [
+      {
+        "id": "momentum-indicators",
+        "name": "Momentum Indicator Examples",
+        "description": "Practical examples of momentum-based indicators",
+        "icon": "ChartLineOutline",
+        "children": [
+          "/examples/rsi-trading-strategy",
+          "/examples/rsi-divergence-example",
+          "/examples/rsi-overbought-oversold",
+          "/examples/rsi-multi-timeframe",
+          "/examples/macd-strategy",
+          "/examples/macd-divergence",
+          "/examples/macd-histogram-signal",
+          "/examples/stochastic-overbought-oversold",
+          "/examples/stochastic-divergence",
+          "/examples/cci-oversold-overbought",
+          "/examples/cci-divergence",
+          "/examples/mfi-volume-weighted-rsi",
+          "/examples/ultimate-oscillator-multi-timeframe",
+          "/examples/relative-vigor-index-trend",
+          "/examples/kst-oscillator-momentum",
+          "/examples/price-roc-momentum",
+          "/examples/trix-oscillator",
+          "/examples/chande-momentum-oscillator",
+          "/examples/coppock-curve-long-term",
+          "/examples/demark-sequential-9-13-9",
+          "/examples/rainbow-oscillator",
+          "/examples/relative-strength-index-ma",
+          "/examples/schaff-trend-cycle-macd",
+          "/examples/sine-wave-indicator",
+          "/examples/wave-trend-momentum",
+          "/examples/williams-percent-range"
+        ]
+      },
+      {
+        "id": "moving-average-examples",
+        "name": "Moving Average Examples",
+        "description": "Practical examples using moving averages",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/examples/sma-ema-crossover",
+          "/examples/ema-trend-following",
+          "/examples/wma-vs-sma-comparison",
+          "/examples/hma-smoothing",
+          "/examples/kama-adaptive-strategy",
+          "/examples/frama-adaptive-window",
+          "/examples/t3-moving-average-smoothing",
+          "/examples/vidya-adaptive",
+          "/examples/zlema-lag-reduction"
+        ]
+      },
+      {
+        "id": "volatility-bands",
+        "name": "Volatility & Band Examples",
+        "description": "Practical examples of volatility-based indicators",
+        "icon": "WaveOutline",
+        "children": [
+          "/examples/atr-position-sizing",
+          "/examples/atr-stop-loss",
+          "/examples/atr-breakout-strategy",
+          "/examples/bollinger-bands-squeeze",
+          "/examples/bollinger-bands-bounce",
+          "/examples/bollinger-bands-breakout",
+          "/examples/keltner-channels-mean-reversion",
+          "/examples/donchian-channels-breakout",
+          "/examples/standard-deviation-bands",
+          "/examples/mass-index-volatility",
+          "/examples/chaikin-volatility-squeeze"
+        ]
+      },
+      {
+        "id": "trend-indicators",
+        "name": "Trend Indicator Examples",
+        "description": "Practical examples of trend-following indicators",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/examples/adx-trend-strength",
+          "/examples/adx-di-cross",
+          "/examples/ichimoku-cloud-strategy",
+          "/examples/ichimoku-tenkan-kijun-cross",
+          "/examples/ichimoku-ks-bounce",
+          "/examples/aroon-trend-change",
+          "/examples/super-trend-stop-loss",
+          "/examples/vortex-indicator-trend",
+          "/examples/parabolic-sar-trailing-stop"
+        ]
+      },
+      {
+        "id": "volume-profile",
+        "name": "Volume Profile Examples",
+        "description": "Practical examples of volume profile analysis",
+        "icon": "SpeakerWaveOutline",
+        "children": [
+          "/examples/volume-profile-poc-trading",
+          "/examples/market-profile-tpo",
+          "/examples/footprint-chart-reading",
+          "/examples/delta-divergence-example",
+          "/examples/cumulative-delta-absorption",
+          "/examples/order-flow-imbalance",
+          "/examples/stacked-imbalance-detection",
+          "/examples/value-area-high-low",
+          "/examples/single-print-exhaustion",
+          "/examples/double-distribution-reversal"
+        ]
+      },
+      {
+        "id": "detection-examples",
+        "name": "Market Manipulation Detection",
+        "description": "Examples of detecting market manipulation patterns",
+        "icon": "ShieldExclamationOutline",
+        "children": [
+          "/examples/iceberg-detection-example",
+          "/examples/spoofing-detection",
+          "/examples/wash-trading-detection"
+        ]
+      },
+      {
+        "id": "volume-indicators",
+        "name": "Volume Indicator Examples",
+        "description": "Practical examples of volume-based indicators",
+        "icon": "SpeakerWaveOutline",
+        "children": [
+          "/examples/obv-confirmation",
+          "/examples/chaikin-money-flow-accumulation",
+          "/examples/ease-of-movement-volume",
+          "/examples/force-index-volume-momentum",
+          "/examples/money-flow-index-hlv"
+        ]
+      },
+      {
+        "id": "fibonacci-patterns",
+        "name": "Fibonacci & Pattern Examples",
+        "description": "Practical examples of Fibonacci and pattern analysis",
+        "icon": "NumberedListOutline",
+        "children": [
+          "/examples/fibonacci-retracement-levels",
+          "/examples/fibonacci-extension-targets",
+          "/examples/fibonacci-time-zones",
+          "/examples/zigzag-swing-detection",
+          "/examples/rochester-breakout",
+          "/examples/williams-alligator-strategy",
+          "/examples/williams-fractals-breakout"
+        ]
+      },
+      {
+        "id": "advanced-indicators",
+        "name": "Advanced Indicator Examples",
+        "description": "Practical examples of advanced technical indicators",
+        "icon": "CogOutline",
+        "children": [
+          "/examples/elder-ray-index-bull-power",
+          "/examples/accumulation-distribution-divergence",
+          "/examples/detrended-price-oscillator",
+          "/examples/typical-price",
+          "/examples/median-price-calculation",
+          "/examples/ehlers-fisher-transform",
+          "/examples/ehlers-mesa-cycle",
+          "/examples/ehlers-cyclic-analysis",
+          "/examples/hilbert-transform-dominant-cycle",
+          "/examples/instantaneous-trend",
+          "/examples/leading-span-analysis",
+          "/examples/lagging-span-confirmation"
+        ]
+      },
+      {
+        "id": "vwap-examples",
+        "name": "VWAP & Anchored VWAP Examples",
+        "description": "Practical examples using VWAP and Anchored VWAP",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/examples/vwap-intraday-trading",
+          "/examples/vwap-mean-reversion",
+          "/examples/anchored-vwap-key-levels",
+          "/examples/anchored-vwap-strategy",
+          "/examples/volume-weighted-average-price",
+          "/examples/vwap-reversion-example"
+        ]
+      },
+      {
+        "id": "option-pricing",
+        "name": "Option Pricing Examples",
+        "description": "Practical examples of option pricing models",
+        "icon": "CurrencyDollarOutline",
+        "children": [
+          "/examples/black-scholes-option-pricing",
+          "/examples/binomial-option-pricing",
+          "/examples/trinomial-option-pricing",
+          "/examples/heston-option-pricing",
+          "/examples/sabr-option-pricing",
+          "/examples/monte-carlo-option-pricing",
+          "/examples/finite-difference-option-pricing",
+          "/examples/american-option-pricing",
+          "/examples/barrier-option-pricing",
+          "/examples/asian-option-pricing",
+          "/examples/basket-option-pricing",
+          "/examples/rainbow-option-pricing",
+          "/examples/compound-option-pricing",
+          "/examples/forward-start-option-pricing",
+          "/examples/chooser-option-pricing"
+        ]
+      },
+      {
+        "id": "volatility-examples",
+        "name": "Volatility Examples",
+        "description": "Practical examples of volatility analysis",
+        "icon": "SignalOutline",
+        "children": [
+          "/examples/implied-volatility-calculation",
+          "/examples/volatility-smile-fitting",
+          "/examples/volatility-surface-interpolation"
+        ]
+      },
+      {
+        "id": "option-greeks-examples",
+        "name": "Option Greeks Examples",
+        "description": "Practical examples of option Greeks and risk management",
+        "icon": "ChartPieOutline",
+        "children": [
+          "/examples/delta-hedging-example",
+          "/examples/gamma-scalping",
+          "/examples/theta-decay-analysis",
+          "/examples/vega-hedging",
+          "/examples/charm-decay",
+          "/examples/vanna-volatility-effect",
+          "/examples/volga-volatility-effect",
+          "/examples/speed-hedging",
+          "/examples/zomma-hedging"
+        ]
+      },
+      {
+        "id": "option-strategies",
+        "name": "Options Trading Strategy Examples",
+        "description": "Practical examples of options trading strategies",
+        "icon": "DocumentTextOutline",
+        "children": [
+          "/examples/covered-call-example",
+          "/examples/protective-put-example",
+          "/examples/collar-strategy",
+          "/examples/married-put-example",
+          "/examples/iron-condor-example",
+          "/examples/iron-butterfly-example",
+          "/examples/butterfly-spread-example",
+          "/examples/vertical-spread-example",
+          "/examples/calendar-spread-example",
+          "/examples/diagonal-spread-example",
+          "/examples/straddle-example",
+          "/examples/strangle-example",
+          "/examples/risk-reversal-example",
+          "/examples/seagull-example",
+          "/examples/condor-example",
+          "/examples/box-spread-arbitrage",
+          "/examples/ratio-spread-example",
+          "/examples/back-spread-example",
+          "/examples/jade-lizard-example",
+          "/examples/twisted-sister-example"
+        ]
+      },
+      {
+        "id": "volatility-derivatives",
+        "name": "Volatility Derivatives Examples",
+        "description": "Practical examples of volatility derivatives",
+        "icon": "SignalOutline",
+        "children": [
+          "/examples/vix-options-strategy",
+          "/examples/volatility-swap-example",
+          "/examples/variance-swap-example",
+          "/examples/correlation-swap-example",
+          "/examples/dispersion-trading-example"
+        ]
+      },
+      {
+        "id": "portfolio-optimization",
+        "name": "Portfolio Optimization Examples",
+        "description": "Practical examples of portfolio optimization",
+        "icon": "ChartBarOutline",
+        "children": [
+          "/examples/portfolio-rebalancing",
+          "/examples/kelly-criterion-position-sizing",
+          "/examples/risk-parity-portfolio",
+          "/examples/hierarchical-risk-parity-example",
+          "/examples/black-litterman-portfolio",
+          "/examples/efficient-frontier-construction",
+          "/examples/markowitz-optimization-example",
+          "/examples/mean-cvar-optimization",
+          "/examples/maximum-diversification-example"
+        ]
+      },
+      {
+        "id": "risk-metrics-examples",
+        "name": "Risk Metrics Examples",
+        "description": "Practical examples of risk metric calculations",
+        "icon": "ShieldCheckOutline",
+        "children": [
+          "/examples/sharpe-ratio-calculation",
+          "/examples/sortino-ratio-calculation",
+          "/examples/calmar-ratio-calculation",
+          "/examples/var-risk-calculation",
+          "/examples/cvar-risk-calculation",
+          "/examples/maximum-drawdown-calculation",
+          "/examples/ulcer-index-calculation",
+          "/examples/omega-ratio-calculation",
+          "/examples/treynor-ratio-calculation",
+          "/examples/information-ratio-calculation",
+          "/examples/alpha-beta-calculation"
+        ]
+      },
+      {
+        "id": "arbitrage-examples",
+        "name": "Arbitrage Strategy Examples",
+        "description": "Practical examples of arbitrage trading",
+        "icon": "ArrowRightLeftOutline",
+        "children": [
+          "/examples/pairs-trading-backtest",
+          "/examples/statistical-arbitrage-strategy",
+          "/examples/cointegration-trading",
+          "/examples/copula-pairs-trading",
+          "/examples/kalman-filter-pairs-trading",
+          "/examples/basket-trading-example",
+          "/examples/cross-asset-arbitrage",
+          "/examples/momentum-arbitrage",
+          "/examples/event-arbitrage",
+          "/examples/fusion-arbitrage",
+          "/examples/options-arbitrage",
+          "/examples/volatility-arbitrage",
+          "/examples/calendar-arbitrage",
+          "/examples/etf-arbitrage",
+          "/examples/futures-arbitrage"
+        ]
+      },
+      {
+        "id": "trading-strategies",
+        "name": "Trading Strategy Examples",
+        "description": "Practical examples of directional trading strategies",
+        "icon": "ArrowTrendingUpOutline",
+        "children": [
+          "/examples/mean-reversion-strategy",
+          "/examples/momentum-trading-example",
+          "/examples/trend-following-example",
+          "/examples/breakout-trading-example",
+          "/examples/pullback-trading-example",
+          "/examples/reversal-trading-example",
+          "/examples/gap-trading-example",
+          "/examples/opening-range-breakout",
+          "/examples/end-of-day-reversal"
+        ]
+      },
+      {
+        "id": "market-making-examples",
+        "name": "Market Making Examples",
+        "description": "Practical examples of market making strategies",
+        "icon": "ScaleOutline",
+        "children": [
+          "/examples/market-making-simulation",
+          "/examples/avellaneda-stoikov-market-making",
+          "/examples/inventory-management-example",
+          "/examples/quote-placement-optimization",
+          "/examples/spread-capture-example"
+        ]
+      },
+      {
+        "id": "execution-examples",
+        "name": "Execution Algorithm Examples",
+        "description": "Practical examples of order execution algorithms",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/examples/twap-execution-example",
+          "/examples/vwap-execution-example",
+          "/examples/implementation-shortfall-example",
+          "/examples/arrival-price-algorithm",
+          "/examples/iceberg-order-simulation",
+          "/examples/dark-pool-trading",
+          "/examples/smart-order-routing"
+        ]
+      },
+      {
+        "id": "forecasting-examples",
+        "name": "Forecasting Model Examples",
+        "description": "Practical examples of forecasting models",
+        "icon": "ClockOutline",
+        "children": [
+          "/examples/lstm-forecasting",
+          "/examples/gru-forecasting",
+          "/examples/transformer-forecast",
+          "/examples/arima-forecast-example",
+          "/examples/sarima-forecast-example",
+          "/examples/garch-forecast-example",
+          "/examples/kalman-filter-forecast",
+          "/examples/prophet-forecast-example",
+          "/examples/xgboost-forecast-example",
+          "/examples/random-forest-forecast"
+        ]
+      },
+      {
+        "id": "market-microstructure-examples",
+        "name": "Market Microstructure Examples",
+        "description": "Practical examples of market microstructure analysis",
+        "icon": "DocumentTextOutline",
+        "children": [
+          "/examples/order-book-analysis-example",
+          "/examples/market-microstructure-example",
+          "/examples/bid-ask-spread-analysis",
+          "/examples/limit-order-book-dynamics",
+          "/examples/market-depth-analysis",
+          "/examples/liquidity-analysis-example",
+          "/examples/transaction-cost-analysis",
+          "/examples/slippage-estimation",
+          "/examples/volume-profile-trading",
+          "/examples/cumulative-delta-divergence"
+        ]
+      },
+      {
+        "id": "garch-examples",
+        "name": "GARCH Family Examples",
+        "description": "Practical examples of volatility forecasting models",
+        "icon": "WaveOutline",
+        "children": [
+          "/examples/garch-volatility-forecast",
+          "/examples/egarch-asymmetric-volatility",
+          "/examples/tarch-threshold-volatility",
+          "/examples/gjr-garch-leverage-effect",
+          "/examples/power-garch-example",
+          "/examples/component-garch-example",
+          "/examples/realized-garch-example",
+          "/examples/har-rv-forecast",
+          "/examples/realized-kernel-example",
+          "/examples/bipower-variation-example",
+          "/examples/realized-semivariance"
+        ]
+      },
+      {
+        "id": "volatility-estimators-examples",
+        "name": "Volatility Estimator Examples",
+        "description": "Practical examples of volatility estimators",
+        "icon": "ChartLineOutline",
+        "children": [
+          "/examples/range-volatility-example",
+          "/examples/parkinson-volatility-example",
+          "/examples/garman-klass-example",
+          "/examples/rogers-satchell-example",
+          "/examples/yang-zhang-example",
+          "/examples/ewma-volatility-example"
+        ]
+      },
+      {
+        "id": "rolling-metrics-examples",
+        "name": "Rolling Metrics Examples",
+        "description": "Practical examples of rolling calculations",
+        "icon": "ArrowPathOutline",
+        "children": [
+          "/examples/rolling-sharpe-calculation",
+          "/examples/rolling-beta-calculation",
+          "/examples/rolling-var-example",
+          "/examples/rolling-correlation-example"
+        ]
+      },
+      {
+        "id": "advanced-math-examples",
+        "name": "Advanced Mathematics Examples",
+        "description": "Practical examples of advanced mathematical analysis",
+        "icon": "CalculatorOutline",
+        "children": [
+          "/examples/hurst-exponent-calculation",
+          "/examples/fractal-dimension-example",
+          "/examples/lyapunov-exponent-example",
+          "/examples/shannon-entropy-calculation",
+          "/examples/kullback-leibler-divergence",
+          "/examples/granger-causality-test",
+          "/examples/transfer-entropy-calculation"
+        ]
+      },
+      {
+        "id": "dimensionality-reduction-examples",
+        "name": "Dimensionality Reduction Examples",
+        "description": "Practical examples of PCA and visualization",
+        "icon": "CpuChipOutline",
+        "children": [
+          "/examples/pca-dimensionality-reduction",
+          "/examples/tsne-visualization",
+          "/examples/umap-clustering"
+        ]
+      },
+      {
+        "id": "changepoint-examples",
+        "name": "Change Point Detection Examples",
+        "description": "Practical examples of change point and regime detection",
+        "icon": "ArrowDownRightOutline",
+        "children": [
+          "/examples/changepoint-detection-example",
+          "/examples/structural-break-test",
+          "/examples/cusum-test-example",
+          "/examples/regime-switching-example",
+          "/examples/markov-switching-model",
+          "/examples/hidden-markov-model-trading",
+          "/examples/particle-filter-example"
+        ]
+      }
+    ],
+    "incoming_backlinks": [
+      {
+        "from": "/",
+        "anchor": "Examples",
+        "position": "header"
+      },
+      {
+        "from": "/code",
+        "anchor": "Code Examples",
+        "position": "cta"
+      }
+    ],
+    "outgoing_backlinks": [
+      {
+        "to": "/trading",
+        "anchor": "Trading Strategies",
+        "position": "content"
+      },
+      {
+        "to": "/indicators/rsi",
+        "anchor": "RSI Indicator",
+        "position": "sidebar"
+      },
+      {
+        "to": "/code",
+        "anchor": "Example Code",
+        "position": "footer"
+      }
+    ],
+    "metadata": {
+      "total_groups": 28,
+      "total_pages": 230,
+      "grouped_pages": 230,
+      "ungrouped_pages": 0
+    }
+  }
+]

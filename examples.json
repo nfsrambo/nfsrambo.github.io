@@ -1,0 +1,587 @@
+{
+  "name": "{slug}",
+  "path": "/examples/{slug}",
+  "depth_level": 2,
+  "breadcrumb": ["Home", "Examples", "{display_name}"],
+  "parent": "/examples",
+  "category": "examples",
+
+  "meta": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 55
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 120,
+      "maxLength": 155
+    },
+    "canonical": { "type": "string", "required": true, "format": "uri" }
+  },
+
+  "seo_schema": {
+    "@context": {
+      "type": "string",
+      "required": true,
+      "const": "https://schema.org"
+    },
+    "@type": { "type": "string", "required": true, "const": "TechArticle" },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 100
+    },
+    "datePublished": { "type": "string", "required": true, "format": "date" },
+    "dateModified": { "type": "string", "required": true, "format": "date" }
+  },
+
+  "aeo": {
+    "direct_answer": {
+      "type": "string",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 200
+    },
+    "key_takeaways": {
+      "type": "array",
+      "required": true,
+      "minItems": 3,
+      "maxItems": 4,
+      "items": { "type": "string", "minLength": 40, "maxLength": 100 }
+    },
+    "people_also_ask": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string", "minLength": 30, "maxLength": 90 },
+          "answer": { "type": "string", "minLength": 60, "maxLength": 200 }
+        }
+      }
+    }
+  },
+
+  "example_specific": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "trading_strategy",
+        "indicator_application",
+        "risk_calculation",
+        "portfolio_construction",
+        "option_strategy",
+        "execution_algorithm",
+        "forecasting_method",
+        "statistical_analysis",
+        "visualization",
+        "backtest",
+        "simulation",
+        "optimization",
+        "arbitrage"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "required": true,
+      "enum": ["beginner", "intermediate", "advanced"]
+    },
+    "time_required": {
+      "type": "string",
+      "required": true,
+      "pattern": "^\\d+ min$"
+    },
+    "prerequisites": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "maxItems": 4,
+      "items": { "type": "string", "maxLength": 60 }
+    },
+    "interactive_config": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "enabled": { "type": "boolean", "default": false },
+        "demo_type": {
+          "type": "string",
+          "enum": [
+            "live_chart",
+            "parameter_tuner",
+            "code_executor",
+            "visual_simulator"
+          ]
+        },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "label": { "type": "string" },
+              "type": {
+                "type": "string",
+                "enum": ["range", "select", "boolean", "number"]
+              },
+              "default": { "type": "number" },
+              "min": { "type": "number" },
+              "max": { "type": "number" },
+              "step": { "type": "number" },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "value": { "type": "string" },
+                    "label": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "presets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "params": { "type": "object" },
+              "description": { "type": "string" }
+            }
+          }
+        },
+        "real_time": { "type": "boolean", "default": false },
+        "default_asset": { "type": "string" },
+        "default_timeframe": { "type": "string" }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "required": true,
+      "minItems": 3,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string", "required": true, "maxLength": 60 },
+          "description": {
+            "type": "string",
+            "required": true,
+            "minLength": 50,
+            "maxLength": 200
+          },
+          "code_snippet": { "type": "string", "required": false },
+          "language": {
+            "type": "string",
+            "required": false,
+            "enum": [
+              "python",
+              "rust",
+              "go",
+              "cpp",
+              "java",
+              "javascript",
+              "r",
+              "matlab",
+              "sql"
+            ]
+          },
+          "interactive": { "type": "boolean", "default": false },
+          "expected_output": { "type": "string" }
+        }
+      }
+    },
+    "results": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "expected_output": {
+          "type": "string",
+          "required": true,
+          "minLength": 50,
+          "maxLength": 300
+        },
+        "visualization": {
+          "type": "string",
+          "required": false,
+          "format": "uri"
+        },
+        "visualization_type": {
+          "type": "string",
+          "enum": [
+            "line_chart",
+            "bar_chart",
+            "heatmap",
+            "table",
+            "scatter_plot"
+          ]
+        },
+        "interpretation": {
+          "type": "string",
+          "required": true,
+          "minLength": 80,
+          "maxLength": 250
+        },
+        "metrics": {
+          "type": "object",
+          "properties": {
+            "accuracy": { "type": "number" },
+            "precision": { "type": "number" },
+            "recall": { "type": "number" },
+            "sharpe_ratio": { "type": "number" },
+            "max_drawdown": { "type": "number" }
+          }
+        }
+      }
+    },
+    "performance_benchmarks": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "execution_time": { "type": "string" },
+        "memory_usage": { "type": "string" },
+        "scalability": { "type": "string" },
+        "comparison_table": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "implementation": { "type": "string" },
+              "time_ms": { "type": "number" },
+              "memory_mb": { "type": "number" }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "authority_assets": {
+    "calculator": { "type": "string", "required": false, "format": "uri" },
+    "code_hub": { "type": "string", "required": true, "format": "uri" },
+    "related_guide": { "type": "string", "required": true, "format": "uri" },
+    "related_examples": {
+      "type": "array",
+      "required": false,
+      "maxItems": 4,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "prerequisite_guides": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "advanced_examples": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "video_tutorial": { "type": "string", "required": false, "format": "uri" },
+    "downloadable_assets": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "size": { "type": "string" }
+        }
+      }
+    }
+  },
+
+  "content_sections": {
+    "required": {
+      "minItems": 5,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": { "type": "string", "const": "quick_answer" },
+          "type": { "type": "string", "const": "highlight_box" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 30
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 80,
+            "maxLength": 150
+          }
+        },
+        {
+          "id": { "type": "string", "const": "interactive_demo" },
+          "type": { "type": "string", "const": "interactive_widget" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "widget_type": { "type": "string", "const": "example_simulator" }
+        },
+        {
+          "id": { "type": "string", "const": "setup" },
+          "type": { "type": "string", "const": "step_by_step" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 30
+          },
+          "items": {
+            "type": "array",
+            "required": true,
+            "minItems": 2,
+            "maxItems": 4,
+            "items": { "type": "string", "minLength": 30, "maxLength": 100 }
+          }
+        },
+        {
+          "id": { "type": "string", "const": "implementation" },
+          "type": { "type": "string", "const": "step_by_step" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "items": {
+            "type": "array",
+            "required": true,
+            "minItems": 3,
+            "maxItems": 8,
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "required": true,
+                  "maxLength": 60
+                },
+                "description": {
+                  "type": "string",
+                  "required": true,
+                  "minLength": 50,
+                  "maxLength": 200
+                },
+                "code_preview": { "type": "string" },
+                "expandable": { "type": "boolean", "default": true }
+              }
+            }
+          }
+        },
+        {
+          "id": { "type": "string", "const": "results_visualization" },
+          "type": { "type": "string", "const": "visualization" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "chart_type": {
+            "type": "string",
+            "enum": ["line", "bar", "area", "scatter", "candlestick"]
+          },
+          "data_source": { "type": "string" },
+          "interactive": { "type": "boolean", "default": true }
+        }
+      ]
+    },
+    "recommended": {
+      "minItems": 0,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "results_analysis",
+              "optimization_tips",
+              "variations",
+              "common_errors",
+              "performance_metrics",
+              "real_world_applications",
+              "code_breakdown"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["text", "cards", "two_columns", "code_block", "accordion"]
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 35
+          },
+          "content": {
+            "type": "string",
+            "required": false,
+            "minLength": 150,
+            "maxLength": 400
+          },
+          "items": {
+            "type": "array",
+            "required": false,
+            "minItems": 2,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "description": { "type": "string" },
+                "code": { "type": "string" }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "optional": {
+      "minItems": 0,
+      "maxItems": 4,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "background_theory",
+              "mathematical_derivation",
+              "performance_metrics",
+              "alternative_approaches",
+              "references",
+              "further_reading"
+            ]
+          },
+          "type": { "type": "string", "enum": ["text", "cards", "references"] },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 25
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 100,
+            "maxLength": 300
+          },
+          "items": {
+            "type": "array",
+            "required": false,
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "author": { "type": "string" }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+
+  "engagement_widgets": {
+    "interactive_demo": { "type": "boolean", "required": true },
+    "step_by_step": { "type": "boolean", "required": true },
+    "code_language_selector": { "type": "boolean", "required": true },
+    "related_examples": { "type": "boolean", "required": true },
+    "faq_accordion": { "type": "boolean", "required": true },
+    "copy_code_button": { "type": "boolean", "required": true },
+    "run_code_button": { "type": "boolean", "required": false },
+    "download_notebook": { "type": "boolean", "required": false },
+    "share_example": { "type": "boolean", "required": false },
+    "bookmark_example": { "type": "boolean", "required": false },
+    "progress_tracker": {
+      "type": "boolean",
+      "required": false,
+      "default": true
+    }
+  },
+
+  "visualization_config": {
+    "type": "object",
+    "required": false,
+    "properties": {
+      "theme": { "type": "string", "enum": ["light", "dark", "auto"] },
+      "height": { "type": "number", "default": 400 },
+      "width": { "type": "string", "default": "100%" },
+      "show_grid": { "type": "boolean", "default": true },
+      "show_legend": { "type": "boolean", "default": true },
+      "enable_zoom": { "type": "boolean", "default": true },
+      "enable_pan": { "type": "boolean", "default": true },
+      "tooltips": { "type": "boolean", "default": true }
+    }
+  },
+
+  "faq": {
+    "type": "array",
+    "required": true,
+    "minItems": 2,
+    "maxItems": 4,
+    "items": {
+      "type": "object",
+      "properties": {
+        "q": { "type": "string", "minLength": 20, "maxLength": 90 },
+        "a": { "type": "string", "minLength": 80, "maxLength": 250 }
+      }
+    }
+  },
+
+  "metadata": {
+    "estimated_read_time": {
+      "type": "string",
+      "required": true,
+      "pattern": "^\\d+ min read$"
+    },
+    "last_updated": { "type": "string", "required": true, "format": "date" },
+    "difficulty": {
+      "type": "string",
+      "required": true,
+      "enum": ["beginner", "intermediate", "advanced"]
+    },
+    "content_type": {
+      "type": "string",
+      "required": true,
+      "const": "example_guide"
+    },
+    "tags": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 3, "maxLength": 15 }
+    },
+    "rating": {
+      "type": "number",
+      "required": false,
+      "minimum": 0,
+      "maximum": 5
+    },
+    "votes": { "type": "number", "required": false },
+    "featured": { "type": "boolean", "required": false, "default": false },
+    "popularity_score": {
+      "type": "number",
+      "required": false,
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "name": "options",
+  "path": "/options",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Options Trading"
+  ],
+  "total_pages": 196,
+  "child_pattern": "/options/{slug}",
+  "children_list": {
+    "_type": "chunked",
+    "total": 196,
+    "chunkSize": 60,
+    "chunks": [
+      {
+        "index": 1,
+        "file": "options.chunk-1-of-4.json",
+        "itemCount": 60,
+        "startIndex": 1,
+        "endIndex": 60
+      },
+      {
+        "index": 2,
+        "file": "options.chunk-2-of-4.json",
+        "itemCount": 60,
+        "startIndex": 61,
+        "endIndex": 120
+      },
+      {
+        "index": 3,
+        "file": "options.chunk-3-of-4.json",
+        "itemCount": 60,
+        "startIndex": 121,
+        "endIndex": 180
+      },
+      {
+        "index": 4,
+        "file": "options.chunk-4-of-4.json",
+        "itemCount": 16,
+        "startIndex": 181,
+        "endIndex": 196
+      }
+    ]
+  },
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Options Trading",
+      "position": "header"
+    },
+    {
+      "from": "/models",
+      "anchor": "Option Pricing Models",
+      "position": "related"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/models/black-scholes",
+      "anchor": "Black-Scholes Model",
+      "position": "content"
+    },
+    {
+      "to": "/risk",
+      "anchor": "Options Risk",
+      "position": "sidebar"
+    },
+    {
+      "to": "/calculators",
+      "anchor": "Options Calculators",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "options",
+    "displayName": "Options Trading",
+    "totalItems": 196,
+    "chunkSize": 60,
+    "totalChunks": 4,
+    "chunkFiles": []
+  }
+}

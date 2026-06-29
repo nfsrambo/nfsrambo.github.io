@@ -1,0 +1,902 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-06-13T07:02:36.316Z",
+  "sourceFile": "public/thewallstreetbulls.depth1.json",
+  "corrections": 14,
+  "chunks": {
+    "indicators": {
+      "type": "category",
+      "displayName": "Technical Indicators",
+      "path": "/indicators",
+      "total_pages": 68,
+      "totalItems": 68,
+      "chunkSize": 60,
+      "totalChunks": 2,
+      "mainFile": "indicators.json",
+      "chunks": [
+        {
+          "index": 1,
+          "file": "indicators.chunk-1-of-2.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60
+        },
+        {
+          "index": 2,
+          "file": "indicators.chunk-2-of-2.json",
+          "itemCount": 8,
+          "startIndex": 61,
+          "endIndex": 68
+        }
+      ]
+    },
+    "volumeProfile": {
+      "type": "category",
+      "displayName": "Volume Profile",
+      "path": "/volume-profile",
+      "total_pages": 40,
+      "totalItems": 40,
+      "chunkSize": 60,
+      "totalChunks": 1,
+      "mainFile": "volumeProfile.json",
+      "chunks": []
+    },
+    "orderFlow": {
+      "type": "category",
+      "displayName": "Order Flow",
+      "path": "/order-flow",
+      "total_pages": 36,
+      "totalItems": 36,
+      "chunkSize": 60,
+      "totalChunks": 1,
+      "mainFile": "orderFlow.json",
+      "chunks": []
+    },
+    "models": {
+      "type": "category",
+      "displayName": "Financial Models",
+      "path": "/models",
+      "total_pages": 94,
+      "totalItems": 94,
+      "chunkSize": 60,
+      "totalChunks": 2,
+      "mainFile": "models.json",
+      "chunks": [
+        {
+          "index": 1,
+          "file": "models.chunk-1-of-2.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60
+        },
+        {
+          "index": 2,
+          "file": "models.chunk-2-of-2.json",
+          "itemCount": 34,
+          "startIndex": 61,
+          "endIndex": 94
+        }
+      ]
+    },
+    "risk": {
+      "type": "category",
+      "displayName": "Risk Metrics",
+      "path": "/risk",
+      "total_pages": 55,
+      "totalItems": 55,
+      "chunkSize": 60,
+      "totalChunks": 1,
+      "mainFile": "risk.json",
+      "chunks": []
+    },
+    "portfolio": {
+      "type": "category",
+      "displayName": "Portfolio Management",
+      "path": "/portfolio",
+      "total_pages": 53,
+      "totalItems": 53,
+      "chunkSize": 60,
+      "totalChunks": 1,
+      "mainFile": "portfolio.json",
+      "chunks": []
+    },
+    "forecasting": {
+      "type": "category",
+      "displayName": "Forecasting",
+      "path": "/forecasting",
+      "total_pages": 172,
+      "totalItems": 172,
+      "chunkSize": 60,
+      "totalChunks": 3,
+      "mainFile": "forecasting.json",
+      "chunks": [
+        {
+          "index": 1,
+          "file": "forecasting.chunk-1-of-3.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60
+        },
+        {
+          "index": 2,
+          "file": "forecasting.chunk-2-of-3.json",
+          "itemCount": 60,
+          "startIndex": 61,
+          "endIndex": 120
+        },
+        {
+          "index": 3,
+          "file": "forecasting.chunk-3-of-3.json",
+          "itemCount": 52,
+          "startIndex": 121,
+          "endIndex": 172
+        }
+      ]
+    },
+    "trading": {
+      "type": "category",
+      "displayName": "Trading Strategies",
+      "path": "/trading",
+      "total_pages": 147,
+      "totalItems": 147,
+      "chunkSize": 60,
+      "totalChunks": 3,
+      "mainFile": "trading.json",
+      "chunks": [
+        {
+          "index": 1,
+          "file": "trading.chunk-1-of-3.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60
+        },
+        {
+          "index": 2,
+          "file": "trading.chunk-2-of-3.json",
+          "itemCount": 60,
+          "startIndex": 61,
+          "endIndex": 120
+        },
+        {
+          "index": 3,
+          "file": "trading.chunk-3-of-3.json",
+          "itemCount": 27,
+          "startIndex": 121,
+          "endIndex": 147
+        }
+      ]
+    },
+    "options": {
+      "type": "category",
+      "displayName": "Options Trading",
+      "path": "/options",
+      "total_pages": 196,
+      "totalItems": 196,
+      "chunkSize": 60,
+      "totalChunks": 4,
+      "mainFile": "options.json",
+      "chunks": [
+        {
+          "index": 1,
+          "file": "options.chunk-1-of-4.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60
+        },
+        {
+          "index": 2,
+          "file": "options.chunk-2-of-4.json",
+          "itemCount": 60,
+          "startIndex": 61,
+          "endIndex": 120
+        },
+        {
+          "index": 3,
+          "file": "options.chunk-3-of-4.json",
+          "itemCount": 60,
+          "startIndex": 121,
+          "endIndex": 180
+        },
+        {
+          "index": 4,
+          "file": "options.chunk-4-of-4.json",
+          "itemCount": 16,
+          "startIndex": 181,
+          "endIndex": 196
+        }
+      ]
+    },
+    "execution": {
+      "type": "category",
+      "displayName": "Execution Algorithms",
+      "path": "/execution",
+      "total_pages": 36,
+      "totalItems": 36,
+      "chunkSize": 60,
+      "totalChunks": 1,
+      "mainFile": "execution.json",
+      "chunks": []
+    },
+    "calculators": {
+      "type": "category",
+      "displayName": "Calculators",
+      "path": "/calculators",
+      "total_pages": 183,
+      "totalItems": 183,
+      "chunkSize": 60,
+      "totalChunks": 4,
+      "mainFile": "calculators.json",
+      "chunks": [
+        {
+          "index": 1,
+          "file": "calculators.chunk-1-of-4.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60
+        },
+        {
+          "index": 2,
+          "file": "calculators.chunk-2-of-4.json",
+          "itemCount": 60,
+          "startIndex": 61,
+          "endIndex": 120
+        },
+        {
+          "index": 3,
+          "file": "calculators.chunk-3-of-4.json",
+          "itemCount": 60,
+          "startIndex": 121,
+          "endIndex": 180
+        },
+        {
+          "index": 4,
+          "file": "calculators.chunk-4-of-4.json",
+          "itemCount": 3,
+          "startIndex": 181,
+          "endIndex": 183
+        }
+      ]
+    },
+    "codeLibrary": {
+      "type": "codeLibrary",
+      "displayName": "Code Library",
+      "path": "/code",
+      "total_pages": 39261,
+      "total_base_paths": 1707,
+      "total_language_paths": 37554,
+      "totalChunks": 29,
+      "basePathChunks": [
+        {
+          "index": 1,
+          "file": "codeLibrary_basepaths.chunk-1-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60,
+          "languageChunkFile": "codeLibrary_languages.chunk-1-of-29.json"
+        },
+        {
+          "index": 2,
+          "file": "codeLibrary_basepaths.chunk-2-of-29.json",
+          "itemCount": 60,
+          "startIndex": 61,
+          "endIndex": 120,
+          "languageChunkFile": "codeLibrary_languages.chunk-2-of-29.json"
+        },
+        {
+          "index": 3,
+          "file": "codeLibrary_basepaths.chunk-3-of-29.json",
+          "itemCount": 60,
+          "startIndex": 121,
+          "endIndex": 180,
+          "languageChunkFile": "codeLibrary_languages.chunk-3-of-29.json"
+        },
+        {
+          "index": 4,
+          "file": "codeLibrary_basepaths.chunk-4-of-29.json",
+          "itemCount": 60,
+          "startIndex": 181,
+          "endIndex": 240,
+          "languageChunkFile": "codeLibrary_languages.chunk-4-of-29.json"
+        },
+        {
+          "index": 5,
+          "file": "codeLibrary_basepaths.chunk-5-of-29.json",
+          "itemCount": 60,
+          "startIndex": 241,
+          "endIndex": 300,
+          "languageChunkFile": "codeLibrary_languages.chunk-5-of-29.json"
+        },
+        {
+          "index": 6,
+          "file": "codeLibrary_basepaths.chunk-6-of-29.json",
+          "itemCount": 60,
+          "startIndex": 301,
+          "endIndex": 360,
+          "languageChunkFile": "codeLibrary_languages.chunk-6-of-29.json"
+        },
+        {
+          "index": 7,
+          "file": "codeLibrary_basepaths.chunk-7-of-29.json",
+          "itemCount": 60,
+          "startIndex": 361,
+          "endIndex": 420,
+          "languageChunkFile": "codeLibrary_languages.chunk-7-of-29.json"
+        },
+        {
+          "index": 8,
+          "file": "codeLibrary_basepaths.chunk-8-of-29.json",
+          "itemCount": 60,
+          "startIndex": 421,
+          "endIndex": 480,
+          "languageChunkFile": "codeLibrary_languages.chunk-8-of-29.json"
+        },
+        {
+          "index": 9,
+          "file": "codeLibrary_basepaths.chunk-9-of-29.json",
+          "itemCount": 60,
+          "startIndex": 481,
+          "endIndex": 540,
+          "languageChunkFile": "codeLibrary_languages.chunk-9-of-29.json"
+        },
+        {
+          "index": 10,
+          "file": "codeLibrary_basepaths.chunk-10-of-29.json",
+          "itemCount": 60,
+          "startIndex": 541,
+          "endIndex": 600,
+          "languageChunkFile": "codeLibrary_languages.chunk-10-of-29.json"
+        },
+        {
+          "index": 11,
+          "file": "codeLibrary_basepaths.chunk-11-of-29.json",
+          "itemCount": 60,
+          "startIndex": 601,
+          "endIndex": 660,
+          "languageChunkFile": "codeLibrary_languages.chunk-11-of-29.json"
+        },
+        {
+          "index": 12,
+          "file": "codeLibrary_basepaths.chunk-12-of-29.json",
+          "itemCount": 60,
+          "startIndex": 661,
+          "endIndex": 720,
+          "languageChunkFile": "codeLibrary_languages.chunk-12-of-29.json"
+        },
+        {
+          "index": 13,
+          "file": "codeLibrary_basepaths.chunk-13-of-29.json",
+          "itemCount": 60,
+          "startIndex": 721,
+          "endIndex": 780,
+          "languageChunkFile": "codeLibrary_languages.chunk-13-of-29.json"
+        },
+        {
+          "index": 14,
+          "file": "codeLibrary_basepaths.chunk-14-of-29.json",
+          "itemCount": 60,
+          "startIndex": 781,
+          "endIndex": 840,
+          "languageChunkFile": "codeLibrary_languages.chunk-14-of-29.json"
+        },
+        {
+          "index": 15,
+          "file": "codeLibrary_basepaths.chunk-15-of-29.json",
+          "itemCount": 60,
+          "startIndex": 841,
+          "endIndex": 900,
+          "languageChunkFile": "codeLibrary_languages.chunk-15-of-29.json"
+        },
+        {
+          "index": 16,
+          "file": "codeLibrary_basepaths.chunk-16-of-29.json",
+          "itemCount": 60,
+          "startIndex": 901,
+          "endIndex": 960,
+          "languageChunkFile": "codeLibrary_languages.chunk-16-of-29.json"
+        },
+        {
+          "index": 17,
+          "file": "codeLibrary_basepaths.chunk-17-of-29.json",
+          "itemCount": 60,
+          "startIndex": 961,
+          "endIndex": 1020,
+          "languageChunkFile": "codeLibrary_languages.chunk-17-of-29.json"
+        },
+        {
+          "index": 18,
+          "file": "codeLibrary_basepaths.chunk-18-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1021,
+          "endIndex": 1080,
+          "languageChunkFile": "codeLibrary_languages.chunk-18-of-29.json"
+        },
+        {
+          "index": 19,
+          "file": "codeLibrary_basepaths.chunk-19-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1081,
+          "endIndex": 1140,
+          "languageChunkFile": "codeLibrary_languages.chunk-19-of-29.json"
+        },
+        {
+          "index": 20,
+          "file": "codeLibrary_basepaths.chunk-20-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1141,
+          "endIndex": 1200,
+          "languageChunkFile": "codeLibrary_languages.chunk-20-of-29.json"
+        },
+        {
+          "index": 21,
+          "file": "codeLibrary_basepaths.chunk-21-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1201,
+          "endIndex": 1260,
+          "languageChunkFile": "codeLibrary_languages.chunk-21-of-29.json"
+        },
+        {
+          "index": 22,
+          "file": "codeLibrary_basepaths.chunk-22-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1261,
+          "endIndex": 1320,
+          "languageChunkFile": "codeLibrary_languages.chunk-22-of-29.json"
+        },
+        {
+          "index": 23,
+          "file": "codeLibrary_basepaths.chunk-23-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1321,
+          "endIndex": 1380,
+          "languageChunkFile": "codeLibrary_languages.chunk-23-of-29.json"
+        },
+        {
+          "index": 24,
+          "file": "codeLibrary_basepaths.chunk-24-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1381,
+          "endIndex": 1440,
+          "languageChunkFile": "codeLibrary_languages.chunk-24-of-29.json"
+        },
+        {
+          "index": 25,
+          "file": "codeLibrary_basepaths.chunk-25-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1441,
+          "endIndex": 1500,
+          "languageChunkFile": "codeLibrary_languages.chunk-25-of-29.json"
+        },
+        {
+          "index": 26,
+          "file": "codeLibrary_basepaths.chunk-26-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1501,
+          "endIndex": 1560,
+          "languageChunkFile": "codeLibrary_languages.chunk-26-of-29.json"
+        },
+        {
+          "index": 27,
+          "file": "codeLibrary_basepaths.chunk-27-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1561,
+          "endIndex": 1620,
+          "languageChunkFile": "codeLibrary_languages.chunk-27-of-29.json"
+        },
+        {
+          "index": 28,
+          "file": "codeLibrary_basepaths.chunk-28-of-29.json",
+          "itemCount": 60,
+          "startIndex": 1621,
+          "endIndex": 1680,
+          "languageChunkFile": "codeLibrary_languages.chunk-28-of-29.json"
+        },
+        {
+          "index": 29,
+          "file": "codeLibrary_basepaths.chunk-29-of-29.json",
+          "itemCount": 27,
+          "startIndex": 1681,
+          "endIndex": 1707,
+          "languageChunkFile": "codeLibrary_languages.chunk-29-of-29.json"
+        }
+      ],
+      "languageChunks": [
+        {
+          "index": 1,
+          "file": "codeLibrary_languages.chunk-1-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 1,
+          "endIndex": 1320,
+          "correspondingBaseChunk": 1,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-1-of-29.json"
+        },
+        {
+          "index": 2,
+          "file": "codeLibrary_languages.chunk-2-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 1321,
+          "endIndex": 2640,
+          "correspondingBaseChunk": 2,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-2-of-29.json"
+        },
+        {
+          "index": 3,
+          "file": "codeLibrary_languages.chunk-3-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 2641,
+          "endIndex": 3960,
+          "correspondingBaseChunk": 3,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-3-of-29.json"
+        },
+        {
+          "index": 4,
+          "file": "codeLibrary_languages.chunk-4-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 3961,
+          "endIndex": 5280,
+          "correspondingBaseChunk": 4,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-4-of-29.json"
+        },
+        {
+          "index": 5,
+          "file": "codeLibrary_languages.chunk-5-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 5281,
+          "endIndex": 6600,
+          "correspondingBaseChunk": 5,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-5-of-29.json"
+        },
+        {
+          "index": 6,
+          "file": "codeLibrary_languages.chunk-6-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 6601,
+          "endIndex": 7920,
+          "correspondingBaseChunk": 6,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-6-of-29.json"
+        },
+        {
+          "index": 7,
+          "file": "codeLibrary_languages.chunk-7-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 7921,
+          "endIndex": 9240,
+          "correspondingBaseChunk": 7,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-7-of-29.json"
+        },
+        {
+          "index": 8,
+          "file": "codeLibrary_languages.chunk-8-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 9241,
+          "endIndex": 10560,
+          "correspondingBaseChunk": 8,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-8-of-29.json"
+        },
+        {
+          "index": 9,
+          "file": "codeLibrary_languages.chunk-9-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 10561,
+          "endIndex": 11880,
+          "correspondingBaseChunk": 9,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-9-of-29.json"
+        },
+        {
+          "index": 10,
+          "file": "codeLibrary_languages.chunk-10-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 11881,
+          "endIndex": 13200,
+          "correspondingBaseChunk": 10,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-10-of-29.json"
+        },
+        {
+          "index": 11,
+          "file": "codeLibrary_languages.chunk-11-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 13201,
+          "endIndex": 14520,
+          "correspondingBaseChunk": 11,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-11-of-29.json"
+        },
+        {
+          "index": 12,
+          "file": "codeLibrary_languages.chunk-12-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 14521,
+          "endIndex": 15840,
+          "correspondingBaseChunk": 12,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-12-of-29.json"
+        },
+        {
+          "index": 13,
+          "file": "codeLibrary_languages.chunk-13-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 15841,
+          "endIndex": 17160,
+          "correspondingBaseChunk": 13,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-13-of-29.json"
+        },
+        {
+          "index": 14,
+          "file": "codeLibrary_languages.chunk-14-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 17161,
+          "endIndex": 18480,
+          "correspondingBaseChunk": 14,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-14-of-29.json"
+        },
+        {
+          "index": 15,
+          "file": "codeLibrary_languages.chunk-15-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 18481,
+          "endIndex": 19800,
+          "correspondingBaseChunk": 15,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-15-of-29.json"
+        },
+        {
+          "index": 16,
+          "file": "codeLibrary_languages.chunk-16-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 19801,
+          "endIndex": 21120,
+          "correspondingBaseChunk": 16,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-16-of-29.json"
+        },
+        {
+          "index": 17,
+          "file": "codeLibrary_languages.chunk-17-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 21121,
+          "endIndex": 22440,
+          "correspondingBaseChunk": 17,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-17-of-29.json"
+        },
+        {
+          "index": 18,
+          "file": "codeLibrary_languages.chunk-18-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 22441,
+          "endIndex": 23760,
+          "correspondingBaseChunk": 18,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-18-of-29.json"
+        },
+        {
+          "index": 19,
+          "file": "codeLibrary_languages.chunk-19-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 23761,
+          "endIndex": 25080,
+          "correspondingBaseChunk": 19,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-19-of-29.json"
+        },
+        {
+          "index": 20,
+          "file": "codeLibrary_languages.chunk-20-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 25081,
+          "endIndex": 26400,
+          "correspondingBaseChunk": 20,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-20-of-29.json"
+        },
+        {
+          "index": 21,
+          "file": "codeLibrary_languages.chunk-21-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 26401,
+          "endIndex": 27720,
+          "correspondingBaseChunk": 21,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-21-of-29.json"
+        },
+        {
+          "index": 22,
+          "file": "codeLibrary_languages.chunk-22-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 27721,
+          "endIndex": 29040,
+          "correspondingBaseChunk": 22,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-22-of-29.json"
+        },
+        {
+          "index": 23,
+          "file": "codeLibrary_languages.chunk-23-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 29041,
+          "endIndex": 30360,
+          "correspondingBaseChunk": 23,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-23-of-29.json"
+        },
+        {
+          "index": 24,
+          "file": "codeLibrary_languages.chunk-24-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 30361,
+          "endIndex": 31680,
+          "correspondingBaseChunk": 24,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-24-of-29.json"
+        },
+        {
+          "index": 25,
+          "file": "codeLibrary_languages.chunk-25-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 31681,
+          "endIndex": 33000,
+          "correspondingBaseChunk": 25,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-25-of-29.json"
+        },
+        {
+          "index": 26,
+          "file": "codeLibrary_languages.chunk-26-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 33001,
+          "endIndex": 34320,
+          "correspondingBaseChunk": 26,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-26-of-29.json"
+        },
+        {
+          "index": 27,
+          "file": "codeLibrary_languages.chunk-27-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 34321,
+          "endIndex": 35640,
+          "correspondingBaseChunk": 27,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-27-of-29.json"
+        },
+        {
+          "index": 28,
+          "file": "codeLibrary_languages.chunk-28-of-29.json",
+          "itemCount": 1320,
+          "startIndex": 35641,
+          "endIndex": 36960,
+          "correspondingBaseChunk": 28,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-28-of-29.json"
+        },
+        {
+          "index": 29,
+          "file": "codeLibrary_languages.chunk-29-of-29.json",
+          "itemCount": 594,
+          "startIndex": 36961,
+          "endIndex": 37554,
+          "correspondingBaseChunk": 29,
+          "baseChunkFile": "codeLibrary_basepaths.chunk-29-of-29.json"
+        }
+      ],
+      "mainFile": "codeLibrary.json"
+    },
+    "comparisons": {
+      "type": "category",
+      "displayName": "Comparisons",
+      "path": "/compare",
+      "total_pages": 229,
+      "totalItems": 229,
+      "chunkSize": 60,
+      "totalChunks": 4,
+      "mainFile": "comparisons.json",
+      "chunks": [
+        {
+          "index": 1,
+          "file": "comparisons.chunk-1-of-4.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60
+        },
+        {
+          "index": 2,
+          "file": "comparisons.chunk-2-of-4.json",
+          "itemCount": 60,
+          "startIndex": 61,
+          "endIndex": 120
+        },
+        {
+          "index": 3,
+          "file": "comparisons.chunk-3-of-4.json",
+          "itemCount": 60,
+          "startIndex": 121,
+          "endIndex": 180
+        },
+        {
+          "index": 4,
+          "file": "comparisons.chunk-4-of-4.json",
+          "itemCount": 49,
+          "startIndex": 181,
+          "endIndex": 229
+        }
+      ]
+    },
+    "benchmarks": {
+      "type": "category",
+      "displayName": "Benchmarks",
+      "path": "/benchmarks",
+      "total_pages": 253,
+      "totalItems": 253,
+      "chunkSize": 60,
+      "totalChunks": 5,
+      "mainFile": "benchmarks.json",
+      "chunks": [
+        {
+          "index": 1,
+          "file": "benchmarks.chunk-1-of-5.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60
+        },
+        {
+          "index": 2,
+          "file": "benchmarks.chunk-2-of-5.json",
+          "itemCount": 60,
+          "startIndex": 61,
+          "endIndex": 120
+        },
+        {
+          "index": 3,
+          "file": "benchmarks.chunk-3-of-5.json",
+          "itemCount": 60,
+          "startIndex": 121,
+          "endIndex": 180
+        },
+        {
+          "index": 4,
+          "file": "benchmarks.chunk-4-of-5.json",
+          "itemCount": 60,
+          "startIndex": 181,
+          "endIndex": 240
+        },
+        {
+          "index": 5,
+          "file": "benchmarks.chunk-5-of-5.json",
+          "itemCount": 13,
+          "startIndex": 241,
+          "endIndex": 253
+        }
+      ]
+    },
+    "examples": {
+      "type": "category",
+      "displayName": "Examples",
+      "path": "/examples",
+      "total_pages": 265,
+      "totalItems": 265,
+      "chunkSize": 60,
+      "totalChunks": 5,
+      "mainFile": "examples.json",
+      "chunks": [
+        {
+          "index": 1,
+          "file": "examples.chunk-1-of-5.json",
+          "itemCount": 60,
+          "startIndex": 1,
+          "endIndex": 60
+        },
+        {
+          "index": 2,
+          "file": "examples.chunk-2-of-5.json",
+          "itemCount": 60,
+          "startIndex": 61,
+          "endIndex": 120
+        },
+        {
+          "index": 3,
+          "file": "examples.chunk-3-of-5.json",
+          "itemCount": 60,
+          "startIndex": 121,
+          "endIndex": 180
+        },
+        {
+          "index": 4,
+          "file": "examples.chunk-4-of-5.json",
+          "itemCount": 60,
+          "startIndex": 181,
+          "endIndex": 240
+        },
+        {
+          "index": 5,
+          "file": "examples.chunk-5-of-5.json",
+          "itemCount": 25,
+          "startIndex": 241,
+          "endIndex": 265
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "name": "orderFlow",
+  "path": "/order-flow",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Order Flow"
+  ],
+  "total_pages": 36,
+  "child_pattern": "/order-flow/{slug}",
+  "children_list": [
+    "/order-flow/cumulative-volume-delta",
+    "/order-flow/delta-divergence",
+    "/order-flow/absorption",
+    "/order-flow/exhaustion",
+    "/order-flow/iceberg-detection",
+    "/order-flow/spoofing-detection",
+    "/order-flow/liquidity-grabs",
+    "/order-flow/stop-hunting",
+    "/order-flow/stacked-imbalance",
+    "/order-flow/microstructure-imbalance",
+    "/order-flow/order-book-imbalance",
+    "/order-flow/trade-flow-imbalance",
+    "/order-flow/aggressor-analysis",
+    "/order-flow/passive-analysis",
+    "/order-flow/limit-order-book-dynamics",
+    "/order-flow/market-order-analysis",
+    "/order-flow/order-flow-imbalance-ratio",
+    "/order-flow/volume-weighted-delta",
+    "/order-flow/tick-weighted-delta",
+    "/order-flow/delta-per-bar",
+    "/order-flow/cumulative-delta-divergence",
+    "/order-flow/order-flow-pressure",
+    "/order-flow/bid-ask-spread-dynamics",
+    "/order-flow/liquidity-provider-analysis",
+    "/order-flow/liquidity-taker-analysis",
+    "/order-flow/quote-stuffing-detection",
+    "/order-flow/latency-arbitrage-detection",
+    "/order-flow/order-anticipation",
+    "/order-flow/pinging-detection",
+    "/order-flow/order-book-depth",
+    "/order-flow/time-sales",
+    "/order-flow/tape-reading",
+    "/order-flow/absorption-ratio",
+    "/order-flow/micro-price",
+    "/order-flow/order-to-trade-ratio",
+    "/order-flow/delta-reversal-patterns"
+  ],
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Order Flow",
+      "position": "header"
+    },
+    {
+      "from": "/volume-profile",
+      "anchor": "Volume Analysis",
+      "position": "related"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/trading",
+      "anchor": "Order Flow Trading",
+      "position": "content"
+    },
+    {
+      "to": "/execution",
+      "anchor": "Algorithmic Execution",
+      "position": "sidebar"
+    },
+    {
+      "to": "/code/cumulative-delta",
+      "anchor": "Cumulative Delta Code",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "orderFlow",
+    "displayName": "Order Flow",
+    "totalItems": 36,
+    "chunkSize": 60,
+    "totalChunks": 1,
+    "chunkFiles": []
+  }
+}

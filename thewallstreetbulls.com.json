@@ -1,0 +1,63 @@
+{
+  "homepage": {
+    "purpose": ["Discover", "Learn", "Calculate", "Implement"],
+    "sections": []
+  },
+  "indicators": ["/indicators/rsi", "/indicators/adx"],
+  "volumeProfile": [
+    "/volume-profile/volume-profile",
+    "/volume-profile/footprint-chart"
+  ],
+  "orderFlow": [
+    "/order-flow/cumulative-volume-delta",
+    "/order-flow/absorption"
+  ],
+  "models": ["/models/black-scholes", "/models/multi-head-attention"],
+  "risk": ["/risk/sharpe-ratio"],
+  "portfolio": ["/portfolio/kelly-criterion"],
+  "forecasting": [
+    "/forecasting/moving-average",
+    "/forecasting/bayesian-model-averaging"
+  ],
+  "calculators": ["/calculators/cagr", "/calculators/compound-interest"],
+  "options": [
+    "/options/option-greeks",
+    "/options/delta",
+    "/options/dispersion-trading"
+  ],
+  "trading": [
+    "/trading/order-book-analysis",
+    "/trading/market-microstructure",
+    "/trading/opening-range-breakout",
+    "/trading/end-of-day-reversal"
+  ],
+  "execution": [
+    "/execution/latency-benchmarks",
+    "/execution/position-limits",
+    "/execution/order-velocity-checks"
+  ],
+  "codeLibrary": {
+    "basePaths": ["/code/rsi", "/code/macd", "/code/hierarchical-risk-parity"],
+    "languagePaths": [
+      "/code/rsi/python",
+      "/code/hierarchical-risk-parity/python"
+    ]
+  },
+  "benchmarks": [
+    "/benchmarks/rsi-python-vs-rust",
+    "/benchmarks/rsi-python-vs-cpp",
+    "/benchmarks/encryption-overhead-benchmark",
+    "/benchmarks/hashing-algorithm-performance"
+  ],
+  "comparisons": [
+    "/compare/rsi-vs-macd",
+    "/compare/rsi-vs-stochastic",
+    "/compare/rsi-vs-cci",
+    "/compare/schaff-trend-cycle-vs-macd"
+  ],
+  "examples": [
+    "/examples/rsi-trading-strategy",
+    "/examples/macd-strategy",
+    "/examples/efficient-frontier-construction"
+  ]
+}

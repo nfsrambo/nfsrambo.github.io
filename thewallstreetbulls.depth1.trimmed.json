@@ -1,0 +1,765 @@
+{
+  "depth": 1,
+  "page": "Home Page",
+  "path": "/",
+  "depth_level": 0,
+  "breadcrumb": ["Home"],
+  "incoming_backlinks": [],
+  "outgoing_backlinks": [
+    {
+      "to": "/indicators",
+      "anchor": "Technical Indicators",
+      "position": "header",
+      "priority": "highest",
+      "description": "Complete library of 70+ technical indicators"
+    },
+    {
+      "to": "/volume-profile",
+      "anchor": "Volume Profile",
+      "position": "header",
+      "priority": "high",
+      "description": "Volume profile analysis tools"
+    },
+    {
+      "to": "/order-flow",
+      "anchor": "Order Flow",
+      "position": "header",
+      "priority": "high",
+      "description": "Order flow and market microstructure"
+    },
+    {
+      "to": "/models",
+      "anchor": "Financial Models",
+      "position": "header",
+      "priority": "highest",
+      "description": "117+ quantitative financial models"
+    },
+    {
+      "to": "/risk",
+      "anchor": "Risk Metrics",
+      "position": "header",
+      "priority": "high",
+      "description": "Risk measurement and management"
+    },
+    {
+      "to": "/portfolio",
+      "anchor": "Portfolio Management",
+      "position": "header",
+      "priority": "high",
+      "description": "Portfolio optimization strategies"
+    },
+    {
+      "to": "/forecasting",
+      "anchor": "Forecasting",
+      "position": "header",
+      "priority": "high",
+      "description": "Time series forecasting methods"
+    },
+    {
+      "to": "/trading",
+      "anchor": "Trading Strategies",
+      "position": "header",
+      "priority": "high",
+      "description": "Algorithmic trading strategies"
+    },
+    {
+      "to": "/options",
+      "anchor": "Options Trading",
+      "position": "header",
+      "priority": "medium",
+      "description": "Options pricing and strategies"
+    },
+    {
+      "to": "/execution",
+      "anchor": "Execution Algorithms",
+      "position": "header",
+      "priority": "medium",
+      "description": "Order execution algorithms"
+    },
+    {
+      "to": "/calculators",
+      "anchor": "Calculators",
+      "position": "header",
+      "priority": "highest",
+      "description": "90+ interactive financial calculators"
+    },
+    {
+      "to": "/code",
+      "anchor": "Code Library",
+      "position": "header",
+      "priority": "highest",
+      "description": "Production-ready code implementations"
+    },
+    {
+      "to": "/compare",
+      "anchor": "Comparisons",
+      "position": "header",
+      "priority": "medium",
+      "description": "Side-by-side comparisons"
+    },
+    {
+      "to": "/benchmarks",
+      "anchor": "Benchmarks",
+      "position": "header",
+      "priority": "low",
+      "description": "Performance benchmarks"
+    },
+    {
+      "to": "/examples",
+      "anchor": "Examples",
+      "position": "header",
+      "priority": "medium",
+      "description": "Practical examples and use cases"
+    }
+  ],
+  "children": [
+    {
+      "name": "indicators",
+      "path": "/indicators",
+      "depth": 1,
+      "breadcrumb": ["Home", "Technical Indicators"],
+      "total_pages": 68,
+      "child_pattern": "/indicators/{slug}",
+      "children_list": [
+        "/indicators/rsi",
+        "/indicators/macd",
+        "/indicators/atr",
+        "/indicators/adx"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Technical Indicators",
+          "position": "header"
+        },
+        {
+          "from": "/calculators",
+          "anchor": "Indicator Calculators",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/risk",
+          "anchor": "Risk Metrics for Indicators",
+          "position": "footer"
+        },
+        {
+          "to": "/trading",
+          "anchor": "Trading Strategies",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Indicator Code",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "volumeProfile",
+      "path": "/volume-profile",
+      "depth": 1,
+      "breadcrumb": ["Home", "Volume Profile"],
+      "total_pages": 40,
+      "child_pattern": "/volume-profile/{slug}",
+      "children_list": [
+        "/volume-profile/volume-profile",
+        "/volume-profile/market-profile-tpo",
+        "/volume-profile/footprint-chart",
+        "/volume-profile/delta-divergence"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Volume Profile",
+          "position": "header"
+        },
+        {
+          "from": "/trading",
+          "anchor": "Volume Trading",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/order-flow",
+          "anchor": "Order Flow Analysis",
+          "position": "content"
+        },
+        {
+          "to": "/indicators/vwap",
+          "anchor": "VWAP Indicator",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code/volume-profile",
+          "anchor": "Volume Profile Code",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "orderFlow",
+      "path": "/order-flow",
+      "depth": 1,
+      "breadcrumb": ["Home", "Order Flow"],
+      "total_pages": 36,
+      "child_pattern": "/order-flow/{slug}",
+      "children_list": [
+        "/order-flow/cumulative-volume-delta",
+        "/order-flow/delta-divergence",
+        "/order-flow/absorption",
+        "/order-flow/exhaustion"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Order Flow",
+          "position": "header"
+        },
+        {
+          "from": "/volume-profile",
+          "anchor": "Volume Analysis",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/trading",
+          "anchor": "Order Flow Trading",
+          "position": "content"
+        },
+        {
+          "to": "/execution",
+          "anchor": "Algorithmic Execution",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code/cumulative-delta",
+          "anchor": "Cumulative Delta Code",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "models",
+      "path": "/models",
+      "depth": 1,
+      "breadcrumb": ["Home", "Financial Models"],
+      "total_pages": 94,
+      "child_pattern": "/models/{slug}",
+      "children_list": [
+        "/models/black-scholes",
+        "/models/monte-carlo",
+        "/models/binomial-model",
+        "/models/trinomial-model"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Financial Models",
+          "position": "header"
+        },
+        {
+          "from": "/calculators",
+          "anchor": "Model Calculators",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/forecasting",
+          "anchor": "Forecasting Methods",
+          "position": "content"
+        },
+        {
+          "to": "/risk",
+          "anchor": "Model Risk",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Model Implementations",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "risk",
+      "path": "/risk",
+      "depth": 1,
+      "breadcrumb": ["Home", "Risk Metrics"],
+      "total_pages": 55,
+      "child_pattern": "/risk/{slug}",
+      "children_list": [
+        "/risk/sharpe-ratio",
+        "/risk/sortino-ratio",
+        "/risk/calmar-ratio",
+        "/risk/sterling-ratio"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Risk Metrics",
+          "position": "header"
+        },
+        {
+          "from": "/portfolio",
+          "anchor": "Portfolio Risk",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/portfolio",
+          "anchor": "Portfolio Optimization",
+          "position": "content"
+        },
+        {
+          "to": "/models",
+          "anchor": "Risk Models",
+          "position": "sidebar"
+        },
+        {
+          "to": "/calculators",
+          "anchor": "Risk Calculators",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "portfolio",
+      "path": "/portfolio",
+      "depth": 1,
+      "breadcrumb": ["Home", "Portfolio Management"],
+      "total_pages": 53,
+      "child_pattern": "/portfolio/{slug}",
+      "children_list": [
+        "/portfolio/kelly-criterion",
+        "/portfolio/fractional-kelly",
+        "/portfolio/half-kelly",
+        "/portfolio/position-sizing"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Portfolio Management",
+          "position": "header"
+        },
+        {
+          "from": "/risk",
+          "anchor": "Risk-Adjusted Returns",
+          "position": "content"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/risk",
+          "anchor": "Risk Metrics",
+          "position": "sidebar"
+        },
+        {
+          "to": "/trading",
+          "anchor": "Trading Strategies",
+          "position": "footer"
+        },
+        {
+          "to": "/calculators",
+          "anchor": "Portfolio Calculators",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "forecasting",
+      "path": "/forecasting",
+      "depth": 1,
+      "breadcrumb": ["Home", "Forecasting"],
+      "total_pages": 172,
+      "child_pattern": "/forecasting/{slug}",
+      "children_list": [
+        "/forecasting/moving-average",
+        "/forecasting/exponential-smoothing",
+        "/forecasting/holt-winters",
+        "/forecasting/seasonal-decomposition"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Forecasting",
+          "position": "header"
+        },
+        {
+          "from": "/models",
+          "anchor": "Time Series Models",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/models",
+          "anchor": "Statistical Models",
+          "position": "content"
+        },
+        {
+          "to": "/trading",
+          "anchor": "Forecast Trading",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Forecasting Code",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "trading",
+      "path": "/trading",
+      "depth": 1,
+      "breadcrumb": ["Home", "Trading Strategies"],
+      "total_pages": 147,
+      "child_pattern": "/trading/{slug}",
+      "children_list": [
+        "/trading/order-book-analysis",
+        "/trading/market-microstructure",
+        "/trading/bid-ask-spread",
+        "/trading/limit-order-book"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Trading Strategies",
+          "position": "header"
+        },
+        {
+          "from": "/indicators",
+          "anchor": "Indicator Strategies",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/execution",
+          "anchor": "Order Execution",
+          "position": "content"
+        },
+        {
+          "to": "/order-flow",
+          "anchor": "Order Flow Analysis",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Trading Code",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "options",
+      "path": "/options",
+      "depth": 1,
+      "breadcrumb": ["Home", "Options Trading"],
+      "total_pages": 196,
+      "child_pattern": "/options/{slug}",
+      "children_list": [
+        "/options/option-greeks",
+        "/options/delta",
+        "/options/gamma",
+        "/options/theta"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Options Trading",
+          "position": "header"
+        },
+        {
+          "from": "/models",
+          "anchor": "Option Pricing Models",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/models/black-scholes",
+          "anchor": "Black-Scholes Model",
+          "position": "content"
+        },
+        {
+          "to": "/risk",
+          "anchor": "Options Risk",
+          "position": "sidebar"
+        },
+        {
+          "to": "/calculators",
+          "anchor": "Options Calculators",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "execution",
+      "path": "/execution",
+      "depth": 1,
+      "breadcrumb": ["Home", "Execution Algorithms"],
+      "total_pages": 36,
+      "child_pattern": "/execution/{slug}",
+      "children_list": [
+        "/execution/latency-benchmarks",
+        "/execution/throughput-benchmarks",
+        "/execution/websocket-performance",
+        "/execution/fix-protocol"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Execution Algorithms",
+          "position": "header"
+        },
+        {
+          "from": "/trading",
+          "anchor": "Trade Execution",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/trading/market-making",
+          "anchor": "Market Making",
+          "position": "content"
+        },
+        {
+          "to": "/benchmarks",
+          "anchor": "Execution Benchmarks",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Execution Code",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "calculators",
+      "path": "/calculators",
+      "depth": 1,
+      "breadcrumb": ["Home", "Calculators"],
+      "total_pages": 183,
+      "child_pattern": "/calculators/{slug}",
+      "children_list": [
+        "/calculators/risk-parity-weights",
+        "/calculators/hierarchical-risk-parity-weights",
+        "/calculators/black-litterman-weights",
+        "/calculators/maximum-diversification-weights"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Calculators",
+          "position": "header"
+        },
+        {
+          "from": "/indicators",
+          "anchor": "Indicator Calculators",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/indicators",
+          "anchor": "Indicator Guides",
+          "position": "content"
+        },
+        {
+          "to": "/models",
+          "anchor": "Financial Models",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Calculator Code",
+          "position": "footer"
+        }
+      ]
+    },
+    {
+      "name": "codeLibrary",
+      "path": "/code",
+      "depth": 1,
+      "breadcrumb": ["Home", "Code Library"],
+      "total_pages": 39261,
+      "child_pattern": "/code/{indicator}/{language}",
+      "base_paths": ["/code/rsi", "/code/macd", "/code/atr", "/code/adx"],
+      "language_paths": [
+        "/code/rsi/python",
+        "/code/macd/python",
+        "/code/atr/python",
+        "/code/adx/python"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Code Library",
+          "position": "header"
+        },
+        {
+          "from": "/indicators",
+          "anchor": "Implementation Code",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/benchmarks",
+          "anchor": "Performance Benchmarks",
+          "position": "content"
+        },
+        {
+          "to": "/examples",
+          "anchor": "Usage Examples",
+          "position": "sidebar"
+        },
+        {
+          "to": "/indicators",
+          "anchor": "Indicator Documentation",
+          "position": "footer"
+        }
+      ],
+      "total_base_paths": 1707,
+      "total_language_paths": 37554
+    },
+    {
+      "name": "comparisons",
+      "path": "/compare",
+      "depth": 1,
+      "breadcrumb": ["Home", "Comparisons"],
+      "total_pages": 229,
+      "child_pattern": "/compare/{slug}",
+      "children_list": [
+        "/compare/rsi-vs-macd",
+        "/compare/rsi-vs-stochastic",
+        "/compare/rsi-vs-cci",
+        "/compare/rsi-vs-mfi"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Comparisons",
+          "position": "header"
+        },
+        {
+          "from": "/indicators",
+          "anchor": "Compare Indicators",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/indicators/rsi",
+          "anchor": "RSI Details",
+          "position": "content"
+        },
+        {
+          "to": "/indicators/macd",
+          "anchor": "MACD Details",
+          "position": "content"
+        },
+        {
+          "to": "/risk/sharpe-ratio",
+          "anchor": "Sharpe Ratio Details",
+          "position": "content"
+        }
+      ]
+    },
+    {
+      "name": "benchmarks",
+      "path": "/benchmarks",
+      "depth": 1,
+      "breadcrumb": ["Home", "Benchmarks"],
+      "total_pages": 253,
+      "child_pattern": "/benchmarks/{slug}",
+      "children_list": [
+        "/benchmarks/rsi-python-vs-rust",
+        "/benchmarks/rsi-python-vs-cpp",
+        "/benchmarks/rsi-python-vs-go",
+        "/benchmarks/rsi-python-vs-julia"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Benchmarks",
+          "position": "header"
+        },
+        {
+          "from": "/code",
+          "anchor": "Code Performance",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/code/rsi/python",
+          "anchor": "Python Implementation",
+          "position": "content"
+        },
+        {
+          "to": "/code/rsi/rust",
+          "anchor": "Rust Implementation",
+          "position": "content"
+        },
+        {
+          "to": "/code",
+          "anchor": "All Implementations",
+          "position": "footer"
+        }
+      ]
+    },
+    {
+      "name": "examples",
+      "path": "/examples",
+      "depth": 1,
+      "breadcrumb": ["Home", "Examples"],
+      "total_pages": 265,
+      "child_pattern": "/examples/{slug}",
+      "children_list": [
+        "/examples/rsi-trading-strategy",
+        "/examples/rsi-divergence-example",
+        "/examples/rsi-overbought-oversold",
+        "/examples/rsi-multi-timeframe"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Examples",
+          "position": "header"
+        },
+        {
+          "from": "/code",
+          "anchor": "Code Examples",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/trading",
+          "anchor": "Trading Strategies",
+          "position": "content"
+        },
+        {
+          "to": "/indicators/rsi",
+          "anchor": "RSI Indicator",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Example Code",
+          "position": "footer"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "category": "benchmarks",
+  "displayName": "Benchmarks",
+  "chunkIndex": 5,
+  "totalChunks": 5,
+  "items": [
+    "/benchmarks/cold-start-performance",
+    "/benchmarks/memory-footprint-comparison",
+    "/benchmarks/cpu-usage-benchmark",
+    "/benchmarks/battery-consumption-benchmark",
+    "/benchmarks/network-latency-benchmark",
+    "/benchmarks/database-query-performance",
+    "/benchmarks/redis-vs-postgres-latency",
+    "/benchmarks/parquet-vs-csv-performance",
+    "/benchmarks/arrow-vs-protobuf-speed",
+    "/benchmarks/json-vs-messagepack-performance",
+    "/benchmarks/compression-algorithm-speed",
+    "/benchmarks/encryption-overhead-benchmark",
+    "/benchmarks/hashing-algorithm-performance"
+  ],
+  "parentPath": "/benchmarks",
+  "chunkType": "children_list",
+  "total_pages": 253
+}

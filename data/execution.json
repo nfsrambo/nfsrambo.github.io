@@ -1,0 +1,86 @@
+{
+  "name": "execution",
+  "path": "/execution",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Execution Algorithms"
+  ],
+  "total_pages": 36,
+  "child_pattern": "/execution/{slug}",
+  "children_list": [
+    "/execution/latency-benchmarks",
+    "/execution/throughput-benchmarks",
+    "/execution/websocket-performance",
+    "/execution/fix-protocol",
+    "/execution/order-entry",
+    "/execution/order-cancel",
+    "/execution/order-modify",
+    "/execution/order-types",
+    "/execution/market-order",
+    "/execution/limit-order",
+    "/execution/stop-order",
+    "/execution/stop-limit-order",
+    "/execution/trailing-stop",
+    "/execution/pegged-order",
+    "/execution/hidden-order",
+    "/execution/iceberg-order",
+    "/execution/twap-order",
+    "/execution/vwap-order",
+    "/execution/percent-of-volume",
+    "/execution/implementation-shortfall-algorithm",
+    "/execution/arrival-price-algorithm",
+    "/execution/volume-weighted-algorithm",
+    "/execution/time-weighted-algorithm",
+    "/execution/participation-weighted-algorithm",
+    "/execution/adaptive-algorithm",
+    "/execution/machine-learning-execution",
+    "/execution/reinforcement-learning-execution",
+    "/execution/co-location",
+    "/execution/proximity-hosting",
+    "/execution/direct-market-access",
+    "/execution/sponsored-access",
+    "/execution/algorithmic-sponsorship",
+    "/execution/risk-controls",
+    "/execution/circuit-breakers",
+    "/execution/position-limits",
+    "/execution/order-velocity-checks"
+  ],
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Execution Algorithms",
+      "position": "header"
+    },
+    {
+      "from": "/trading",
+      "anchor": "Trade Execution",
+      "position": "cta"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/trading/market-making",
+      "anchor": "Market Making",
+      "position": "content"
+    },
+    {
+      "to": "/benchmarks",
+      "anchor": "Execution Benchmarks",
+      "position": "sidebar"
+    },
+    {
+      "to": "/code",
+      "anchor": "Execution Code",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "execution",
+    "displayName": "Execution Algorithms",
+    "totalItems": 36,
+    "chunkSize": 60,
+    "totalChunks": 1,
+    "chunkFiles": []
+  }
+}

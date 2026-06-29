@@ -1,0 +1,69 @@
+{
+  "name": "indicators",
+  "path": "/indicators",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Technical Indicators"
+  ],
+  "total_pages": 68,
+  "child_pattern": "/indicators/{slug}",
+  "children_list": {
+    "_type": "chunked",
+    "total": 68,
+    "chunkSize": 60,
+    "chunks": [
+      {
+        "index": 1,
+        "file": "indicators.chunk-1-of-2.json",
+        "itemCount": 60,
+        "startIndex": 1,
+        "endIndex": 60
+      },
+      {
+        "index": 2,
+        "file": "indicators.chunk-2-of-2.json",
+        "itemCount": 8,
+        "startIndex": 61,
+        "endIndex": 68
+      }
+    ]
+  },
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Technical Indicators",
+      "position": "header"
+    },
+    {
+      "from": "/calculators",
+      "anchor": "Indicator Calculators",
+      "position": "related"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/risk",
+      "anchor": "Risk Metrics for Indicators",
+      "position": "footer"
+    },
+    {
+      "to": "/trading",
+      "anchor": "Trading Strategies",
+      "position": "sidebar"
+    },
+    {
+      "to": "/code",
+      "anchor": "Indicator Code",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "indicators",
+    "displayName": "Technical Indicators",
+    "totalItems": 68,
+    "chunkSize": 60,
+    "totalChunks": 2,
+    "chunkFiles": []
+  }
+}

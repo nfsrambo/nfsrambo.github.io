@@ -1,0 +1,604 @@
+{
+  "name": "{slug}",
+  "path": "/portfolio/{slug}",
+  "depth_level": 2,
+  "breadcrumb": ["Home", "Portfolio Management", "{display_name}"],
+  "parent": "/portfolio",
+  "category": "portfolio",
+
+  "meta": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 55
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 120,
+      "maxLength": 155
+    },
+    "canonical": { "type": "string", "required": true, "format": "uri" }
+  },
+
+  "seo_schema": {
+    "@context": {
+      "type": "string",
+      "required": true,
+      "const": "https://schema.org"
+    },
+    "@type": { "type": "string", "required": true, "const": "TechArticle" },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 100
+    },
+    "datePublished": { "type": "string", "required": true, "format": "date" },
+    "dateModified": { "type": "string", "required": true, "format": "date" }
+  },
+
+  "aeo": {
+    "direct_answer": {
+      "type": "string",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 200
+    },
+    "key_takeaways": {
+      "type": "array",
+      "required": true,
+      "minItems": 3,
+      "maxItems": 4,
+      "items": { "type": "string", "minLength": 40, "maxLength": 100 }
+    },
+    "people_also_ask": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string", "minLength": 30, "maxLength": 90 },
+          "answer": { "type": "string", "minLength": 60, "maxLength": 200 }
+        }
+      }
+    }
+  },
+
+  "portfolio_specific": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "position_sizing",
+        "optimization",
+        "rebalancing",
+        "asset_allocation",
+        "risk_parity",
+        "factor_investing",
+        "online_selection",
+        "multi_period",
+        "stochastic_programming",
+        "monte_carlo",
+        "stress_testing",
+        "black_litterman",
+        "bayesian",
+        "robust_optimization",
+        "hierarchical",
+        "machine_learning"
+      ]
+    },
+    "optimization_objective": {
+      "type": "string",
+      "required": false,
+      "enum": [
+        "maximize_return",
+        "minimize_risk",
+        "maximize_sharpe",
+        "maximize_diversification",
+        "equal_risk_contribution",
+        "minimize_cvar",
+        "maximize_utility"
+      ]
+    },
+    "constraints": {
+      "type": "array",
+      "required": false,
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "enum": [
+          "long_only",
+          "leverage_limit",
+          "turnover_limit",
+          "factor_exposure",
+          "sector_limits",
+          "liquidity_constraint"
+        ]
+      }
+    },
+    "input_requirements": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 20, "maxLength": 60 }
+    },
+    "output_type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "weights",
+        "allocation",
+        "risk_budget",
+        "rebalance_schedule",
+        "efficient_frontier"
+      ]
+    },
+    "computational_complexity": {
+      "type": "string",
+      "required": true,
+      "enum": ["low", "medium", "high", "very_high"]
+    },
+    "requires_covariance_matrix": { "type": "boolean", "required": true },
+    "requires_return_forecasts": { "type": "boolean", "required": true },
+    "supports_regularization": { "type": "boolean", "required": false },
+    "supports_turnover_constraints": { "type": "boolean", "required": false },
+
+    "interactive_config": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "enabled": { "type": "boolean", "default": false },
+        "simulator_type": {
+          "type": "string",
+          "enum": [
+            "optimization_simulator",
+            "efficient_frontier",
+            "rebalance_calculator",
+            "risk_analyzer"
+          ]
+        },
+        "real_time": { "type": "boolean", "default": false },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "label": { "type": "string" },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "range",
+                  "select",
+                  "boolean",
+                  "number",
+                  "risk_tolerance"
+                ]
+              },
+              "default": { "type": "number" },
+              "min": { "type": "number" },
+              "max": { "type": "number" },
+              "step": { "type": "number" },
+              "unit": { "type": "string" },
+              "description": { "type": "string" },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "value": { "type": "string" },
+                    "label": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "presets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "params": { "type": "object" },
+              "description": { "type": "string" }
+            }
+          }
+        },
+        "default_risk_free_rate": { "type": "number", "default": 0.03 },
+        "default_lookback_period": { "type": "number", "default": 252 },
+        "show_efficient_frontier": { "type": "boolean", "default": true },
+        "show_risk_metrics": { "type": "boolean", "default": true }
+      }
+    },
+
+    "optimization_metrics": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "expected_sharpe": { "type": "number" },
+        "expected_volatility": { "type": "number" },
+        "max_drawdown_estimate": { "type": "number" },
+        "diversification_ratio": { "type": "number" }
+      }
+    },
+
+    "comparison_methods": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "sharpe_ratio": { "type": "number" },
+          "max_drawdown": { "type": "number" },
+          "turnover": { "type": "string" }
+        }
+      }
+    },
+
+    "sample_assets": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "expected_return": { "type": "number" },
+          "volatility": { "type": "number" },
+          "asset_class": { "type": "string" }
+        }
+      }
+    }
+  },
+
+  "authority_assets": {
+    "calculator": { "type": "string", "required": true, "format": "uri" },
+    "code_hub": { "type": "string", "required": true, "format": "uri" },
+    "interactive_simulator": {
+      "type": "string",
+      "required": false,
+      "format": "uri"
+    },
+    "comparisons": {
+      "type": "array",
+      "required": false,
+      "maxItems": 4,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "examples": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "benchmarks": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "related_portfolio_methods": {
+      "type": "array",
+      "required": false,
+      "maxItems": 5,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "alternative_methods": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "prerequisite_topics": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    }
+  },
+
+  "content_sections": {
+    "required": {
+      "minItems": 5,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": { "type": "string", "const": "quick_answer" },
+          "type": { "type": "string", "const": "highlight_box" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 30
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 80,
+            "maxLength": 150
+          }
+        },
+        {
+          "id": { "type": "string", "const": "interactive_optimizer" },
+          "type": { "type": "string", "const": "interactive_widget" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "widget_type": { "type": "string", "const": "portfolio_simulator" }
+        },
+        {
+          "id": { "type": "string", "const": "formula" },
+          "type": { "type": "string", "const": "code_block" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 20
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 50,
+            "maxLength": 300
+          }
+        },
+        {
+          "id": { "type": "string", "const": "interpretation" },
+          "type": { "type": "string", "const": "signal_table" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "rows": {
+            "type": "array",
+            "required": true,
+            "minItems": 3,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "properties": {
+                "scenario": {
+                  "type": "string",
+                  "minLength": 20,
+                  "maxLength": 40
+                },
+                "recommendation": {
+                  "type": "string",
+                  "minLength": 30,
+                  "maxLength": 80
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": { "type": "string", "const": "code_implementations" },
+          "type": { "type": "string", "const": "language_grid" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 30
+          },
+          "languages": {
+            "type": "array",
+            "required": true,
+            "minItems": 6,
+            "maxItems": 22,
+            "items": {
+              "type": "string",
+              "enum": [
+                "python",
+                "rust",
+                "go",
+                "cpp",
+                "java",
+                "javascript",
+                "typescript",
+                "csharp",
+                "ruby",
+                "swift",
+                "kotlin",
+                "php",
+                "r",
+                "julia",
+                "scala",
+                "haskell",
+                "ocaml",
+                "fsharp",
+                "matlab",
+                "zig",
+                "dotnet",
+                "sql"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "recommended": {
+      "minItems": 0,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "how_it_works",
+              "step_by_step",
+              "use_cases",
+              "pros_cons",
+              "implementation_guide",
+              "risk_metrics",
+              "comparison_chart"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["text", "step_by_step", "cards", "two_columns", "chart"]
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 35
+          },
+          "content": {
+            "type": "string",
+            "required": false,
+            "minLength": 150,
+            "maxLength": 400
+          },
+          "items": {
+            "type": "array",
+            "required": false,
+            "minItems": 2,
+            "maxItems": 5
+          },
+          "chart_config": {
+            "type": "object",
+            "required": false,
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["efficient_frontier", "weights", "risk_decomposition"]
+              },
+              "x_axis": { "type": "string" },
+              "y_axis": { "type": "string" }
+            }
+          }
+        }
+      ]
+    },
+    "optional": {
+      "minItems": 0,
+      "maxItems": 4,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "history",
+              "mathematical_derivation",
+              "practical_considerations",
+              "implementation_tips",
+              "common_pitfalls"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["text", "code_block", "warning_box"]
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 25
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 100,
+            "maxLength": 300
+          },
+          "code": { "type": "string", "required": false },
+          "language": { "type": "string", "required": false }
+        }
+      ]
+    }
+  },
+
+  "engagement_widgets": {
+    "interactive_optimizer": { "type": "boolean", "required": true },
+    "calculator_preview": { "type": "boolean", "required": true },
+    "code_language_selector": { "type": "boolean", "required": true },
+    "comparison_links": { "type": "boolean", "required": true },
+    "related_portfolio_methods": { "type": "boolean", "required": true },
+    "faq_accordion": { "type": "boolean", "required": true },
+    "efficient_frontier": { "type": "boolean", "required": false },
+    "risk_decomposition": { "type": "boolean", "required": false },
+    "export_portfolio": { "type": "boolean", "required": false }
+  },
+
+  "visualization_config": {
+    "type": "object",
+    "required": false,
+    "properties": {
+      "default_chart": {
+        "type": "string",
+        "enum": [
+          "efficient_frontier",
+          "weights_pie",
+          "risk_decomposition",
+          "cumulative_returns"
+        ]
+      },
+      "color_scheme": {
+        "type": "string",
+        "enum": ["default", "risk", "performance"]
+      },
+      "show_efficient_frontier": { "type": "boolean", "default": true },
+      "animate_allocation": { "type": "boolean", "default": true },
+      "show_risk_contribution": { "type": "boolean", "default": true }
+    }
+  },
+
+  "faq": {
+    "type": "array",
+    "required": true,
+    "minItems": 2,
+    "maxItems": 4,
+    "items": {
+      "type": "object",
+      "properties": {
+        "q": { "type": "string", "minLength": 20, "maxLength": 90 },
+        "a": { "type": "string", "minLength": 80, "maxLength": 250 }
+      }
+    }
+  },
+
+  "metadata": {
+    "estimated_read_time": {
+      "type": "string",
+      "required": true,
+      "pattern": "^\\d+ min read$"
+    },
+    "last_updated": { "type": "string", "required": true, "format": "date" },
+    "difficulty": {
+      "type": "string",
+      "required": true,
+      "enum": ["beginner", "intermediate", "advanced", "expert"]
+    },
+    "content_type": {
+      "type": "string",
+      "required": true,
+      "const": "portfolio_guide"
+    },
+    "tags": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 3, "maxLength": 15 }
+    },
+    "featured": { "type": "boolean", "required": false, "default": false },
+    "popularity_score": {
+      "type": "number",
+      "required": false,
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}

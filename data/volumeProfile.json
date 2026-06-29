@@ -1,0 +1,90 @@
+{
+  "name": "volumeProfile",
+  "path": "/volume-profile",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Volume Profile"
+  ],
+  "total_pages": 40,
+  "child_pattern": "/volume-profile/{slug}",
+  "children_list": [
+    "/volume-profile/volume-profile",
+    "/volume-profile/market-profile-tpo",
+    "/volume-profile/footprint-chart",
+    "/volume-profile/delta-divergence",
+    "/volume-profile/order-flow-imbalance",
+    "/volume-profile/volume-weighted-alpha",
+    "/volume-profile/cumulative-delta",
+    "/volume-profile/delta-reversal",
+    "/volume-profile/absorption-analysis",
+    "/volume-profile/exhaustion-detection",
+    "/volume-profile/stacked-imbalance",
+    "/volume-profile/volume-point-of-control",
+    "/volume-profile/value-area-high",
+    "/volume-profile/value-area-low",
+    "/volume-profile/value-area-70",
+    "/volume-profile/initial-balance",
+    "/volume-profile/developing-poc",
+    "/volume-profile/single-print",
+    "/volume-profile/double-distribution",
+    "/volume-profile/poor-high-low",
+    "/volume-profile/excess-high-low",
+    "/volume-profile/thin-volume",
+    "/volume-profile/high-volume-nodes",
+    "/volume-profile/low-volume-nodes",
+    "/volume-profile/volume-gap",
+    "/volume-profile/volume-cluster",
+    "/volume-profile/volume-weighted-average-price",
+    "/volume-profile/anchored-volume-profile",
+    "/volume-profile/session-volume-profile",
+    "/volume-profile/tick-volume-profile",
+    "/volume-profile/volume-by-price",
+    "/volume-profile/volume-by-bid-ask",
+    "/volume-profile/volume-by-aggressor",
+    "/volume-profile/volume-delta",
+    "/volume-profile/bid-ask-volume",
+    "/volume-profile/passive-volume",
+    "/volume-profile/aggressive-volume",
+    "/volume-profile/iceberg-detection",
+    "/volume-profile/spoofing-detection",
+    "/volume-profile/wash-trading-detection"
+  ],
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Volume Profile",
+      "position": "header"
+    },
+    {
+      "from": "/trading",
+      "anchor": "Volume Trading",
+      "position": "related"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/order-flow",
+      "anchor": "Order Flow Analysis",
+      "position": "content"
+    },
+    {
+      "to": "/indicators/vwap",
+      "anchor": "VWAP Indicator",
+      "position": "sidebar"
+    },
+    {
+      "to": "/code/volume-profile",
+      "anchor": "Volume Profile Code",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "volumeProfile",
+    "displayName": "Volume Profile",
+    "totalItems": 40,
+    "chunkSize": 60,
+    "totalChunks": 1,
+    "chunkFiles": []
+  }
+}

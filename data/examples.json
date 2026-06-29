@@ -1,0 +1,90 @@
+{
+  "name": "examples",
+  "path": "/examples",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Examples"
+  ],
+  "total_pages": 265,
+  "child_pattern": "/examples/{slug}",
+  "children_list": {
+    "_type": "chunked",
+    "total": 265,
+    "chunkSize": 60,
+    "chunks": [
+      {
+        "index": 1,
+        "file": "examples.chunk-1-of-5.json",
+        "itemCount": 60,
+        "startIndex": 1,
+        "endIndex": 60
+      },
+      {
+        "index": 2,
+        "file": "examples.chunk-2-of-5.json",
+        "itemCount": 60,
+        "startIndex": 61,
+        "endIndex": 120
+      },
+      {
+        "index": 3,
+        "file": "examples.chunk-3-of-5.json",
+        "itemCount": 60,
+        "startIndex": 121,
+        "endIndex": 180
+      },
+      {
+        "index": 4,
+        "file": "examples.chunk-4-of-5.json",
+        "itemCount": 60,
+        "startIndex": 181,
+        "endIndex": 240
+      },
+      {
+        "index": 5,
+        "file": "examples.chunk-5-of-5.json",
+        "itemCount": 25,
+        "startIndex": 241,
+        "endIndex": 265
+      }
+    ]
+  },
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Examples",
+      "position": "header"
+    },
+    {
+      "from": "/code",
+      "anchor": "Code Examples",
+      "position": "cta"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/trading",
+      "anchor": "Trading Strategies",
+      "position": "content"
+    },
+    {
+      "to": "/indicators/rsi",
+      "anchor": "RSI Indicator",
+      "position": "sidebar"
+    },
+    {
+      "to": "/code",
+      "anchor": "Example Code",
+      "position": "footer"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "examples",
+    "displayName": "Examples",
+    "totalItems": 265,
+    "chunkSize": 60,
+    "totalChunks": 5,
+    "chunkFiles": []
+  }
+}

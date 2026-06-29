@@ -1,0 +1,103 @@
+{
+  "name": "portfolio",
+  "path": "/portfolio",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Portfolio Management"
+  ],
+  "total_pages": 53,
+  "child_pattern": "/portfolio/{slug}",
+  "children_list": [
+    "/portfolio/kelly-criterion",
+    "/portfolio/fractional-kelly",
+    "/portfolio/half-kelly",
+    "/portfolio/position-sizing",
+    "/portfolio/optimal-f",
+    "/portfolio/secure-f",
+    "/portfolio/portfolio-optimization",
+    "/portfolio/mean-variance-optimization",
+    "/portfolio/mean-cvar-optimization",
+    "/portfolio/maximum-diversification",
+    "/portfolio/most-diversified-portfolio",
+    "/portfolio/risk-parity",
+    "/portfolio/equal-risk-contribution",
+    "/portfolio/hierarchical-risk-parity",
+    "/portfolio/hierarchical-clustering",
+    "/portfolio/risk-budgeting",
+    "/portfolio/black-litterman",
+    "/portfolio/robust-black-litterman",
+    "/portfolio/worst-case-optimization",
+    "/portfolio/bayesian-optimization",
+    "/portfolio/robust-optimization",
+    "/portfolio/regret-minimization",
+    "/portfolio/markowitz-efficient-frontier",
+    "/portfolio/post-modern-portfolio-theory",
+    "/portfolio/rebalancing",
+    "/portfolio/calendar-rebalancing",
+    "/portfolio/percentage-rebalancing",
+    "/portfolio/threshold-rebalancing",
+    "/portfolio/tactical-asset-allocation",
+    "/portfolio/dynamic-asset-allocation",
+    "/portfolio/constant-mix-strategy",
+    "/portfolio/constant-proportion-portfolio-insurance",
+    "/portfolio/bucket-strategy",
+    "/portfolio/ladder-strategy",
+    "/portfolio/barbell-strategy",
+    "/portfolio/factor-investing",
+    "/portfolio/smart-beta",
+    "/portfolio/factor-timing",
+    "/portfolio/online-portfolio-selection",
+    "/portfolio/universal-portfolio",
+    "/portfolio/eg-strategy",
+    "/portfolio/anticor-strategy",
+    "/portfolio/olmar-strategy",
+    "/portfolio/rmr-strategy",
+    "/portfolio/reinforcement-learning-portfolio",
+    "/portfolio/deep-portfolio-optimization",
+    "/portfolio/graph-portfolio-theory",
+    "/portfolio/multi-period-optimization",
+    "/portfolio/stochastic-programming",
+    "/portfolio/robust-stochastic-optimization",
+    "/portfolio/monte-carlo-portfolio-simulation",
+    "/portfolio/scenario-optimization",
+    "/portfolio/stress-test-optimization"
+  ],
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Portfolio Management",
+      "position": "header"
+    },
+    {
+      "from": "/risk",
+      "anchor": "Risk-Adjusted Returns",
+      "position": "content"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/risk",
+      "anchor": "Risk Metrics",
+      "position": "sidebar"
+    },
+    {
+      "to": "/trading",
+      "anchor": "Trading Strategies",
+      "position": "footer"
+    },
+    {
+      "to": "/calculators",
+      "anchor": "Portfolio Calculators",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "portfolio",
+    "displayName": "Portfolio Management",
+    "totalItems": 53,
+    "chunkSize": 60,
+    "totalChunks": 1,
+    "chunkFiles": []
+  }
+}

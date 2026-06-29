@@ -1,0 +1,313 @@
+{
+  "name": "{slug}",
+  "path": "/benchmarks/{slug}",
+  "depth_level": 2,
+  "breadcrumb": ["Home", "Benchmarks", "{display_name}"],
+  "parent": "/benchmarks",
+  "category": "benchmarks",
+
+  "meta": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 55
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 120,
+      "maxLength": 155
+    },
+    "canonical": { "type": "string", "required": true, "format": "uri" }
+  },
+
+  "seo_schema": {
+    "@context": {
+      "type": "string",
+      "required": true,
+      "const": "https://schema.org"
+    },
+    "@type": { "type": "string", "required": true, "const": "TechArticle" },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 100
+    },
+    "datePublished": { "type": "string", "required": true, "format": "date" },
+    "dateModified": { "type": "string", "required": true, "format": "date" }
+  },
+
+  "aeo": {
+    "direct_answer": {
+      "type": "string",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 200
+    },
+    "key_takeaways": {
+      "type": "array",
+      "required": true,
+      "minItems": 3,
+      "maxItems": 4,
+      "items": { "type": "string", "minLength": 40, "maxLength": 100 }
+    },
+    "people_also_ask": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string", "minLength": 30, "maxLength": 90 },
+          "answer": { "type": "string", "minLength": 60, "maxLength": 200 }
+        }
+      }
+    }
+  },
+
+  "benchmark_specific": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "language_comparison",
+        "algorithm_performance",
+        "library_comparison",
+        "optimization_impact",
+        "hardware_performance",
+        "execution_latency",
+        "memory_usage",
+        "throughput",
+        "scalability",
+        "compiler_optimization",
+        "io_performance"
+      ]
+    },
+    "benchmark_environment": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "cpu": { "type": "string", "required": true, "maxLength": 50 },
+        "ram": { "type": "string", "required": true, "maxLength": 20 },
+        "os": { "type": "string", "required": true, "maxLength": 30 },
+        "compiler_version": {
+          "type": "string",
+          "required": false,
+          "maxLength": 30
+        },
+        "python_version": {
+          "type": "string",
+          "required": false,
+          "maxLength": 20
+        },
+        "rust_version": {
+          "type": "string",
+          "required": false,
+          "maxLength": 20
+        },
+        "go_version": { "type": "string", "required": false, "maxLength": 20 },
+        "cpp_compiler": { "type": "string", "required": false, "maxLength": 30 }
+      }
+    },
+    "benchmark_methodology": {
+      "type": "string",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 300
+    },
+    "metrics": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "required": true, "maxLength": 30 },
+          "unit": { "type": "string", "required": true, "maxLength": 20 },
+          "higher_is_better": { "type": "boolean", "required": true },
+          "color": {
+            "type": "string",
+            "required": false,
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          }
+        }
+      }
+    },
+    "results": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "required": true, "maxLength": 40 },
+          "category": { "type": "string", "required": false, "maxLength": 30 },
+          "icon": { "type": "string", "required": false },
+          "values": {
+            "type": "array",
+            "required": true,
+            "minItems": 1,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "properties": {
+                "metric": { "type": "string", "required": true },
+                "value": { "type": "number", "required": true },
+                "unit": { "type": "string", "required": true },
+                "confidence_interval": {
+                  "type": "array",
+                  "required": false,
+                  "minItems": 2,
+                  "maxItems": 2
+                }
+              }
+            }
+          },
+          "speedup_vs_baseline": { "type": "number", "required": false }
+        }
+      }
+    },
+    "winner": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "name": { "type": "string", "required": true, "maxLength": 40 },
+        "reason": {
+          "type": "string",
+          "required": true,
+          "minLength": 80,
+          "maxLength": 200
+        }
+      }
+    },
+    "visualization_config": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "default_chart_type": {
+          "type": "string",
+          "enum": ["bar", "line", "radar"]
+        },
+        "enable_comparison": { "type": "boolean" },
+        "enable_filtering": { "type": "boolean" },
+        "enable_log_scale": { "type": "boolean" },
+        "color_scheme": {
+          "type": "string",
+          "enum": ["default", "performance", "cool", "warm"]
+        }
+      }
+    }
+  },
+
+  "authority_assets": {
+    "calculator": { "type": "string", "required": false, "format": "uri" },
+    "code_hub": { "type": "string", "required": true, "format": "uri" },
+    "item_a_implementation": {
+      "type": "string",
+      "required": false,
+      "format": "uri"
+    },
+    "item_b_implementation": {
+      "type": "string",
+      "required": false,
+      "format": "uri"
+    },
+    "related_benchmarks": {
+      "type": "array",
+      "required": false,
+      "maxItems": 4,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "performance_guides": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    }
+  },
+
+  "content_sections": {
+    "required": [
+      {
+        "id": "quick_answer",
+        "type": "highlight_box",
+        "title": "Quick Answer",
+        "content": ""
+      },
+      {
+        "id": "interactive_benchmark",
+        "type": "interactive_widget",
+        "title": "Interactive Benchmark Explorer",
+        "widget_type": "benchmark_simulator"
+      },
+      {
+        "id": "results_analysis",
+        "type": "text",
+        "title": "Performance Analysis",
+        "content": ""
+      },
+      {
+        "id": "code_implementations",
+        "type": "language_grid",
+        "title": "Implementation Code",
+        "languages": ["python", "rust", "go", "cpp", "java", "javascript"]
+      }
+    ],
+    "recommended": [],
+    "optional": []
+  },
+
+  "engagement_widgets": {
+    "interactive_benchmark": { "type": "boolean", "required": true },
+    "code_language_selector": { "type": "boolean", "required": true },
+    "related_benchmarks": { "type": "boolean", "required": true },
+    "faq_accordion": { "type": "boolean", "required": true },
+    "winner_badge": { "type": "boolean", "required": true },
+    "export_data": { "type": "boolean", "required": false }
+  },
+
+  "faq": {
+    "type": "array",
+    "required": true,
+    "minItems": 2,
+    "maxItems": 3,
+    "items": {
+      "type": "object",
+      "properties": {
+        "q": { "type": "string", "minLength": 20, "maxLength": 90 },
+        "a": { "type": "string", "minLength": 80, "maxLength": 250 }
+      }
+    }
+  },
+
+  "metadata": {
+    "estimated_read_time": {
+      "type": "string",
+      "required": true,
+      "pattern": "^\\d+ min read$"
+    },
+    "last_updated": { "type": "string", "required": true, "format": "date" },
+    "difficulty": {
+      "type": "string",
+      "required": true,
+      "enum": ["beginner", "intermediate", "advanced"]
+    },
+    "content_type": {
+      "type": "string",
+      "required": true,
+      "const": "benchmark_guide"
+    },
+    "tags": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 3, "maxLength": 15 }
+    }
+  }
+}

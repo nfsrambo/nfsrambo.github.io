@@ -1,0 +1,537 @@
+{
+  "name": "{slug}",
+  "path": "/compare/{slug}",
+  "depth_level": 2,
+  "breadcrumb": ["Home", "Comparisons", "{display_name}"],
+  "parent": "/compare",
+  "category": "comparisons",
+
+  "meta": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 55
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 120,
+      "maxLength": 155
+    },
+    "canonical": { "type": "string", "required": true, "format": "uri" }
+  },
+
+  "seo_schema": {
+    "@context": {
+      "type": "string",
+      "required": true,
+      "const": "https://schema.org"
+    },
+    "@type": { "type": "string", "required": true, "const": "TechArticle" },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 100
+    },
+    "datePublished": { "type": "string", "required": true, "format": "date" },
+    "dateModified": { "type": "string", "required": true, "format": "date" }
+  },
+
+  "aeo": {
+    "direct_answer": {
+      "type": "string",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 200
+    },
+    "key_takeaways": {
+      "type": "array",
+      "required": true,
+      "minItems": 3,
+      "maxItems": 4,
+      "items": { "type": "string", "minLength": 40, "maxLength": 100 }
+    },
+    "people_also_ask": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string", "minLength": 30, "maxLength": 90 },
+          "answer": { "type": "string", "minLength": 60, "maxLength": 200 }
+        }
+      }
+    }
+  },
+
+  "comparison_specific": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "indicator_vs_indicator",
+        "model_vs_model",
+        "strategy_vs_strategy",
+        "risk_metric_vs_risk_metric",
+        "option_strategy_vs_option_strategy",
+        "execution_vs_execution",
+        "forecasting_vs_forecasting",
+        "portfolio_vs_portfolio",
+        "concept_vs_concept",
+        "language_vs_language",
+        "library_vs_library"
+      ]
+    },
+    "comparison_dimensions": {
+      "type": "array",
+      "required": true,
+      "minItems": 4,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "properties": {
+          "dimension": { "type": "string", "required": true, "maxLength": 30 },
+          "description": {
+            "type": "string",
+            "required": false,
+            "maxLength": 100
+          },
+          "item_a_score": {
+            "type": "number",
+            "required": true,
+            "minimum": 0,
+            "maximum": 10
+          },
+          "item_b_score": {
+            "type": "number",
+            "required": true,
+            "minimum": 0,
+            "maximum": 10
+          },
+          "winner": { "type": "string", "enum": ["a", "b", "tie"] },
+          "weight": {
+            "type": "number",
+            "required": false,
+            "minimum": 0,
+            "maximum": 2,
+            "default": 1
+          }
+        }
+      }
+    },
+    "interactive_comparison": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "enabled": { "type": "boolean", "default": false },
+        "simulator_type": {
+          "type": "string",
+          "enum": [
+            "indicator_simulator",
+            "performance_simulator",
+            "strategy_simulator"
+          ]
+        },
+        "default_item_a_params": { "type": "object" },
+        "default_item_b_params": { "type": "object" }
+      }
+    },
+    "item_a": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "name": { "type": "string", "required": true, "maxLength": 50 },
+        "path": { "type": "string", "required": true, "format": "uri" },
+        "category": { "type": "string", "required": true, "maxLength": 30 },
+        "icon": { "type": "string", "required": false },
+        "color": {
+          "type": "string",
+          "required": false,
+          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+        },
+        "pros": {
+          "type": "array",
+          "required": true,
+          "minItems": 3,
+          "maxItems": 5,
+          "items": { "type": "string", "maxLength": 100 }
+        },
+        "cons": {
+          "type": "array",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 4,
+          "items": { "type": "string", "maxLength": 100 }
+        },
+        "best_for": {
+          "type": "array",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 4,
+          "items": { "type": "string", "maxLength": 80 }
+        },
+        "metrics": {
+          "type": "object",
+          "required": false,
+          "properties": {
+            "accuracy": { "type": "number", "minimum": 0, "maximum": 100 },
+            "speed": { "type": "number", "minimum": 0, "maximum": 100 },
+            "ease_of_use": { "type": "number", "minimum": 0, "maximum": 10 }
+          }
+        }
+      }
+    },
+    "item_b": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "name": { "type": "string", "required": true, "maxLength": 50 },
+        "path": { "type": "string", "required": true, "format": "uri" },
+        "category": { "type": "string", "required": true, "maxLength": 30 },
+        "icon": { "type": "string", "required": false },
+        "color": {
+          "type": "string",
+          "required": false,
+          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+        },
+        "pros": {
+          "type": "array",
+          "required": true,
+          "minItems": 3,
+          "maxItems": 5,
+          "items": { "type": "string", "maxLength": 100 }
+        },
+        "cons": {
+          "type": "array",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 4,
+          "items": { "type": "string", "maxLength": 100 }
+        },
+        "best_for": {
+          "type": "array",
+          "required": true,
+          "minItems": 2,
+          "maxItems": 4,
+          "items": { "type": "string", "maxLength": 80 }
+        },
+        "metrics": {
+          "type": "object",
+          "required": false,
+          "properties": {
+            "accuracy": { "type": "number", "minimum": 0, "maximum": 100 },
+            "speed": { "type": "number", "minimum": 0, "maximum": 100 },
+            "ease_of_use": { "type": "number", "minimum": 0, "maximum": 10 }
+          }
+        }
+      }
+    },
+    "overall_winner": {
+      "type": "string",
+      "required": true,
+      "enum": ["a", "b", "depends"]
+    },
+    "winner_recommendation": {
+      "type": "string",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 300
+    },
+    "weighted_scores": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "item_a_total": { "type": "number" },
+        "item_b_total": { "type": "number" },
+        "item_a_normalized": { "type": "number", "minimum": 0, "maximum": 100 },
+        "item_b_normalized": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    }
+  },
+
+  "authority_assets": {
+    "calculator": { "type": "string", "required": false, "format": "uri" },
+    "code_hub": { "type": "string", "required": false, "format": "uri" },
+    "item_a_details": { "type": "string", "required": true, "format": "uri" },
+    "item_b_details": { "type": "string", "required": true, "format": "uri" },
+    "item_a_simulator": {
+      "type": "string",
+      "required": false,
+      "format": "uri"
+    },
+    "item_b_simulator": {
+      "type": "string",
+      "required": false,
+      "format": "uri"
+    },
+    "related_comparisons": {
+      "type": "array",
+      "required": false,
+      "maxItems": 4,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "detailed_guides": {
+      "type": "array",
+      "required": false,
+      "maxItems": 4,
+      "items": { "type": "string", "format": "uri" }
+    }
+  },
+
+  "content_sections": {
+    "required": {
+      "minItems": 5,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": { "type": "string", "const": "quick_answer" },
+          "type": { "type": "string", "const": "highlight_box" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 30
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 80,
+            "maxLength": 150
+          }
+        },
+        {
+          "id": { "type": "string", "const": "interactive_comparison" },
+          "type": { "type": "string", "const": "interactive_widget" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "widget_type": { "type": "string", "const": "comparison_simulator" }
+        },
+        {
+          "id": { "type": "string", "const": "comparison_table" },
+          "type": { "type": "string", "const": "comparison_grid" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "dimensions": {
+            "type": "array",
+            "required": true,
+            "minItems": 4,
+            "maxItems": 8,
+            "items": {
+              "type": "object",
+              "properties": {
+                "dimension": { "type": "string", "required": true },
+                "item_a": { "type": "string", "required": true },
+                "item_b": { "type": "string", "required": true }
+              }
+            }
+          }
+        },
+        {
+          "id": { "type": "string", "const": "score_chart" },
+          "type": { "type": "string", "const": "radar_chart" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "dimensions": {
+            "type": "array",
+            "required": true,
+            "minItems": 4,
+            "maxItems": 8,
+            "items": { "type": "string" }
+          }
+        },
+        {
+          "id": { "type": "string", "const": "verdict" },
+          "type": { "type": "string", "const": "text" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 30
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 100,
+            "maxLength": 250
+          }
+        }
+      ]
+    },
+    "recommended": {
+      "minItems": 0,
+      "maxItems": 4,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "detailed_analysis",
+              "use_cases",
+              "pros_cons_comparison",
+              "expert_opinion",
+              "performance_metrics",
+              "code_comparison"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["text", "cards", "two_columns", "code_block"]
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 35
+          },
+          "content": {
+            "type": "string",
+            "required": false,
+            "minLength": 150,
+            "maxLength": 400
+          },
+          "items": {
+            "type": "array",
+            "required": false,
+            "minItems": 2,
+            "maxItems": 5
+          },
+          "code": {
+            "type": "string",
+            "required": false
+          },
+          "language": {
+            "type": "string",
+            "required": false
+          }
+        }
+      ]
+    },
+    "optional": {
+      "minItems": 0,
+      "maxItems": 3,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "historical_context",
+              "community_opinion",
+              "expert_quotes",
+              "research_papers",
+              "case_studies"
+            ]
+          },
+          "type": { "type": "string", "enum": ["text", "cards"] },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 25
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 100,
+            "maxLength": 300
+          },
+          "items": {
+            "type": "array",
+            "required": false
+          }
+        }
+      ]
+    }
+  },
+
+  "engagement_widgets": {
+    "interactive_comparison": { "type": "boolean", "required": true },
+    "comparison_table": { "type": "boolean", "required": true },
+    "code_language_selector": { "type": "boolean", "required": true },
+    "related_comparisons": { "type": "boolean", "required": true },
+    "faq_accordion": { "type": "boolean", "required": true },
+    "winner_badge": { "type": "boolean", "required": true },
+    "score_chart": { "type": "boolean", "required": true },
+    "export_comparison": { "type": "boolean", "required": false },
+    "print_comparison": { "type": "boolean", "required": false }
+  },
+
+  "visualization_config": {
+    "type": "object",
+    "required": false,
+    "properties": {
+      "chart_type": {
+        "type": "string",
+        "enum": ["radar", "bar", "horizontal_bar"]
+      },
+      "color_scheme": {
+        "type": "string",
+        "enum": ["default", "contrast", "colorblind"]
+      },
+      "show_confidence": { "type": "boolean" },
+      "animate_scores": { "type": "boolean" }
+    }
+  },
+
+  "faq": {
+    "type": "array",
+    "required": true,
+    "minItems": 2,
+    "maxItems": 4,
+    "items": {
+      "type": "object",
+      "properties": {
+        "q": { "type": "string", "minLength": 20, "maxLength": 90 },
+        "a": { "type": "string", "minLength": 80, "maxLength": 250 }
+      }
+    }
+  },
+
+  "metadata": {
+    "estimated_read_time": {
+      "type": "string",
+      "required": true,
+      "pattern": "^\\d+ min read$"
+    },
+    "last_updated": { "type": "string", "required": true, "format": "date" },
+    "difficulty": {
+      "type": "string",
+      "required": true,
+      "enum": ["beginner", "intermediate", "advanced"]
+    },
+    "content_type": {
+      "type": "string",
+      "required": true,
+      "const": "comparison_guide"
+    },
+    "tags": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 3, "maxLength": 15 }
+    },
+    "featured": { "type": "boolean", "required": false, "default": false },
+    "popularity_score": {
+      "type": "number",
+      "required": false,
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}

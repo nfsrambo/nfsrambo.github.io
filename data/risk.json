@@ -1,0 +1,105 @@
+{
+  "name": "risk",
+  "path": "/risk",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Risk Metrics"
+  ],
+  "total_pages": 55,
+  "child_pattern": "/risk/{slug}",
+  "children_list": [
+    "/risk/sharpe-ratio",
+    "/risk/sortino-ratio",
+    "/risk/calmar-ratio",
+    "/risk/sterling-ratio",
+    "/risk/burke-ratio",
+    "/risk/omega-ratio",
+    "/risk/treynor-ratio",
+    "/risk/information-ratio",
+    "/risk/modigliani-risk-adjusted-performance",
+    "/risk/maximum-drawdown",
+    "/risk/average-drawdown",
+    "/risk/recovery-factor",
+    "/risk/ulcer-index",
+    "/risk/pain-index",
+    "/risk/gain-to-pain-ratio",
+    "/risk/martin-ratio",
+    "/risk/value-at-risk",
+    "/risk/conditional-value-at-risk",
+    "/risk/marginal-var",
+    "/risk/incremental-var",
+    "/risk/component-var",
+    "/risk/liquidity-adjusted-var",
+    "/risk/extreme-value-theory",
+    "/risk/pot-over-threshold",
+    "/risk/block-maxima",
+    "/risk/tail-dependency",
+    "/risk/copula-var",
+    "/risk/beta",
+    "/risk/alpha",
+    "/risk/jensens-alpha",
+    "/risk/upside-capture-ratio",
+    "/risk/downside-capture-ratio",
+    "/risk/bias-ratio",
+    "/risk/herfindahl-index",
+    "/risk/concentration-risk",
+    "/risk/systemic-risk-index",
+    "/risk/network-risk",
+    "/risk/contagion-risk",
+    "/risk/stress-testing-framework",
+    "/risk/reverse-stress-testing",
+    "/risk/scenario-analysis",
+    "/risk/coverage-ratio",
+    "/risk/risk-appetite-framework",
+    "/risk/risk-budgeting",
+    "/risk/risk-attribution",
+    "/risk/risk-parity",
+    "/risk/risk-factor-analysis",
+    "/risk/principal-component-risk",
+    "/risk/correlation-risk",
+    "/risk/volatility-risk",
+    "/risk/tail-risk",
+    "/risk/liquidity-risk",
+    "/risk/counterparty-risk",
+    "/risk/operational-risk",
+    "/risk/model-risk"
+  ],
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Risk Metrics",
+      "position": "header"
+    },
+    {
+      "from": "/portfolio",
+      "anchor": "Portfolio Risk",
+      "position": "related"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/portfolio",
+      "anchor": "Portfolio Optimization",
+      "position": "content"
+    },
+    {
+      "to": "/models",
+      "anchor": "Risk Models",
+      "position": "sidebar"
+    },
+    {
+      "to": "/calculators",
+      "anchor": "Risk Calculators",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "risk",
+    "displayName": "Risk Metrics",
+    "totalItems": 55,
+    "chunkSize": 60,
+    "totalChunks": 1,
+    "chunkFiles": []
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "forecasting",
+  "path": "/forecasting",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Forecasting"
+  ],
+  "total_pages": 172,
+  "child_pattern": "/forecasting/{slug}",
+  "children_list": {
+    "_type": "chunked",
+    "total": 172,
+    "chunkSize": 60,
+    "chunks": [
+      {
+        "index": 1,
+        "file": "forecasting.chunk-1-of-3.json",
+        "itemCount": 60,
+        "startIndex": 1,
+        "endIndex": 60
+      },
+      {
+        "index": 2,
+        "file": "forecasting.chunk-2-of-3.json",
+        "itemCount": 60,
+        "startIndex": 61,
+        "endIndex": 120
+      },
+      {
+        "index": 3,
+        "file": "forecasting.chunk-3-of-3.json",
+        "itemCount": 52,
+        "startIndex": 121,
+        "endIndex": 172
+      }
+    ]
+  },
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Forecasting",
+      "position": "header"
+    },
+    {
+      "from": "/models",
+      "anchor": "Time Series Models",
+      "position": "related"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/models",
+      "anchor": "Statistical Models",
+      "position": "content"
+    },
+    {
+      "to": "/trading",
+      "anchor": "Forecast Trading",
+      "position": "sidebar"
+    },
+    {
+      "to": "/code",
+      "anchor": "Forecasting Code",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "forecasting",
+    "displayName": "Forecasting",
+    "totalItems": 172,
+    "chunkSize": 60,
+    "totalChunks": 3,
+    "chunkFiles": []
+  }
+}

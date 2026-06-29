@@ -1,0 +1,627 @@
+{
+  "depth": 1,
+  "page": "Home Page",
+  "path": "/",
+  "depth_level": 0,
+  "breadcrumb": ["Home"],
+  "incoming_backlinks": [],
+  "outgoing_backlinks": [
+    {
+      "to": "/about",
+      "anchor": "About Us",
+      "position": "header",
+      "priority": "highest",
+      "description": "Learn about SugarDaddyMeet's story since 2007"
+    },
+    {
+      "to": "/signup",
+      "anchor": "Join Free",
+      "position": "header",
+      "priority": "highest",
+      "description": "Create your free account today"
+    },
+    {
+      "to": "/login",
+      "anchor": "Login",
+      "position": "header",
+      "priority": "highest",
+      "description": "Access your SugarDaddyMeet account"
+    },
+    {
+      "to": "/search",
+      "anchor": "Search",
+      "position": "header",
+      "priority": "high",
+      "description": "Advanced search for compatible matches"
+    },
+    {
+      "to": "/success-stories",
+      "anchor": "Success Stories",
+      "position": "header",
+      "priority": "high",
+      "description": "Real stories from real members"
+    },
+    {
+      "to": "/features",
+      "anchor": "Features",
+      "position": "header",
+      "priority": "high",
+      "description": "Premium features for sugar dating"
+    },
+    {
+      "to": "/safety",
+      "anchor": "Safety & Privacy",
+      "position": "header",
+      "priority": "highest",
+      "description": "Verified members and security controls"
+    },
+    {
+      "to": "/support",
+      "anchor": "Support",
+      "position": "header",
+      "priority": "high",
+      "description": "24/7 live support team"
+    },
+    {
+      "to": "/blog",
+      "anchor": "Blog",
+      "position": "header",
+      "priority": "medium",
+      "description": "Dating tips and advice"
+    },
+    {
+      "to": "/cities",
+      "anchor": "Cities",
+      "position": "header",
+      "priority": "medium",
+      "description": "Find sugar dates in your city"
+    },
+    {
+      "to": "/pricing",
+      "anchor": "Pricing",
+      "position": "header",
+      "priority": "high",
+      "description": "Premium membership plans"
+    },
+    {
+      "to": "/testimonials",
+      "anchor": "Testimonials",
+      "position": "header",
+      "priority": "medium",
+      "description": "Member reviews and experiences"
+    },
+    {
+      "to": "/faq",
+      "anchor": "FAQ",
+      "position": "header",
+      "priority": "low",
+      "description": "Frequently asked questions"
+    },
+    {
+      "to": "/terms",
+      "anchor": "Terms",
+      "position": "header",
+      "priority": "low",
+      "description": "Terms and conditions"
+    },
+    {
+      "to": "/privacy",
+      "anchor": "Privacy Policy",
+      "position": "header",
+      "priority": "low",
+      "description": "Privacy and data protection"
+    }
+  ],
+  "children": [
+    {
+      "name": "about",
+      "path": "/about",
+      "depth": 1,
+      "breadcrumb": ["Home", "About Us"],
+      "total_pages": 1,
+      "child_pattern": "/about",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "About Us",
+          "position": "header"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/signup",
+          "anchor": "Join Our Community",
+          "position": "cta"
+        },
+        {
+          "to": "/success-stories",
+          "anchor": "Success Stories",
+          "position": "content"
+        }
+      ]
+    },
+    {
+      "name": "signup",
+      "path": "/signup",
+      "depth": 1,
+      "breadcrumb": ["Home", "Join Free"],
+      "total_pages": 1,
+      "child_pattern": "/signup",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Join Free",
+          "position": "header"
+        },
+        {
+          "from": "/about",
+          "anchor": "Join Our Community",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/login",
+          "anchor": "Already have an account? Login",
+          "position": "footer"
+        },
+        {
+          "to": "/pricing",
+          "anchor": "View Premium Plans",
+          "position": "sidebar"
+        }
+      ]
+    },
+    {
+      "name": "login",
+      "path": "/login",
+      "depth": 1,
+      "breadcrumb": ["Home", "Login"],
+      "total_pages": 1,
+      "child_pattern": "/login",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Login",
+          "position": "header"
+        },
+        {
+          "from": "/signup",
+          "anchor": "Already have an account? Login",
+          "position": "footer"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/signup",
+          "anchor": "Create New Account",
+          "position": "footer"
+        },
+        {
+          "to": "/support",
+          "anchor": "Need Help?",
+          "position": "sidebar"
+        }
+      ]
+    },
+    {
+      "name": "search",
+      "path": "/search",
+      "depth": 1,
+      "breadcrumb": ["Home", "Search"],
+      "total_pages": 1,
+      "child_pattern": "/search",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Search",
+          "position": "header"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/cities",
+          "anchor": "Browse by City",
+          "position": "sidebar"
+        },
+        {
+          "to": "/features",
+          "anchor": "Advanced Search Features",
+          "position": "content"
+        }
+      ]
+    },
+    {
+      "name": "successStories",
+      "path": "/success-stories",
+      "depth": 1,
+      "breadcrumb": ["Home", "Success Stories"],
+      "total_pages": 25,
+      "child_pattern": "/success-stories/{slug}",
+      "children_list": [
+        "/success-stories/found-my-happiness-again",
+        "/success-stories/love-unexpected",
+        "/success-stories/perfect-match",
+        "/success-stories/building-our-future"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Success Stories",
+          "position": "header"
+        },
+        {
+          "from": "/about",
+          "anchor": "Success Stories",
+          "position": "content"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/signup",
+          "anchor": "Start Your Story",
+          "position": "cta"
+        },
+        {
+          "to": "/blog",
+          "anchor": "Dating Tips",
+          "position": "sidebar"
+        }
+      ]
+    },
+    {
+      "name": "features",
+      "path": "/features",
+      "depth": 1,
+      "breadcrumb": ["Home", "Features"],
+      "total_pages": 1,
+      "child_pattern": "/features",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Features",
+          "position": "header"
+        },
+        {
+          "from": "/search",
+          "anchor": "Advanced Search Features",
+          "position": "content"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/safety",
+          "anchor": "Safety Features",
+          "position": "content"
+        },
+        {
+          "to": "/signup",
+          "anchor": "Try Premium Features",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "safety",
+      "path": "/safety",
+      "depth": 1,
+      "breadcrumb": ["Home", "Safety & Privacy"],
+      "total_pages": 1,
+      "child_pattern": "/safety",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Safety & Privacy",
+          "position": "header"
+        },
+        {
+          "from": "/features",
+          "anchor": "Safety Features",
+          "position": "content"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/privacy",
+          "anchor": "Privacy Policy",
+          "position": "footer"
+        },
+        {
+          "to": "/support",
+          "anchor": "Contact Support",
+          "position": "cta"
+        },
+        {
+          "to": "/signup",
+          "anchor": "Join Secure Community",
+          "position": "sidebar"
+        }
+      ]
+    },
+    {
+      "name": "support",
+      "path": "/support",
+      "depth": 1,
+      "breadcrumb": ["Home", "Support"],
+      "total_pages": 1,
+      "child_pattern": "/support",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Support",
+          "position": "header"
+        },
+        {
+          "from": "/safety",
+          "anchor": "Contact Support",
+          "position": "cta"
+        },
+        {
+          "from": "/login",
+          "anchor": "Need Help?",
+          "position": "sidebar"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/faq",
+          "anchor": "FAQ",
+          "position": "content"
+        },
+        {
+          "to": "/contact",
+          "anchor": "Contact Us",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "blog",
+      "path": "/blog",
+      "depth": 1,
+      "breadcrumb": ["Home", "Blog"],
+      "total_pages": 50,
+      "child_pattern": "/blog/{slug}",
+      "children_list": [
+        "/blog/sugar-dating-tips",
+        "/blog/how-to-create-profile",
+        "/blog/safety-tips-sugar-dating",
+        "/blog/relationship-advice"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Blog",
+          "position": "header"
+        },
+        {
+          "from": "/success-stories",
+          "anchor": "Dating Tips",
+          "position": "sidebar"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/signup",
+          "anchor": "Join and Start Dating",
+          "position": "cta"
+        },
+        {
+          "to": "/success-stories",
+          "anchor": "Success Stories",
+          "position": "sidebar"
+        }
+      ]
+    },
+    {
+      "name": "cities",
+      "path": "/cities",
+      "depth": 1,
+      "breadcrumb": ["Home", "Cities"],
+      "total_pages": 150,
+      "child_pattern": "/cities/{slug}",
+      "children_list": [
+        "/cities/sonipat",
+        "/cities/mumbai",
+        "/cities/delhi",
+        "/cities/bangalore"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Cities",
+          "position": "header"
+        },
+        {
+          "from": "/search",
+          "anchor": "Browse by City",
+          "position": "sidebar"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/search",
+          "anchor": "Advanced Search",
+          "position": "content"
+        },
+        {
+          "to": "/signup",
+          "anchor": "Meet Singles in Your City",
+          "position": "cta"
+        }
+      ]
+    },
+    {
+      "name": "pricing",
+      "path": "/pricing",
+      "depth": 1,
+      "breadcrumb": ["Home", "Pricing"],
+      "total_pages": 1,
+      "child_pattern": "/pricing",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Pricing",
+          "position": "header"
+        },
+        {
+          "from": "/signup",
+          "anchor": "View Premium Plans",
+          "position": "sidebar"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/signup",
+          "anchor": "Get Started",
+          "position": "cta"
+        },
+        {
+          "to": "/features",
+          "anchor": "What's Included",
+          "position": "content"
+        }
+      ]
+    },
+    {
+      "name": "testimonials",
+      "path": "/testimonials",
+      "depth": 1,
+      "breadcrumb": ["Home", "Testimonials"],
+      "total_pages": 30,
+      "child_pattern": "/testimonials/{slug}",
+      "children_list": [
+        "/testimonials/john-melissa",
+        "/testimonials/mark-sarah",
+        "/testimonials/david-emma",
+        "/testimonials/james-olivia"
+      ],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Testimonials",
+          "position": "header"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/signup",
+          "anchor": "Write Your Story",
+          "position": "cta"
+        },
+        {
+          "to": "/success-stories",
+          "anchor": "More Success Stories",
+          "position": "footer"
+        }
+      ]
+    },
+    {
+      "name": "faq",
+      "path": "/faq",
+      "depth": 1,
+      "breadcrumb": ["Home", "FAQ"],
+      "total_pages": 1,
+      "child_pattern": "/faq",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "FAQ",
+          "position": "header"
+        },
+        {
+          "from": "/support",
+          "anchor": "FAQ",
+          "position": "content"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/support",
+          "anchor": "Contact Support",
+          "position": "cta"
+        },
+        {
+          "to": "/safety",
+          "anchor": "Safety Info",
+          "position": "sidebar"
+        }
+      ]
+    },
+    {
+      "name": "terms",
+      "path": "/terms",
+      "depth": 1,
+      "breadcrumb": ["Home", "Terms"],
+      "total_pages": 1,
+      "child_pattern": "/terms",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Terms",
+          "position": "header"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/privacy",
+          "anchor": "Privacy Policy",
+          "position": "footer"
+        },
+        {
+          "to": "/safety",
+          "anchor": "Safety Guidelines",
+          "position": "sidebar"
+        }
+      ]
+    },
+    {
+      "name": "privacy",
+      "path": "/privacy",
+      "depth": 1,
+      "breadcrumb": ["Home", "Privacy Policy"],
+      "total_pages": 1,
+      "child_pattern": "/privacy",
+      "children_list": [],
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Privacy Policy",
+          "position": "header"
+        },
+        {
+          "from": "/safety",
+          "anchor": "Privacy Policy",
+          "position": "footer"
+        },
+        {
+          "from": "/terms",
+          "anchor": "Privacy Policy",
+          "position": "footer"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/terms",
+          "anchor": "Terms of Service",
+          "position": "footer"
+        },
+        {
+          "to": "/safety",
+          "anchor": "Safety Guidelines",
+          "position": "sidebar"
+        }
+      ]
+    }
+  ]
+}

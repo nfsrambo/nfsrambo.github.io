@@ -1,0 +1,454 @@
+{
+  "name": "{slug}",
+  "path": "/calculators/{slug}",
+  "breadcrumb": ["Home", "Calculators", "{display_name}"],
+  "parent": "/calculators",
+  "category": "calculators",
+
+  "meta": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 55
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 120,
+      "maxLength": 155
+    },
+    "canonical": { "type": "string", "required": true, "format": "uri" }
+  },
+
+  "seo_schema": {
+    "@context": {
+      "type": "string",
+      "required": true,
+      "const": "https://schema.org"
+    },
+    "@type": { "type": "string", "required": true, "const": "TechArticle" },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 100
+    },
+    "datePublished": { "type": "string", "required": true, "format": "date" },
+    "dateModified": { "type": "string", "required": true, "format": "date" }
+  },
+
+  "aeo": {
+    "direct_answer": {
+      "type": "string",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 200
+    },
+    "key_takeaways": {
+      "type": "array",
+      "required": true,
+      "minItems": 3,
+      "maxItems": 4,
+      "items": { "type": "string", "minLength": 40, "maxLength": 100 }
+    },
+    "people_also_ask": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string", "minLength": 30, "maxLength": 90 },
+          "answer": { "type": "string", "minLength": 60, "maxLength": 200 }
+        }
+      }
+    }
+  },
+
+  "calculator_specific": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "portfolio_optimization",
+        "risk_metric",
+        "volatility",
+        "option_pricing",
+        "performance_ratio",
+        "statistical",
+        "time_series",
+        "machine_learning",
+        "bayesian",
+        "filtering",
+        "entropy",
+        "copula",
+        "clustering",
+        "dimensionality_reduction",
+        "change_point_detection"
+      ]
+    },
+    "input_parameters": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "required": true, "maxLength": 30 },
+          "type": {
+            "type": "string",
+            "enum": ["number", "array", "boolean", "select"]
+          },
+          "required": { "type": "boolean", "required": true },
+          "default_value": { "type": "string", "required": false },
+          "description": {
+            "type": "string",
+            "required": true,
+            "maxLength": 100
+          },
+          "min": { "type": "number", "required": false },
+          "max": { "type": "number", "required": false },
+          "step": { "type": "number", "required": false }
+        }
+      }
+    },
+    "output_fields": {
+      "type": "array",
+      "required": true,
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "required": true, "maxLength": 30 },
+          "description": {
+            "type": "string",
+            "required": true,
+            "maxLength": 80
+          },
+          "unit": { "type": "string", "required": false, "maxLength": 20 }
+        }
+      }
+    },
+    "formula_complexity": {
+      "type": "string",
+      "required": true,
+      "enum": ["simple", "moderate", "complex", "very_complex"]
+    },
+    "real_time_capable": { "type": "boolean", "required": true },
+    "requires_historical_data": { "type": "boolean", "required": true },
+    "batch_processing_supported": { "type": "boolean", "required": true },
+    "visualization_supported": { "type": "boolean", "required": true },
+    "interactive_widget": { "type": "boolean", "required": true },
+    "widget_config": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "required": true,
+          "enum": [
+            "risk_parity",
+            "hrp",
+            "black_litterman",
+            "mean_variance",
+            "monte_carlo"
+          ]
+        },
+        "default_assets": {
+          "type": "array",
+          "required": false,
+          "items": { "type": "string" }
+        },
+        "default_weights": {
+          "type": "array",
+          "required": false,
+          "items": { "type": "number" }
+        },
+        "default_volatilities": {
+          "type": "array",
+          "required": false,
+          "items": { "type": "number" }
+        }
+      }
+    }
+  },
+
+  "authority_assets": {
+    "calculator": { "type": "string", "required": true, "format": "uri" },
+    "code_hub": { "type": "string", "required": true, "format": "uri" },
+    "comparisons": {
+      "type": "array",
+      "required": false,
+      "maxItems": 4,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "examples": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "benchmarks": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "related_calculators": {
+      "type": "array",
+      "required": false,
+      "maxItems": 5,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "prerequisite_calculators": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    }
+  },
+
+  "content_sections": {
+    "required": {
+      "minItems": 5,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": "quick_answer",
+          "type": "highlight_box",
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 30
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 80,
+            "maxLength": 150
+          }
+        },
+        {
+          "id": "interactive_calculator",
+          "type": "interactive_widget",
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "widget_type": { "type": "string", "required": true }
+        },
+        {
+          "id": "formula",
+          "type": "code_block",
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 20
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 50,
+            "maxLength": 300
+          }
+        },
+        {
+          "id": "interpretation",
+          "type": "signal_table",
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "rows": {
+            "type": "array",
+            "required": true,
+            "minItems": 3,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "properties": {
+                "result_range": {
+                  "type": "string",
+                  "minLength": 20,
+                  "maxLength": 40
+                },
+                "interpretation": {
+                  "type": "string",
+                  "minLength": 30,
+                  "maxLength": 80
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "code_implementations",
+          "type": "language_grid",
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 30
+          },
+          "languages": {
+            "type": "array",
+            "required": true,
+            "minItems": 6,
+            "maxItems": 22,
+            "items": {
+              "type": "string",
+              "enum": [
+                "python",
+                "rust",
+                "go",
+                "cpp",
+                "java",
+                "javascript",
+                "typescript",
+                "csharp",
+                "ruby",
+                "swift",
+                "kotlin",
+                "php",
+                "r",
+                "julia",
+                "scala",
+                "haskell",
+                "ocaml",
+                "fsharp",
+                "matlab",
+                "zig",
+                "dotnet",
+                "sql"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "recommended": {
+      "minItems": 0,
+      "maxItems": 4,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "how_to_use",
+              "example_calculation",
+              "use_cases",
+              "limitations"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["text", "step_by_step", "cards", "two_columns"]
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 35
+          },
+          "content": {
+            "type": "string",
+            "required": false,
+            "minLength": 150,
+            "maxLength": 400
+          },
+          "items": {
+            "type": "array",
+            "required": false,
+            "minItems": 2,
+            "maxItems": 5
+          }
+        }
+      ]
+    },
+    "optional": {
+      "minItems": 0,
+      "maxItems": 3,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": ["derivation", "optimization_tips", "common_errors"]
+          },
+          "type": { "type": "string", "const": "text" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 25
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 100,
+            "maxLength": 300
+          }
+        }
+      ]
+    }
+  },
+
+  "engagement_widgets": {
+    "calculator_preview": { "type": "boolean", "required": true },
+    "code_language_selector": { "type": "boolean", "required": true },
+    "comparison_links": { "type": "boolean", "required": true },
+    "related_calculators": { "type": "boolean", "required": true },
+    "faq_accordion": { "type": "boolean", "required": true },
+    "interactive_inputs": { "type": "boolean", "required": true },
+    "live_validation": { "type": "boolean", "required": false }
+  },
+
+  "faq": {
+    "type": "array",
+    "required": true,
+    "minItems": 2,
+    "maxItems": 3,
+    "items": {
+      "type": "object",
+      "properties": {
+        "q": { "type": "string", "minLength": 20, "maxLength": 90 },
+        "a": { "type": "string", "minLength": 80, "maxLength": 250 }
+      }
+    }
+  },
+
+  "metadata": {
+    "estimated_read_time": {
+      "type": "string",
+      "required": true,
+      "pattern": "^\\d+ min read$"
+    },
+    "last_updated": { "type": "string", "required": true, "format": "date" },
+    "difficulty": {
+      "type": "string",
+      "required": true,
+      "enum": ["beginner", "intermediate", "advanced"]
+    },
+    "content_type": {
+      "type": "string",
+      "required": true,
+      "const": "calculator_guide"
+    },
+    "tags": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 3, "maxLength": 15 }
+    }
+  }
+}

@@ -1,0 +1,1363 @@
+{
+  "version": "2.1.0",
+  "siteName": "Quantitative Finance Hub",
+  "maxClickDepth": 3,
+
+  "hierarchy": {
+    "level1": {
+      "home": {
+        "path": "/",
+        "depth": 0,
+        "breadcrumb": ["Home"],
+        "children": [
+          "indicators",
+          "calculators",
+          "codeLibrary",
+          "models",
+          "risk",
+          "portfolio",
+          "forecasting",
+          "trading",
+          "options",
+          "volumeProfile",
+          "orderFlow",
+          "execution",
+          "comparisons",
+          "benchmarks",
+          "examples"
+        ]
+      }
+    },
+
+    "level2": {
+      "indicators": {
+        "path": "/indicators",
+        "depth": 1,
+        "breadcrumb": ["Home", "Technical Indicators"],
+        "parent": "/",
+        "children": [
+          "rsi",
+          "macd",
+          "atr",
+          "bollingerBands",
+          "stochastic",
+          "ichimoku",
+          "vwap"
+        ],
+        "childPattern": "/indicators/{slug}",
+        "backlinks": {
+          "incoming": [
+            {
+              "from": "/",
+              "anchor": "Technical Indicators",
+              "position": "header"
+            },
+            {
+              "from": "/calculators",
+              "anchor": "Indicator Calculators",
+              "position": "related"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/risk",
+              "anchor": "Risk Metrics for Indicators",
+              "position": "footer"
+            },
+            {
+              "to": "/trading",
+              "anchor": "Trading Strategies",
+              "position": "sidebar"
+            }
+          ]
+        }
+      },
+
+      "calculators": {
+        "path": "/calculators",
+        "depth": 1,
+        "breadcrumb": ["Home", "Calculators"],
+        "parent": "/",
+        "children": [
+          "sharpeRatio",
+          "sortinoRatio",
+          "blackScholes",
+          "var",
+          "cvar",
+          "optionGreeks"
+        ],
+        "childPattern": "/calculators/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Calculators", "position": "header" },
+            {
+              "from": "/indicators",
+              "anchor": "Calculate Indicators",
+              "position": "related"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/models",
+              "anchor": "Mathematical Models",
+              "position": "footer"
+            },
+            {
+              "to": "/risk",
+              "anchor": "Risk Calculators",
+              "position": "sidebar"
+            }
+          ]
+        }
+      },
+
+      "codeLibrary": {
+        "path": "/code",
+        "depth": 1,
+        "breadcrumb": ["Home", "Code Library"],
+        "parent": "/",
+        "children": [
+          "rsi",
+          "macd",
+          "sharpeRatio",
+          "blackScholes",
+          "optionGreeks"
+        ],
+        "childPattern": "/code/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Code Library", "position": "header" },
+            {
+              "from": "/indicators",
+              "anchor": "Implementation Code",
+              "position": "cta"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/benchmarks",
+              "anchor": "Performance Benchmarks",
+              "position": "content"
+            },
+            {
+              "to": "/examples",
+              "anchor": "Usage Examples",
+              "position": "sidebar"
+            }
+          ]
+        }
+      },
+
+      "models": {
+        "path": "/models",
+        "depth": 1,
+        "breadcrumb": ["Home", "Financial Models"],
+        "parent": "/",
+        "children": [
+          "blackScholes",
+          "heston",
+          "garch",
+          "arima",
+          "lstm",
+          "kalmanFilter"
+        ],
+        "childPattern": "/models/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Financial Models", "position": "header" },
+            {
+              "from": "/calculators",
+              "anchor": "Model Calculators",
+              "position": "related"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/forecasting",
+              "anchor": "Forecasting Methods",
+              "position": "content"
+            },
+            { "to": "/risk", "anchor": "Model Risk", "position": "sidebar" }
+          ]
+        }
+      },
+
+      "risk": {
+        "path": "/risk",
+        "depth": 1,
+        "breadcrumb": ["Home", "Risk Metrics"],
+        "parent": "/",
+        "children": [
+          "sharpeRatio",
+          "sortinoRatio",
+          "var",
+          "cvar",
+          "maximumDrawdown",
+          "beta"
+        ],
+        "childPattern": "/risk/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Risk Metrics", "position": "header" },
+            {
+              "from": "/portfolio",
+              "anchor": "Portfolio Risk",
+              "position": "related"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/portfolio",
+              "anchor": "Portfolio Optimization",
+              "position": "content"
+            },
+            { "to": "/models", "anchor": "Risk Models", "position": "sidebar" }
+          ]
+        }
+      },
+
+      "portfolio": {
+        "path": "/portfolio",
+        "depth": 1,
+        "breadcrumb": ["Home", "Portfolio Management"],
+        "parent": "/",
+        "children": [
+          "kellyCriterion",
+          "meanVariance",
+          "riskParity",
+          "blackLitterman",
+          "efficientFrontier"
+        ],
+        "childPattern": "/portfolio/{slug}",
+        "backlinks": {
+          "incoming": [
+            {
+              "from": "/",
+              "anchor": "Portfolio Management",
+              "position": "header"
+            },
+            {
+              "from": "/risk",
+              "anchor": "Risk-Adjusted Returns",
+              "position": "content"
+            }
+          ],
+          "outgoing": [
+            { "to": "/risk", "anchor": "Risk Metrics", "position": "sidebar" },
+            {
+              "to": "/trading",
+              "anchor": "Trading Strategies",
+              "position": "footer"
+            }
+          ]
+        }
+      },
+
+      "forecasting": {
+        "path": "/forecasting",
+        "depth": 1,
+        "breadcrumb": ["Home", "Forecasting"],
+        "parent": "/",
+        "children": ["arima", "lstm", "prophet", "transformer", "kalmanFilter"],
+        "childPattern": "/forecasting/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Forecasting", "position": "header" },
+            {
+              "from": "/models",
+              "anchor": "Time Series Models",
+              "position": "related"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/models",
+              "anchor": "Statistical Models",
+              "position": "content"
+            },
+            {
+              "to": "/trading",
+              "anchor": "Forecast Trading",
+              "position": "sidebar"
+            }
+          ]
+        }
+      },
+
+      "trading": {
+        "path": "/trading",
+        "depth": 1,
+        "breadcrumb": ["Home", "Trading Strategies"],
+        "parent": "/",
+        "children": [
+          "pairsTrading",
+          "statArbitrage",
+          "marketMaking",
+          "momentum",
+          "meanReversion"
+        ],
+        "childPattern": "/trading/{slug}",
+        "backlinks": {
+          "incoming": [
+            {
+              "from": "/",
+              "anchor": "Trading Strategies",
+              "position": "header"
+            },
+            {
+              "from": "/indicators",
+              "anchor": "Indicator Strategies",
+              "position": "cta"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/execution",
+              "anchor": "Order Execution",
+              "position": "content"
+            },
+            {
+              "to": "/order-flow",
+              "anchor": "Order Flow Analysis",
+              "position": "sidebar"
+            }
+          ]
+        }
+      },
+
+      "options": {
+        "path": "/options",
+        "depth": 1,
+        "breadcrumb": ["Home", "Options Trading"],
+        "parent": "/",
+        "children": [
+          "optionGreeks",
+          "impliedVolatility",
+          "optionStrategies",
+          "exoticOptions"
+        ],
+        "childPattern": "/options/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Options Trading", "position": "header" },
+            {
+              "from": "/models",
+              "anchor": "Option Pricing Models",
+              "position": "related"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/models/black-scholes",
+              "anchor": "Black-Scholes Model",
+              "position": "content"
+            },
+            { "to": "/risk", "anchor": "Options Risk", "position": "sidebar" }
+          ]
+        }
+      },
+
+      "volumeProfile": {
+        "path": "/volume-profile",
+        "depth": 1,
+        "breadcrumb": ["Home", "Volume Profile"],
+        "parent": "/",
+        "children": [
+          "volumeProfile",
+          "marketProfile",
+          "footprint",
+          "cumulativeDelta",
+          "vwap"
+        ],
+        "childPattern": "/volume-profile/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Volume Profile", "position": "header" },
+            {
+              "from": "/trading",
+              "anchor": "Volume Trading",
+              "position": "related"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/order-flow",
+              "anchor": "Order Flow",
+              "position": "content"
+            },
+            {
+              "to": "/indicators/vwap",
+              "anchor": "VWAP Indicator",
+              "position": "sidebar"
+            }
+          ]
+        }
+      },
+
+      "orderFlow": {
+        "path": "/order-flow",
+        "depth": 1,
+        "breadcrumb": ["Home", "Order Flow"],
+        "parent": "/",
+        "children": [
+          "cumulativeDelta",
+          "deltaDivergence",
+          "absorption",
+          "icebergDetection"
+        ],
+        "childPattern": "/order-flow/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Order Flow", "position": "header" },
+            {
+              "from": "/volume-profile",
+              "anchor": "Volume Analysis",
+              "position": "related"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/trading",
+              "anchor": "Order Flow Trading",
+              "position": "content"
+            },
+            {
+              "to": "/execution",
+              "anchor": "Algorithmic Execution",
+              "position": "sidebar"
+            }
+          ]
+        }
+      },
+
+      "execution": {
+        "path": "/execution",
+        "depth": 1,
+        "breadcrumb": ["Home", "Execution Algorithms"],
+        "parent": "/",
+        "children": ["twap", "vwap", "implementationShortfall", "marketMaking"],
+        "childPattern": "/execution/{slug}",
+        "backlinks": {
+          "incoming": [
+            {
+              "from": "/",
+              "anchor": "Execution Algorithms",
+              "position": "header"
+            },
+            {
+              "from": "/trading",
+              "anchor": "Trade Execution",
+              "position": "cta"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/trading/market-making",
+              "anchor": "Market Making",
+              "position": "content"
+            },
+            {
+              "to": "/benchmarks",
+              "anchor": "Execution Benchmarks",
+              "position": "sidebar"
+            }
+          ]
+        }
+      },
+
+      "comparisons": {
+        "path": "/compare",
+        "depth": 1,
+        "breadcrumb": ["Home", "Comparisons"],
+        "parent": "/",
+        "children": [
+          "rsiVsMacd",
+          "sharpeVsSortino",
+          "varVsCvar",
+          "arimaVsLstm"
+        ],
+        "childPattern": "/compare/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Comparisons", "position": "header" },
+            {
+              "from": "/indicators",
+              "anchor": "Compare Indicators",
+              "position": "cta"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/indicators/rsi",
+              "anchor": "RSI Details",
+              "position": "content"
+            },
+            {
+              "to": "/indicators/macd",
+              "anchor": "MACD Details",
+              "position": "content"
+            }
+          ]
+        }
+      },
+
+      "benchmarks": {
+        "path": "/benchmarks",
+        "depth": 1,
+        "breadcrumb": ["Home", "Benchmarks"],
+        "parent": "/",
+        "children": [
+          "rsiPythonVsRust",
+          "blackScholesCppVsRust",
+          "lstmTrainingSpeed"
+        ],
+        "childPattern": "/benchmarks/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Benchmarks", "position": "header" },
+            {
+              "from": "/code",
+              "anchor": "Code Performance",
+              "position": "related"
+            }
+          ],
+          "outgoing": [
+            {
+              "to": "/code/rsi/python",
+              "anchor": "Python Implementation",
+              "position": "content"
+            },
+            {
+              "to": "/code/rsi/rust",
+              "anchor": "Rust Implementation",
+              "position": "content"
+            }
+          ]
+        }
+      },
+
+      "examples": {
+        "path": "/examples",
+        "depth": 1,
+        "breadcrumb": ["Home", "Examples"],
+        "parent": "/",
+        "children": [
+          "rsiStrategy",
+          "portfolioRebalancing",
+          "deltaHedging",
+          "marketMakingSim"
+        ],
+        "childPattern": "/examples/{slug}",
+        "backlinks": {
+          "incoming": [
+            { "from": "/", "anchor": "Examples", "position": "header" },
+            { "from": "/code", "anchor": "Code Examples", "position": "cta" }
+          ],
+          "outgoing": [
+            {
+              "to": "/trading",
+              "anchor": "Trading Strategies",
+              "position": "content"
+            },
+            {
+              "to": "/indicators/rsi",
+              "anchor": "RSI Indicator",
+              "position": "sidebar"
+            }
+          ]
+        }
+      }
+    },
+
+    "level3": {
+      "indicators": {
+        "rsi": {
+          "path": "/indicators/rsi",
+          "depth": 2,
+          "breadcrumb": ["Home", "Technical Indicators", "RSI"],
+          "parent": "/indicators",
+          "related": [
+            "/calculators/rsi",
+            "/code/rsi/python",
+            "/compare/rsi-vs-macd",
+            "/examples/rsi-trading-strategy"
+          ],
+          "childPattern": null,
+          "backlinks": {
+            "incoming": [
+              { "from": "/indicators", "anchor": "RSI", "position": "listing" },
+              {
+                "from": "/calculators/rsi",
+                "anchor": "RSI Calculator",
+                "position": "related"
+              },
+              {
+                "from": "/code/rsi/python",
+                "anchor": "RSI Python Code",
+                "position": "code"
+              },
+              {
+                "from": "/compare/rsi-vs-macd",
+                "anchor": "RSI vs MACD",
+                "position": "comparison"
+              },
+              {
+                "from": "/examples/rsi-trading-strategy",
+                "anchor": "RSI Strategy",
+                "position": "example"
+              },
+              {
+                "from": "/trading/momentum",
+                "anchor": "Momentum Indicators",
+                "position": "related"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/calculators/rsi",
+                "anchor": "Try RSI Calculator",
+                "position": "cta",
+                "priority": "high"
+              },
+              {
+                "to": "/code/rsi/python",
+                "anchor": "RSI Code Implementation",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/code/rsi/rust",
+                "anchor": "RSI in Rust",
+                "position": "content",
+                "priority": "medium"
+              },
+              {
+                "to": "/compare/rsi-vs-macd",
+                "anchor": "RSI vs MACD",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/examples/rsi-trading-strategy",
+                "anchor": "Example Strategy",
+                "position": "sidebar",
+                "priority": "medium"
+              },
+              {
+                "to": "/indicators/macd",
+                "anchor": "MACD Indicator",
+                "position": "related",
+                "priority": "medium"
+              },
+              {
+                "to": "/indicators/stochastic",
+                "anchor": "Stochastic Oscillator",
+                "position": "related",
+                "priority": "medium"
+              },
+              {
+                "to": "/risk/sharpe-ratio",
+                "anchor": "Risk-Adjusted Returns",
+                "position": "footer",
+                "priority": "low"
+              }
+            ]
+          }
+        },
+        "macd": {
+          "path": "/indicators/macd",
+          "depth": 2,
+          "breadcrumb": ["Home", "Technical Indicators", "MACD"],
+          "parent": "/indicators",
+          "related": [
+            "/calculators/macd",
+            "/code/macd/python",
+            "/compare/rsi-vs-macd"
+          ],
+          "childPattern": null,
+          "backlinks": {
+            "incoming": [
+              {
+                "from": "/indicators",
+                "anchor": "MACD",
+                "position": "listing"
+              },
+              {
+                "from": "/compare/rsi-vs-macd",
+                "anchor": "MACD vs RSI",
+                "position": "comparison"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/calculators/macd",
+                "anchor": "MACD Calculator",
+                "position": "cta",
+                "priority": "high"
+              },
+              {
+                "to": "/code/macd/python",
+                "anchor": "MACD Python Code",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/compare/rsi-vs-macd",
+                "anchor": "RSI vs MACD",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/indicators/rsi",
+                "anchor": "RSI Indicator",
+                "position": "related",
+                "priority": "medium"
+              }
+            ]
+          }
+        },
+        "atr": {
+          "path": "/indicators/atr",
+          "depth": 2,
+          "breadcrumb": ["Home", "Technical Indicators", "ATR"],
+          "parent": "/indicators",
+          "related": ["/calculators/atr", "/code/atr/python"],
+          "childPattern": null,
+          "backlinks": {
+            "incoming": [
+              { "from": "/indicators", "anchor": "ATR", "position": "listing" }
+            ],
+            "outgoing": [
+              {
+                "to": "/calculators/atr",
+                "anchor": "ATR Calculator",
+                "position": "cta",
+                "priority": "high"
+              },
+              {
+                "to": "/risk/volatility-risk",
+                "anchor": "Volatility Risk",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/trading/position-sizing",
+                "anchor": "Position Sizing",
+                "position": "sidebar",
+                "priority": "medium"
+              }
+            ]
+          }
+        },
+        "bollingerBands": {
+          "path": "/indicators/bollinger-bands",
+          "depth": 2,
+          "breadcrumb": ["Home", "Technical Indicators", "Bollinger Bands"],
+          "parent": "/indicators",
+          "backlinks": {
+            "incoming": [
+              {
+                "from": "/indicators",
+                "anchor": "Bollinger Bands",
+                "position": "listing"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/calculators/bollinger-bands",
+                "anchor": "Bollinger Bands Calculator",
+                "position": "cta",
+                "priority": "high"
+              },
+              {
+                "to": "/indicators/standard-deviation",
+                "anchor": "Standard Deviation",
+                "position": "content",
+                "priority": "high"
+              }
+            ]
+          }
+        },
+        "stochastic": {
+          "path": "/indicators/stochastic",
+          "depth": 2,
+          "breadcrumb": [
+            "Home",
+            "Technical Indicators",
+            "Stochastic Oscillator"
+          ],
+          "parent": "/indicators",
+          "backlinks": {
+            "incoming": [
+              {
+                "from": "/indicators",
+                "anchor": "Stochastic",
+                "position": "listing"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/calculators/stochastic",
+                "anchor": "Stochastic Calculator",
+                "position": "cta",
+                "priority": "high"
+              },
+              {
+                "to": "/indicators/rsi",
+                "anchor": "RSI vs Stochastic",
+                "position": "content",
+                "priority": "medium"
+              }
+            ]
+          }
+        },
+        "ichimoku": {
+          "path": "/indicators/ichimoku",
+          "depth": 2,
+          "breadcrumb": ["Home", "Technical Indicators", "Ichimoku Cloud"],
+          "parent": "/indicators",
+          "backlinks": {
+            "incoming": [
+              {
+                "from": "/indicators",
+                "anchor": "Ichimoku",
+                "position": "listing"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/calculators/ichimoku",
+                "anchor": "Ichimoku Calculator",
+                "position": "cta",
+                "priority": "high"
+              },
+              {
+                "to": "/trading/trend-following",
+                "anchor": "Trend Following",
+                "position": "content",
+                "priority": "medium"
+              }
+            ]
+          }
+        },
+        "vwap": {
+          "path": "/indicators/vwap",
+          "depth": 2,
+          "breadcrumb": ["Home", "Technical Indicators", "VWAP"],
+          "parent": "/indicators",
+          "backlinks": {
+            "incoming": [
+              {
+                "from": "/indicators",
+                "anchor": "VWAP",
+                "position": "listing"
+              },
+              {
+                "from": "/volume-profile",
+                "anchor": "Volume Profile",
+                "position": "related"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/calculators/vwap",
+                "anchor": "VWAP Calculator",
+                "position": "cta",
+                "priority": "high"
+              },
+              {
+                "to": "/execution/vwap-algorithm",
+                "anchor": "VWAP Execution",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/volume-profile/volume-weighted-average-price",
+                "anchor": "Volume Profile VWAP",
+                "position": "sidebar",
+                "priority": "medium"
+              }
+            ]
+          }
+        }
+      },
+
+      "codeLibrary": {
+        "rsi": {
+          "path": "/code/rsi",
+          "depth": 2,
+          "breadcrumb": ["Home", "Code Library", "RSI Implementations"],
+          "parent": "/code",
+          "children": ["python", "rust", "go", "cpp", "java", "javascript"],
+          "childPattern": "/code/rsi/{language}",
+          "backlinks": {
+            "incoming": [
+              { "from": "/code", "anchor": "RSI Code", "position": "listing" },
+              {
+                "from": "/indicators/rsi",
+                "anchor": "RSI Indicator",
+                "position": "related"
+              },
+              {
+                "from": "/benchmarks/rsi-python-vs-rust",
+                "anchor": "RSI Benchmarks",
+                "position": "benchmark"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/code/rsi/python",
+                "anchor": "Python",
+                "position": "language",
+                "priority": "high"
+              },
+              {
+                "to": "/code/rsi/rust",
+                "anchor": "Rust",
+                "position": "language",
+                "priority": "high"
+              },
+              {
+                "to": "/code/rsi/go",
+                "anchor": "Go",
+                "position": "language",
+                "priority": "medium"
+              },
+              {
+                "to": "/code/rsi/cpp",
+                "anchor": "C++",
+                "position": "language",
+                "priority": "medium"
+              },
+              {
+                "to": "/benchmarks/rsi-python-vs-rust",
+                "anchor": "Performance Comparison",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/indicators/rsi",
+                "anchor": "RSI Documentation",
+                "position": "sidebar",
+                "priority": "high"
+              }
+            ]
+          }
+        },
+        "macd": {
+          "path": "/code/macd",
+          "depth": 2,
+          "breadcrumb": ["Home", "Code Library", "MACD Implementations"],
+          "parent": "/code",
+          "children": ["python", "rust", "go"],
+          "childPattern": "/code/macd/{language}",
+          "backlinks": {
+            "incoming": [
+              { "from": "/code", "anchor": "MACD Code", "position": "listing" },
+              {
+                "from": "/indicators/macd",
+                "anchor": "MACD Indicator",
+                "position": "related"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/code/macd/python",
+                "anchor": "Python",
+                "position": "language",
+                "priority": "high"
+              },
+              {
+                "to": "/code/macd/rust",
+                "anchor": "Rust",
+                "position": "language",
+                "priority": "high"
+              },
+              {
+                "to": "/indicators/macd",
+                "anchor": "MACD Documentation",
+                "position": "sidebar",
+                "priority": "high"
+              }
+            ]
+          }
+        }
+      },
+
+      "calculators": {
+        "rsi": {
+          "path": "/calculators/rsi",
+          "depth": 2,
+          "breadcrumb": ["Home", "Calculators", "RSI Calculator"],
+          "parent": "/calculators",
+          "related": ["/indicators/rsi", "/code/rsi/python"],
+          "childPattern": null,
+          "backlinks": {
+            "incoming": [
+              {
+                "from": "/calculators",
+                "anchor": "RSI Calculator",
+                "position": "listing"
+              },
+              {
+                "from": "/indicators/rsi",
+                "anchor": "Calculate RSI",
+                "position": "cta"
+              },
+              {
+                "from": "/code/rsi/python",
+                "anchor": "RSI Python Calculator",
+                "position": "code"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/indicators/rsi",
+                "anchor": "RSI Guide",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/code/rsi/python",
+                "anchor": "Python Implementation",
+                "position": "sidebar",
+                "priority": "medium"
+              },
+              {
+                "to": "/trading/rsi-strategy",
+                "anchor": "RSI Trading Strategy",
+                "position": "footer",
+                "priority": "low"
+              }
+            ]
+          }
+        },
+        "blackScholes": {
+          "path": "/calculators/black-scholes",
+          "depth": 2,
+          "breadcrumb": ["Home", "Calculators", "Black-Scholes Calculator"],
+          "parent": "/calculators",
+          "related": ["/models/black-scholes", "/options/option-greeks"],
+          "childPattern": null,
+          "backlinks": {
+            "incoming": [
+              {
+                "from": "/calculators",
+                "anchor": "Black-Scholes",
+                "position": "listing"
+              },
+              {
+                "from": "/models/black-scholes",
+                "anchor": "Model Calculator",
+                "position": "cta"
+              },
+              {
+                "from": "/options/option-greeks",
+                "anchor": "Calculate Greeks",
+                "position": "related"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/models/black-scholes",
+                "anchor": "Black-Scholes Model",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/options/option-greeks",
+                "anchor": "Option Greeks",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/options/implied-volatility",
+                "anchor": "Implied Volatility",
+                "position": "sidebar",
+                "priority": "medium"
+              }
+            ]
+          }
+        }
+      }
+    },
+
+    "level4": {
+      "codeLanguage": {
+        "rsiPython": {
+          "path": "/code/rsi/python",
+          "depth": 3,
+          "breadcrumb": [
+            "Home",
+            "Code Library",
+            "RSI Implementations",
+            "Python"
+          ],
+          "parent": "/code/rsi",
+          "related": [
+            "/code/rsi/rust",
+            "/indicators/rsi",
+            "/benchmarks/rsi-python-vs-rust"
+          ],
+          "childPattern": null,
+          "backlinks": {
+            "incoming": [
+              {
+                "from": "/code/rsi",
+                "anchor": "Python",
+                "position": "language"
+              },
+              {
+                "from": "/indicators/rsi",
+                "anchor": "RSI Python Code",
+                "position": "code"
+              },
+              {
+                "from": "/benchmarks/rsi-python-vs-rust",
+                "anchor": "Python vs Rust",
+                "position": "benchmark"
+              },
+              {
+                "from": "/code/rsi",
+                "anchor": "View Python Code",
+                "position": "cta"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/indicators/rsi",
+                "anchor": "RSI Documentation",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/code/rsi/rust",
+                "anchor": "Rust Implementation",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/benchmarks/rsi-python-vs-rust",
+                "anchor": "Performance Benchmark",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/code/rsi/go",
+                "anchor": "Go Implementation",
+                "position": "sidebar",
+                "priority": "medium"
+              },
+              {
+                "to": "/examples/rsi-trading-strategy",
+                "anchor": "Trading Example",
+                "position": "footer",
+                "priority": "medium"
+              }
+            ]
+          }
+        },
+        "rsiRust": {
+          "path": "/code/rsi/rust",
+          "depth": 3,
+          "breadcrumb": ["Home", "Code Library", "RSI Implementations", "Rust"],
+          "parent": "/code/rsi",
+          "related": ["/code/rsi/python", "/benchmarks/rsi-python-vs-rust"],
+          "childPattern": null,
+          "backlinks": {
+            "incoming": [
+              { "from": "/code/rsi", "anchor": "Rust", "position": "language" },
+              {
+                "from": "/benchmarks/rsi-python-vs-rust",
+                "anchor": "Rust vs Python",
+                "position": "benchmark"
+              }
+            ],
+            "outgoing": [
+              {
+                "to": "/indicators/rsi",
+                "anchor": "RSI Documentation",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/code/rsi/python",
+                "anchor": "Python Implementation",
+                "position": "content",
+                "priority": "high"
+              },
+              {
+                "to": "/benchmarks/rsi-python-vs-rust",
+                "anchor": "Speed Comparison",
+                "position": "content",
+                "priority": "high"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "crossLinks": {
+    "rules": [
+      {
+        "from": "/indicators/{indicator}",
+        "to": [
+          "/calculators/{indicator}",
+          "/code/{indicator}/python",
+          "/compare/{indicator}-vs-*"
+        ],
+        "position": "content",
+        "weight": "high"
+      },
+      {
+        "from": "/calculators/{calculator}",
+        "to": ["/indicators/{calculator}", "/code/{calculator}/python"],
+        "position": "sidebar",
+        "weight": "medium"
+      },
+      {
+        "from": "/code/{indicator}/{language}",
+        "to": [
+          "/indicators/{indicator}",
+          "/benchmarks/{indicator}-{language}-vs-*",
+          "/compare/*"
+        ],
+        "position": "content",
+        "weight": "high"
+      }
+    ]
+  },
+
+  "autoBreadcrumbRules": {
+    "indicators": {
+      "pattern": "/indicators/([a-z-]+)",
+      "breadcrumb": ["Home", "Technical Indicators", "{1}"],
+      "depth": 2
+    },
+    "calculators": {
+      "pattern": "/calculators/([a-z-]+)",
+      "breadcrumb": ["Home", "Calculators", "{1}"],
+      "depth": 2
+    },
+    "code": {
+      "pattern": "/code/([a-z-]+)/([a-z-]+)",
+      "breadcrumb": ["Home", "Code Library", "{1}", "{2}"],
+      "depth": 3
+    },
+    "codeCategory": {
+      "pattern": "/code/([a-z-]+)",
+      "breadcrumb": ["Home", "Code Library", "{1}"],
+      "depth": 2
+    },
+    "compare": {
+      "pattern": "/compare/([a-z-]+)-vs-([a-z-]+)",
+      "breadcrumb": ["Home", "Comparisons", "{1} vs {2}"],
+      "depth": 2
+    },
+    "models": {
+      "pattern": "/models/([a-z-]+)",
+      "breadcrumb": ["Home", "Financial Models", "{1}"],
+      "depth": 2
+    },
+    "risk": {
+      "pattern": "/risk/([a-z-]+)",
+      "breadcrumb": ["Home", "Risk Metrics", "{1}"],
+      "depth": 2
+    },
+    "portfolio": {
+      "pattern": "/portfolio/([a-z-]+)",
+      "breadcrumb": ["Home", "Portfolio Management", "{1}"],
+      "depth": 2
+    },
+    "forecasting": {
+      "pattern": "/forecasting/([a-z-]+)",
+      "breadcrumb": ["Home", "Forecasting", "{1}"],
+      "depth": 2
+    },
+    "trading": {
+      "pattern": "/trading/([a-z-]+)",
+      "breadcrumb": ["Home", "Trading Strategies", "{1}"],
+      "depth": 2
+    },
+    "options": {
+      "pattern": "/options/([a-z-]+)",
+      "breadcrumb": ["Home", "Options Trading", "{1}"],
+      "depth": 2
+    },
+    "volumeProfile": {
+      "pattern": "/volume-profile/([a-z-]+)",
+      "breadcrumb": ["Home", "Volume Profile", "{1}"],
+      "depth": 2
+    },
+    "orderFlow": {
+      "pattern": "/order-flow/([a-z-]+)",
+      "breadcrumb": ["Home", "Order Flow", "{1}"],
+      "depth": 2
+    },
+    "execution": {
+      "pattern": "/execution/([a-z-]+)",
+      "breadcrumb": ["Home", "Execution Algorithms", "{1}"],
+      "depth": 2
+    },
+    "examples": {
+      "pattern": "/examples/([a-z-]+)",
+      "breadcrumb": ["Home", "Examples", "{1}"],
+      "depth": 2
+    },
+    "benchmarks": {
+      "pattern": "/benchmarks/([a-z-]+)",
+      "breadcrumb": ["Home", "Benchmarks", "{1}"],
+      "depth": 2
+    }
+  },
+
+  "backlinkDistributionRules": {
+    "depth2": {
+      "maxOutgoingLinks": 15,
+      "priorityPages": [
+        "/indicators/rsi",
+        "/calculators/black-scholes",
+        "/code/rsi/python"
+      ],
+      "linkToDepth1": true,
+      "linkToDepth3": true,
+      "linkToSameLevel": true
+    },
+    "depth3": {
+      "maxOutgoingLinks": 12,
+      "priorityPages": ["/code/rsi/python", "/indicators/rsi"],
+      "linkToDepth2": true,
+      "linkToDepth4": true,
+      "linkToHome": false
+    },
+    "depth4": {
+      "maxOutgoingLinks": 8,
+      "priorityPages": [],
+      "linkToDepth3": true,
+      "linkToDepth2": true,
+      "linkToSameLevel": true
+    }
+  },
+
+  "sitemapPriority": {
+    "depth0": 1.0,
+    "depth1": 0.9,
+    "depth2": 0.8,
+    "depth3": 0.7,
+    "depth4": 0.5
+  },
+
+  "indexingStrategy": {
+    "crawlBudget": {
+      "priorityPages": [
+        "/indicators/rsi",
+        "/calculators/black-scholes",
+        "/code/rsi/python"
+      ],
+      "crawlDelay": 0.5,
+      "maxPagesPerDay": 500
+    }
+  }
+}

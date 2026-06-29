@@ -1,0 +1,76 @@
+{
+  "name": "trading",
+  "path": "/trading",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Trading Strategies"
+  ],
+  "total_pages": 147,
+  "child_pattern": "/trading/{slug}",
+  "children_list": {
+    "_type": "chunked",
+    "total": 147,
+    "chunkSize": 60,
+    "chunks": [
+      {
+        "index": 1,
+        "file": "trading.chunk-1-of-3.json",
+        "itemCount": 60,
+        "startIndex": 1,
+        "endIndex": 60
+      },
+      {
+        "index": 2,
+        "file": "trading.chunk-2-of-3.json",
+        "itemCount": 60,
+        "startIndex": 61,
+        "endIndex": 120
+      },
+      {
+        "index": 3,
+        "file": "trading.chunk-3-of-3.json",
+        "itemCount": 27,
+        "startIndex": 121,
+        "endIndex": 147
+      }
+    ]
+  },
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Trading Strategies",
+      "position": "header"
+    },
+    {
+      "from": "/indicators",
+      "anchor": "Indicator Strategies",
+      "position": "cta"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/execution",
+      "anchor": "Order Execution",
+      "position": "content"
+    },
+    {
+      "to": "/order-flow",
+      "anchor": "Order Flow Analysis",
+      "position": "sidebar"
+    },
+    {
+      "to": "/code",
+      "anchor": "Trading Code",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "trading",
+    "displayName": "Trading Strategies",
+    "totalItems": 147,
+    "chunkSize": 60,
+    "totalChunks": 3,
+    "chunkFiles": []
+  }
+}

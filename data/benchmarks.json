@@ -1,0 +1,90 @@
+{
+  "name": "benchmarks",
+  "path": "/benchmarks",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Benchmarks"
+  ],
+  "total_pages": 253,
+  "child_pattern": "/benchmarks/{slug}",
+  "children_list": {
+    "_type": "chunked",
+    "total": 253,
+    "chunkSize": 60,
+    "chunks": [
+      {
+        "index": 1,
+        "file": "benchmarks.chunk-1-of-5.json",
+        "itemCount": 60,
+        "startIndex": 1,
+        "endIndex": 60
+      },
+      {
+        "index": 2,
+        "file": "benchmarks.chunk-2-of-5.json",
+        "itemCount": 60,
+        "startIndex": 61,
+        "endIndex": 120
+      },
+      {
+        "index": 3,
+        "file": "benchmarks.chunk-3-of-5.json",
+        "itemCount": 60,
+        "startIndex": 121,
+        "endIndex": 180
+      },
+      {
+        "index": 4,
+        "file": "benchmarks.chunk-4-of-5.json",
+        "itemCount": 60,
+        "startIndex": 181,
+        "endIndex": 240
+      },
+      {
+        "index": 5,
+        "file": "benchmarks.chunk-5-of-5.json",
+        "itemCount": 13,
+        "startIndex": 241,
+        "endIndex": 253
+      }
+    ]
+  },
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Benchmarks",
+      "position": "header"
+    },
+    {
+      "from": "/code",
+      "anchor": "Code Performance",
+      "position": "related"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/code/rsi/python",
+      "anchor": "Python Implementation",
+      "position": "content"
+    },
+    {
+      "to": "/code/rsi/rust",
+      "anchor": "Rust Implementation",
+      "position": "content"
+    },
+    {
+      "to": "/code",
+      "anchor": "All Implementations",
+      "position": "footer"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "benchmarks",
+    "displayName": "Benchmarks",
+    "totalItems": 253,
+    "chunkSize": 60,
+    "totalChunks": 5,
+    "chunkFiles": []
+  }
+}

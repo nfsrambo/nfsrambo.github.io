@@ -1,0 +1,14 @@
+{
+  "category": "calculators",
+  "displayName": "Calculators",
+  "chunkIndex": 4,
+  "totalChunks": 4,
+  "items": [
+    "/calculators/chow-test-calculator",
+    "/calculators/fluctuation-test-calculator",
+    "/calculators/bai-perron-calculator"
+  ],
+  "parentPath": "/calculators",
+  "chunkType": "children_list",
+  "total_pages": 183
+}

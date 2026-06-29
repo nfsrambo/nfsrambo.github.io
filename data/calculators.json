@@ -1,0 +1,83 @@
+{
+  "name": "calculators",
+  "path": "/calculators",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Calculators"
+  ],
+  "total_pages": 183,
+  "child_pattern": "/calculators/{slug}",
+  "children_list": {
+    "_type": "chunked",
+    "total": 183,
+    "chunkSize": 60,
+    "chunks": [
+      {
+        "index": 1,
+        "file": "calculators.chunk-1-of-4.json",
+        "itemCount": 60,
+        "startIndex": 1,
+        "endIndex": 60
+      },
+      {
+        "index": 2,
+        "file": "calculators.chunk-2-of-4.json",
+        "itemCount": 60,
+        "startIndex": 61,
+        "endIndex": 120
+      },
+      {
+        "index": 3,
+        "file": "calculators.chunk-3-of-4.json",
+        "itemCount": 60,
+        "startIndex": 121,
+        "endIndex": 180
+      },
+      {
+        "index": 4,
+        "file": "calculators.chunk-4-of-4.json",
+        "itemCount": 3,
+        "startIndex": 181,
+        "endIndex": 183
+      }
+    ]
+  },
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Calculators",
+      "position": "header"
+    },
+    {
+      "from": "/indicators",
+      "anchor": "Indicator Calculators",
+      "position": "cta"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/indicators",
+      "anchor": "Indicator Guides",
+      "position": "content"
+    },
+    {
+      "to": "/models",
+      "anchor": "Financial Models",
+      "position": "sidebar"
+    },
+    {
+      "to": "/code",
+      "anchor": "Calculator Code",
+      "position": "footer"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "calculators",
+    "displayName": "Calculators",
+    "totalItems": 183,
+    "chunkSize": 60,
+    "totalChunks": 4,
+    "chunkFiles": []
+  }
+}

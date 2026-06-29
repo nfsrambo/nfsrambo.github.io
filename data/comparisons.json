@@ -1,0 +1,83 @@
+{
+  "name": "comparisons",
+  "path": "/compare",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Comparisons"
+  ],
+  "total_pages": 229,
+  "child_pattern": "/compare/{slug}",
+  "children_list": {
+    "_type": "chunked",
+    "total": 229,
+    "chunkSize": 60,
+    "chunks": [
+      {
+        "index": 1,
+        "file": "comparisons.chunk-1-of-4.json",
+        "itemCount": 60,
+        "startIndex": 1,
+        "endIndex": 60
+      },
+      {
+        "index": 2,
+        "file": "comparisons.chunk-2-of-4.json",
+        "itemCount": 60,
+        "startIndex": 61,
+        "endIndex": 120
+      },
+      {
+        "index": 3,
+        "file": "comparisons.chunk-3-of-4.json",
+        "itemCount": 60,
+        "startIndex": 121,
+        "endIndex": 180
+      },
+      {
+        "index": 4,
+        "file": "comparisons.chunk-4-of-4.json",
+        "itemCount": 49,
+        "startIndex": 181,
+        "endIndex": 229
+      }
+    ]
+  },
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Comparisons",
+      "position": "header"
+    },
+    {
+      "from": "/indicators",
+      "anchor": "Compare Indicators",
+      "position": "cta"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/indicators/rsi",
+      "anchor": "RSI Details",
+      "position": "content"
+    },
+    {
+      "to": "/indicators/macd",
+      "anchor": "MACD Details",
+      "position": "content"
+    },
+    {
+      "to": "/risk/sharpe-ratio",
+      "anchor": "Sharpe Ratio Details",
+      "position": "content"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "comparisons",
+    "displayName": "Comparisons",
+    "totalItems": 229,
+    "chunkSize": 60,
+    "totalChunks": 4,
+    "chunkFiles": []
+  }
+}

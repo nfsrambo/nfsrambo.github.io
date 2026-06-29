@@ -1,0 +1,488 @@
+{
+  "name": "{slug}",
+  "path": "/volume-profile/{slug}",
+  "depth_level": 2,
+  "breadcrumb": ["Home", "Volume Profile", "{display_name}"],
+  "parent": "/volume-profile",
+  "category": "volumeProfile",
+
+  "meta": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 55
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 120,
+      "maxLength": 155
+    },
+    "canonical": { "type": "string", "required": true, "format": "uri" }
+  },
+
+  "seo_schema": {
+    "@context": {
+      "type": "string",
+      "required": true,
+      "const": "https://schema.org"
+    },
+    "@type": { "type": "string", "required": true, "const": "TechArticle" },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 100
+    },
+    "datePublished": { "type": "string", "required": true, "format": "date" },
+    "dateModified": { "type": "string", "required": true, "format": "date" }
+  },
+
+  "aeo": {
+    "direct_answer": {
+      "type": "string",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 200
+    },
+    "key_takeaways": {
+      "type": "array",
+      "required": true,
+      "minItems": 3,
+      "maxItems": 4,
+      "items": { "type": "string", "minLength": 40, "maxLength": 100 }
+    },
+    "people_also_ask": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string", "minLength": 30, "maxLength": 90 },
+          "answer": { "type": "string", "minLength": 60, "maxLength": 200 }
+        }
+      }
+    }
+  },
+
+  "volume_profile_specific": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "volume_profile",
+        "market_profile",
+        "footprint",
+        "delta",
+        "order_flow",
+        "volume_analysis"
+      ]
+    },
+    "timeframe": {
+      "type": "string",
+      "required": false,
+      "enum": ["intraday", "daily", "weekly", "monthly", "tick", "range"]
+    },
+    "calculation_method": {
+      "type": "string",
+      "required": false,
+      "enum": [
+        "tick_volume",
+        "bid_ask_volume",
+        "volume_delta",
+        "cumulative_delta"
+      ]
+    },
+    "display_type": {
+      "type": "string",
+      "required": false,
+      "enum": ["horizontal", "vertical", "bid_ask", "footprint"]
+    },
+    "default_period": {
+      "type": "number",
+      "required": true,
+      "minimum": 1,
+      "maximum": 200
+    },
+    "lagging": { "type": "boolean", "required": true },
+    "supports_divergence": { "type": "boolean", "required": true },
+
+    "volume_metrics": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "poc_percentage": { "type": "number" },
+        "value_area_coverage": { "type": "number" },
+        "volume_imbalance_ratio": { "type": "number" },
+        "typical_range": { "type": "string" }
+      }
+    },
+
+    "comparison_methods": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "accuracy": { "type": "string" },
+          "resolution": { "type": "string" },
+          "complexity": { "type": "string" }
+        }
+      }
+    },
+
+    "sample_data": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "price_levels": {
+          "type": "array",
+          "items": { "type": "number" }
+        },
+        "volumes": {
+          "type": "array",
+          "items": { "type": "number" }
+        }
+      }
+    }
+  },
+
+  "authority_assets": {
+    "calculator": { "type": "string", "required": true, "format": "uri" },
+    "code_hub": { "type": "string", "required": true, "format": "uri" },
+    "interactive_simulator": {
+      "type": "string",
+      "required": false,
+      "format": "uri"
+    },
+    "comparisons": {
+      "type": "array",
+      "required": false,
+      "maxItems": 4,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "examples": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "benchmarks": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "related_volume_profile": {
+      "type": "array",
+      "required": false,
+      "maxItems": 5,
+      "items": { "type": "string", "format": "uri" }
+    }
+  },
+
+  "content_sections": {
+    "required": {
+      "minItems": 5,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": { "type": "string", "const": "quick_answer" },
+          "type": { "type": "string", "const": "highlight_box" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 30
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 80,
+            "maxLength": 150
+          }
+        },
+        {
+          "id": { "type": "string", "const": "interactive_volume" },
+          "type": { "type": "string", "const": "interactive_widget" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "widget_type": {
+            "type": "string",
+            "const": "volume_profile_simulator"
+          }
+        },
+        {
+          "id": { "type": "string", "const": "formula" },
+          "type": { "type": "string", "const": "code_block" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 20
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 50,
+            "maxLength": 300
+          }
+        },
+        {
+          "id": { "type": "string", "const": "signals" },
+          "type": { "type": "string", "const": "signal_table" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "rows": {
+            "type": "array",
+            "required": true,
+            "minItems": 3,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "properties": {
+                "signal": {
+                  "type": "string",
+                  "minLength": 20,
+                  "maxLength": 40
+                },
+                "meaning": {
+                  "type": "string",
+                  "minLength": 30,
+                  "maxLength": 80
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": { "type": "string", "const": "code_implementations" },
+          "type": { "type": "string", "const": "language_grid" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 30
+          },
+          "languages": {
+            "type": "array",
+            "required": true,
+            "minItems": 6,
+            "maxItems": 22,
+            "items": {
+              "type": "string",
+              "enum": [
+                "Python",
+                "Rust",
+                "JavaScript",
+                "TypeScript",
+                "Go",
+                "Java",
+                "C++",
+                "C#",
+                "Ruby",
+                "Swift",
+                "Kotlin",
+                "PHP",
+                "SQL",
+                "R",
+                "Julia",
+                "Scala",
+                "Haskell",
+                "OCaml",
+                "F#",
+                "MATLAB",
+                "Zig",
+                ".NET"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "recommended": {
+      "minItems": 0,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "how_it_works",
+              "calculation_example",
+              "trading_strategies",
+              "pros_cons",
+              "value_area_analysis",
+              "poc_trading",
+              "volume_divergence"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["text", "step_by_step", "cards", "two_columns", "chart"]
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 35
+          },
+          "content": {
+            "type": "string",
+            "required": false,
+            "minLength": 150,
+            "maxLength": 400
+          },
+          "items": {
+            "type": "array",
+            "required": false,
+            "minItems": 2,
+            "maxItems": 5
+          },
+          "chart_config": {
+            "type": "object",
+            "required": false,
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["profile", "footprint", "delta"]
+              },
+              "x_axis": { "type": "string" },
+              "y_axis": { "type": "string" }
+            }
+          }
+        }
+      ]
+    },
+    "optional": {
+      "minItems": 0,
+      "maxItems": 4,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "history",
+              "market_conditions",
+              "common_mistakes",
+              "advanced_patterns",
+              "implementation_tips"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["text", "code_block", "warning_box"]
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 25
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 100,
+            "maxLength": 300
+          },
+          "code": { "type": "string", "required": false },
+          "language": { "type": "string", "required": false }
+        }
+      ]
+    }
+  },
+
+  "engagement_widgets": {
+    "interactive_volume": { "type": "boolean", "required": true },
+    "calculator_preview": { "type": "boolean", "required": true },
+    "code_language_selector": { "type": "boolean", "required": true },
+    "comparison_links": { "type": "boolean", "required": true },
+    "related_volume_profile": { "type": "boolean", "required": true },
+    "faq_accordion": { "type": "boolean", "required": true },
+    "volume_chart": { "type": "boolean", "required": false },
+    "footprint_display": { "type": "boolean", "required": false },
+    "export_profile": { "type": "boolean", "required": false }
+  },
+
+  "visualization_config": {
+    "type": "object",
+    "required": false,
+    "properties": {
+      "default_chart": {
+        "type": "string",
+        "enum": [
+          "profile",
+          "footprint",
+          "delta_histogram",
+          "cumulative_profile"
+        ]
+      },
+      "color_scheme": {
+        "type": "string",
+        "enum": ["default", "volume_gradient", "bid_ask"]
+      },
+      "show_poc": { "type": "boolean", "default": true },
+      "show_value_area": { "type": "boolean", "default": true },
+      "show_developing": { "type": "boolean", "default": false }
+    }
+  },
+
+  "faq": {
+    "type": "array",
+    "required": true,
+    "minItems": 2,
+    "maxItems": 4,
+    "items": {
+      "type": "object",
+      "properties": {
+        "q": { "type": "string", "minLength": 20, "maxLength": 90 },
+        "a": { "type": "string", "minLength": 80, "maxLength": 250 }
+      }
+    }
+  },
+
+  "metadata": {
+    "estimated_read_time": {
+      "type": "string",
+      "required": true,
+      "pattern": "^\\d+ min read$"
+    },
+    "last_updated": { "type": "string", "required": true, "format": "date" },
+    "difficulty": {
+      "type": "string",
+      "required": true,
+      "enum": ["beginner", "intermediate", "advanced", "expert"]
+    },
+    "content_type": {
+      "type": "string",
+      "required": true,
+      "const": "volume_profile_guide"
+    },
+    "tags": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 3, "maxLength": 15 }
+    },
+    "featured": { "type": "boolean", "required": false, "default": false },
+    "popularity_score": {
+      "type": "number",
+      "required": false,
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}

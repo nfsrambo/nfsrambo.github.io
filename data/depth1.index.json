@@ -1,0 +1,1630 @@
+{
+  "depth": 1,
+  "page": "Home Page",
+  "path": "/",
+  "depth_level": 0,
+  "breadcrumb": [
+    "Home"
+  ],
+  "incoming_backlinks": [],
+  "outgoing_backlinks": [
+    {
+      "to": "/indicators",
+      "anchor": "Technical Indicators",
+      "position": "header",
+      "priority": "highest",
+      "description": "Complete library of 70+ technical indicators"
+    },
+    {
+      "to": "/volume-profile",
+      "anchor": "Volume Profile",
+      "position": "header",
+      "priority": "high",
+      "description": "Volume profile analysis tools"
+    },
+    {
+      "to": "/order-flow",
+      "anchor": "Order Flow",
+      "position": "header",
+      "priority": "high",
+      "description": "Order flow and market microstructure"
+    },
+    {
+      "to": "/models",
+      "anchor": "Financial Models",
+      "position": "header",
+      "priority": "highest",
+      "description": "117+ quantitative financial models"
+    },
+    {
+      "to": "/risk",
+      "anchor": "Risk Metrics",
+      "position": "header",
+      "priority": "high",
+      "description": "Risk measurement and management"
+    },
+    {
+      "to": "/portfolio",
+      "anchor": "Portfolio Management",
+      "position": "header",
+      "priority": "high",
+      "description": "Portfolio optimization strategies"
+    },
+    {
+      "to": "/forecasting",
+      "anchor": "Forecasting",
+      "position": "header",
+      "priority": "high",
+      "description": "Time series forecasting methods"
+    },
+    {
+      "to": "/trading",
+      "anchor": "Trading Strategies",
+      "position": "header",
+      "priority": "high",
+      "description": "Algorithmic trading strategies"
+    },
+    {
+      "to": "/options",
+      "anchor": "Options Trading",
+      "position": "header",
+      "priority": "medium",
+      "description": "Options pricing and strategies"
+    },
+    {
+      "to": "/execution",
+      "anchor": "Execution Algorithms",
+      "position": "header",
+      "priority": "medium",
+      "description": "Order execution algorithms"
+    },
+    {
+      "to": "/calculators",
+      "anchor": "Calculators",
+      "position": "header",
+      "priority": "highest",
+      "description": "90+ interactive financial calculators"
+    },
+    {
+      "to": "/code",
+      "anchor": "Code Library",
+      "position": "header",
+      "priority": "highest",
+      "description": "Production-ready code implementations"
+    },
+    {
+      "to": "/compare",
+      "anchor": "Comparisons",
+      "position": "header",
+      "priority": "medium",
+      "description": "Side-by-side comparisons"
+    },
+    {
+      "to": "/benchmarks",
+      "anchor": "Benchmarks",
+      "position": "header",
+      "priority": "low",
+      "description": "Performance benchmarks"
+    },
+    {
+      "to": "/examples",
+      "anchor": "Examples",
+      "position": "header",
+      "priority": "medium",
+      "description": "Practical examples and use cases"
+    }
+  ],
+  "children": [
+    {
+      "name": "indicators",
+      "path": "/indicators",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Technical Indicators"
+      ],
+      "total_pages": 68,
+      "child_pattern": "/indicators/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Technical Indicators",
+          "position": "header"
+        },
+        {
+          "from": "/calculators",
+          "anchor": "Indicator Calculators",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/risk",
+          "anchor": "Risk Metrics for Indicators",
+          "position": "footer"
+        },
+        {
+          "to": "/trading",
+          "anchor": "Trading Strategies",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Indicator Code",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "indicators.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Technical Indicators",
+        "path": "/indicators",
+        "total_pages": 68,
+        "totalItems": 68,
+        "chunkSize": 60,
+        "totalChunks": 2,
+        "mainFile": "indicators.json",
+        "chunks": [
+          {
+            "index": 1,
+            "file": "indicators.chunk-1-of-2.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60
+          },
+          {
+            "index": 2,
+            "file": "indicators.chunk-2-of-2.json",
+            "itemCount": 8,
+            "startIndex": 61,
+            "endIndex": 68
+          }
+        ]
+      }
+    },
+    {
+      "name": "volumeProfile",
+      "path": "/volume-profile",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Volume Profile"
+      ],
+      "total_pages": 40,
+      "child_pattern": "/volume-profile/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Volume Profile",
+          "position": "header"
+        },
+        {
+          "from": "/trading",
+          "anchor": "Volume Trading",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/order-flow",
+          "anchor": "Order Flow Analysis",
+          "position": "content"
+        },
+        {
+          "to": "/indicators/vwap",
+          "anchor": "VWAP Indicator",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code/volume-profile",
+          "anchor": "Volume Profile Code",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "volumeProfile.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Volume Profile",
+        "path": "/volume-profile",
+        "total_pages": 40,
+        "totalItems": 40,
+        "chunkSize": 60,
+        "totalChunks": 1,
+        "mainFile": "volumeProfile.json",
+        "chunks": []
+      }
+    },
+    {
+      "name": "orderFlow",
+      "path": "/order-flow",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Order Flow"
+      ],
+      "total_pages": 36,
+      "child_pattern": "/order-flow/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Order Flow",
+          "position": "header"
+        },
+        {
+          "from": "/volume-profile",
+          "anchor": "Volume Analysis",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/trading",
+          "anchor": "Order Flow Trading",
+          "position": "content"
+        },
+        {
+          "to": "/execution",
+          "anchor": "Algorithmic Execution",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code/cumulative-delta",
+          "anchor": "Cumulative Delta Code",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "orderFlow.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Order Flow",
+        "path": "/order-flow",
+        "total_pages": 36,
+        "totalItems": 36,
+        "chunkSize": 60,
+        "totalChunks": 1,
+        "mainFile": "orderFlow.json",
+        "chunks": []
+      }
+    },
+    {
+      "name": "models",
+      "path": "/models",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Financial Models"
+      ],
+      "total_pages": 94,
+      "child_pattern": "/models/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Financial Models",
+          "position": "header"
+        },
+        {
+          "from": "/calculators",
+          "anchor": "Model Calculators",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/forecasting",
+          "anchor": "Forecasting Methods",
+          "position": "content"
+        },
+        {
+          "to": "/risk",
+          "anchor": "Model Risk",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Model Implementations",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "models.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Financial Models",
+        "path": "/models",
+        "total_pages": 94,
+        "totalItems": 94,
+        "chunkSize": 60,
+        "totalChunks": 2,
+        "mainFile": "models.json",
+        "chunks": [
+          {
+            "index": 1,
+            "file": "models.chunk-1-of-2.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60
+          },
+          {
+            "index": 2,
+            "file": "models.chunk-2-of-2.json",
+            "itemCount": 34,
+            "startIndex": 61,
+            "endIndex": 94
+          }
+        ]
+      }
+    },
+    {
+      "name": "risk",
+      "path": "/risk",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Risk Metrics"
+      ],
+      "total_pages": 55,
+      "child_pattern": "/risk/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Risk Metrics",
+          "position": "header"
+        },
+        {
+          "from": "/portfolio",
+          "anchor": "Portfolio Risk",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/portfolio",
+          "anchor": "Portfolio Optimization",
+          "position": "content"
+        },
+        {
+          "to": "/models",
+          "anchor": "Risk Models",
+          "position": "sidebar"
+        },
+        {
+          "to": "/calculators",
+          "anchor": "Risk Calculators",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "risk.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Risk Metrics",
+        "path": "/risk",
+        "total_pages": 55,
+        "totalItems": 55,
+        "chunkSize": 60,
+        "totalChunks": 1,
+        "mainFile": "risk.json",
+        "chunks": []
+      }
+    },
+    {
+      "name": "portfolio",
+      "path": "/portfolio",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Portfolio Management"
+      ],
+      "total_pages": 53,
+      "child_pattern": "/portfolio/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Portfolio Management",
+          "position": "header"
+        },
+        {
+          "from": "/risk",
+          "anchor": "Risk-Adjusted Returns",
+          "position": "content"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/risk",
+          "anchor": "Risk Metrics",
+          "position": "sidebar"
+        },
+        {
+          "to": "/trading",
+          "anchor": "Trading Strategies",
+          "position": "footer"
+        },
+        {
+          "to": "/calculators",
+          "anchor": "Portfolio Calculators",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "portfolio.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Portfolio Management",
+        "path": "/portfolio",
+        "total_pages": 53,
+        "totalItems": 53,
+        "chunkSize": 60,
+        "totalChunks": 1,
+        "mainFile": "portfolio.json",
+        "chunks": []
+      }
+    },
+    {
+      "name": "forecasting",
+      "path": "/forecasting",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Forecasting"
+      ],
+      "total_pages": 172,
+      "child_pattern": "/forecasting/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Forecasting",
+          "position": "header"
+        },
+        {
+          "from": "/models",
+          "anchor": "Time Series Models",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/models",
+          "anchor": "Statistical Models",
+          "position": "content"
+        },
+        {
+          "to": "/trading",
+          "anchor": "Forecast Trading",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Forecasting Code",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "forecasting.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Forecasting",
+        "path": "/forecasting",
+        "total_pages": 172,
+        "totalItems": 172,
+        "chunkSize": 60,
+        "totalChunks": 3,
+        "mainFile": "forecasting.json",
+        "chunks": [
+          {
+            "index": 1,
+            "file": "forecasting.chunk-1-of-3.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60
+          },
+          {
+            "index": 2,
+            "file": "forecasting.chunk-2-of-3.json",
+            "itemCount": 60,
+            "startIndex": 61,
+            "endIndex": 120
+          },
+          {
+            "index": 3,
+            "file": "forecasting.chunk-3-of-3.json",
+            "itemCount": 52,
+            "startIndex": 121,
+            "endIndex": 172
+          }
+        ]
+      }
+    },
+    {
+      "name": "trading",
+      "path": "/trading",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Trading Strategies"
+      ],
+      "total_pages": 147,
+      "child_pattern": "/trading/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Trading Strategies",
+          "position": "header"
+        },
+        {
+          "from": "/indicators",
+          "anchor": "Indicator Strategies",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/execution",
+          "anchor": "Order Execution",
+          "position": "content"
+        },
+        {
+          "to": "/order-flow",
+          "anchor": "Order Flow Analysis",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Trading Code",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "trading.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Trading Strategies",
+        "path": "/trading",
+        "total_pages": 147,
+        "totalItems": 147,
+        "chunkSize": 60,
+        "totalChunks": 3,
+        "mainFile": "trading.json",
+        "chunks": [
+          {
+            "index": 1,
+            "file": "trading.chunk-1-of-3.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60
+          },
+          {
+            "index": 2,
+            "file": "trading.chunk-2-of-3.json",
+            "itemCount": 60,
+            "startIndex": 61,
+            "endIndex": 120
+          },
+          {
+            "index": 3,
+            "file": "trading.chunk-3-of-3.json",
+            "itemCount": 27,
+            "startIndex": 121,
+            "endIndex": 147
+          }
+        ]
+      }
+    },
+    {
+      "name": "options",
+      "path": "/options",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Options Trading"
+      ],
+      "total_pages": 196,
+      "child_pattern": "/options/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Options Trading",
+          "position": "header"
+        },
+        {
+          "from": "/models",
+          "anchor": "Option Pricing Models",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/models/black-scholes",
+          "anchor": "Black-Scholes Model",
+          "position": "content"
+        },
+        {
+          "to": "/risk",
+          "anchor": "Options Risk",
+          "position": "sidebar"
+        },
+        {
+          "to": "/calculators",
+          "anchor": "Options Calculators",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "options.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Options Trading",
+        "path": "/options",
+        "total_pages": 196,
+        "totalItems": 196,
+        "chunkSize": 60,
+        "totalChunks": 4,
+        "mainFile": "options.json",
+        "chunks": [
+          {
+            "index": 1,
+            "file": "options.chunk-1-of-4.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60
+          },
+          {
+            "index": 2,
+            "file": "options.chunk-2-of-4.json",
+            "itemCount": 60,
+            "startIndex": 61,
+            "endIndex": 120
+          },
+          {
+            "index": 3,
+            "file": "options.chunk-3-of-4.json",
+            "itemCount": 60,
+            "startIndex": 121,
+            "endIndex": 180
+          },
+          {
+            "index": 4,
+            "file": "options.chunk-4-of-4.json",
+            "itemCount": 16,
+            "startIndex": 181,
+            "endIndex": 196
+          }
+        ]
+      }
+    },
+    {
+      "name": "execution",
+      "path": "/execution",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Execution Algorithms"
+      ],
+      "total_pages": 36,
+      "child_pattern": "/execution/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Execution Algorithms",
+          "position": "header"
+        },
+        {
+          "from": "/trading",
+          "anchor": "Trade Execution",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/trading/market-making",
+          "anchor": "Market Making",
+          "position": "content"
+        },
+        {
+          "to": "/benchmarks",
+          "anchor": "Execution Benchmarks",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Execution Code",
+          "position": "cta"
+        }
+      ],
+      "_chunkFile": "execution.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Execution Algorithms",
+        "path": "/execution",
+        "total_pages": 36,
+        "totalItems": 36,
+        "chunkSize": 60,
+        "totalChunks": 1,
+        "mainFile": "execution.json",
+        "chunks": []
+      }
+    },
+    {
+      "name": "calculators",
+      "path": "/calculators",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Calculators"
+      ],
+      "total_pages": 183,
+      "child_pattern": "/calculators/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Calculators",
+          "position": "header"
+        },
+        {
+          "from": "/indicators",
+          "anchor": "Indicator Calculators",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/indicators",
+          "anchor": "Indicator Guides",
+          "position": "content"
+        },
+        {
+          "to": "/models",
+          "anchor": "Financial Models",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Calculator Code",
+          "position": "footer"
+        }
+      ],
+      "_chunkFile": "calculators.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Calculators",
+        "path": "/calculators",
+        "total_pages": 183,
+        "totalItems": 183,
+        "chunkSize": 60,
+        "totalChunks": 4,
+        "mainFile": "calculators.json",
+        "chunks": [
+          {
+            "index": 1,
+            "file": "calculators.chunk-1-of-4.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60
+          },
+          {
+            "index": 2,
+            "file": "calculators.chunk-2-of-4.json",
+            "itemCount": 60,
+            "startIndex": 61,
+            "endIndex": 120
+          },
+          {
+            "index": 3,
+            "file": "calculators.chunk-3-of-4.json",
+            "itemCount": 60,
+            "startIndex": 121,
+            "endIndex": 180
+          },
+          {
+            "index": 4,
+            "file": "calculators.chunk-4-of-4.json",
+            "itemCount": 3,
+            "startIndex": 181,
+            "endIndex": 183
+          }
+        ]
+      }
+    },
+    {
+      "name": "codeLibrary",
+      "path": "/code",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Code Library"
+      ],
+      "total_pages": 39261,
+      "total_base_paths": 1707,
+      "total_language_paths": 37554,
+      "child_pattern": "/code/{indicator}/{language}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Code Library",
+          "position": "header"
+        },
+        {
+          "from": "/indicators",
+          "anchor": "Implementation Code",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/benchmarks",
+          "anchor": "Performance Benchmarks",
+          "position": "content"
+        },
+        {
+          "to": "/examples",
+          "anchor": "Usage Examples",
+          "position": "sidebar"
+        },
+        {
+          "to": "/indicators",
+          "anchor": "Indicator Documentation",
+          "position": "footer"
+        }
+      ],
+      "_chunkFile": "codeLibrary.json",
+      "_chunkInfo": {
+        "type": "codeLibrary",
+        "displayName": "Code Library",
+        "path": "/code",
+        "total_pages": 39261,
+        "total_base_paths": 1707,
+        "total_language_paths": 37554,
+        "totalChunks": 29,
+        "basePathChunks": [
+          {
+            "index": 1,
+            "file": "codeLibrary_basepaths.chunk-1-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60,
+            "languageChunkFile": "codeLibrary_languages.chunk-1-of-29.json"
+          },
+          {
+            "index": 2,
+            "file": "codeLibrary_basepaths.chunk-2-of-29.json",
+            "itemCount": 60,
+            "startIndex": 61,
+            "endIndex": 120,
+            "languageChunkFile": "codeLibrary_languages.chunk-2-of-29.json"
+          },
+          {
+            "index": 3,
+            "file": "codeLibrary_basepaths.chunk-3-of-29.json",
+            "itemCount": 60,
+            "startIndex": 121,
+            "endIndex": 180,
+            "languageChunkFile": "codeLibrary_languages.chunk-3-of-29.json"
+          },
+          {
+            "index": 4,
+            "file": "codeLibrary_basepaths.chunk-4-of-29.json",
+            "itemCount": 60,
+            "startIndex": 181,
+            "endIndex": 240,
+            "languageChunkFile": "codeLibrary_languages.chunk-4-of-29.json"
+          },
+          {
+            "index": 5,
+            "file": "codeLibrary_basepaths.chunk-5-of-29.json",
+            "itemCount": 60,
+            "startIndex": 241,
+            "endIndex": 300,
+            "languageChunkFile": "codeLibrary_languages.chunk-5-of-29.json"
+          },
+          {
+            "index": 6,
+            "file": "codeLibrary_basepaths.chunk-6-of-29.json",
+            "itemCount": 60,
+            "startIndex": 301,
+            "endIndex": 360,
+            "languageChunkFile": "codeLibrary_languages.chunk-6-of-29.json"
+          },
+          {
+            "index": 7,
+            "file": "codeLibrary_basepaths.chunk-7-of-29.json",
+            "itemCount": 60,
+            "startIndex": 361,
+            "endIndex": 420,
+            "languageChunkFile": "codeLibrary_languages.chunk-7-of-29.json"
+          },
+          {
+            "index": 8,
+            "file": "codeLibrary_basepaths.chunk-8-of-29.json",
+            "itemCount": 60,
+            "startIndex": 421,
+            "endIndex": 480,
+            "languageChunkFile": "codeLibrary_languages.chunk-8-of-29.json"
+          },
+          {
+            "index": 9,
+            "file": "codeLibrary_basepaths.chunk-9-of-29.json",
+            "itemCount": 60,
+            "startIndex": 481,
+            "endIndex": 540,
+            "languageChunkFile": "codeLibrary_languages.chunk-9-of-29.json"
+          },
+          {
+            "index": 10,
+            "file": "codeLibrary_basepaths.chunk-10-of-29.json",
+            "itemCount": 60,
+            "startIndex": 541,
+            "endIndex": 600,
+            "languageChunkFile": "codeLibrary_languages.chunk-10-of-29.json"
+          },
+          {
+            "index": 11,
+            "file": "codeLibrary_basepaths.chunk-11-of-29.json",
+            "itemCount": 60,
+            "startIndex": 601,
+            "endIndex": 660,
+            "languageChunkFile": "codeLibrary_languages.chunk-11-of-29.json"
+          },
+          {
+            "index": 12,
+            "file": "codeLibrary_basepaths.chunk-12-of-29.json",
+            "itemCount": 60,
+            "startIndex": 661,
+            "endIndex": 720,
+            "languageChunkFile": "codeLibrary_languages.chunk-12-of-29.json"
+          },
+          {
+            "index": 13,
+            "file": "codeLibrary_basepaths.chunk-13-of-29.json",
+            "itemCount": 60,
+            "startIndex": 721,
+            "endIndex": 780,
+            "languageChunkFile": "codeLibrary_languages.chunk-13-of-29.json"
+          },
+          {
+            "index": 14,
+            "file": "codeLibrary_basepaths.chunk-14-of-29.json",
+            "itemCount": 60,
+            "startIndex": 781,
+            "endIndex": 840,
+            "languageChunkFile": "codeLibrary_languages.chunk-14-of-29.json"
+          },
+          {
+            "index": 15,
+            "file": "codeLibrary_basepaths.chunk-15-of-29.json",
+            "itemCount": 60,
+            "startIndex": 841,
+            "endIndex": 900,
+            "languageChunkFile": "codeLibrary_languages.chunk-15-of-29.json"
+          },
+          {
+            "index": 16,
+            "file": "codeLibrary_basepaths.chunk-16-of-29.json",
+            "itemCount": 60,
+            "startIndex": 901,
+            "endIndex": 960,
+            "languageChunkFile": "codeLibrary_languages.chunk-16-of-29.json"
+          },
+          {
+            "index": 17,
+            "file": "codeLibrary_basepaths.chunk-17-of-29.json",
+            "itemCount": 60,
+            "startIndex": 961,
+            "endIndex": 1020,
+            "languageChunkFile": "codeLibrary_languages.chunk-17-of-29.json"
+          },
+          {
+            "index": 18,
+            "file": "codeLibrary_basepaths.chunk-18-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1021,
+            "endIndex": 1080,
+            "languageChunkFile": "codeLibrary_languages.chunk-18-of-29.json"
+          },
+          {
+            "index": 19,
+            "file": "codeLibrary_basepaths.chunk-19-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1081,
+            "endIndex": 1140,
+            "languageChunkFile": "codeLibrary_languages.chunk-19-of-29.json"
+          },
+          {
+            "index": 20,
+            "file": "codeLibrary_basepaths.chunk-20-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1141,
+            "endIndex": 1200,
+            "languageChunkFile": "codeLibrary_languages.chunk-20-of-29.json"
+          },
+          {
+            "index": 21,
+            "file": "codeLibrary_basepaths.chunk-21-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1201,
+            "endIndex": 1260,
+            "languageChunkFile": "codeLibrary_languages.chunk-21-of-29.json"
+          },
+          {
+            "index": 22,
+            "file": "codeLibrary_basepaths.chunk-22-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1261,
+            "endIndex": 1320,
+            "languageChunkFile": "codeLibrary_languages.chunk-22-of-29.json"
+          },
+          {
+            "index": 23,
+            "file": "codeLibrary_basepaths.chunk-23-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1321,
+            "endIndex": 1380,
+            "languageChunkFile": "codeLibrary_languages.chunk-23-of-29.json"
+          },
+          {
+            "index": 24,
+            "file": "codeLibrary_basepaths.chunk-24-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1381,
+            "endIndex": 1440,
+            "languageChunkFile": "codeLibrary_languages.chunk-24-of-29.json"
+          },
+          {
+            "index": 25,
+            "file": "codeLibrary_basepaths.chunk-25-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1441,
+            "endIndex": 1500,
+            "languageChunkFile": "codeLibrary_languages.chunk-25-of-29.json"
+          },
+          {
+            "index": 26,
+            "file": "codeLibrary_basepaths.chunk-26-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1501,
+            "endIndex": 1560,
+            "languageChunkFile": "codeLibrary_languages.chunk-26-of-29.json"
+          },
+          {
+            "index": 27,
+            "file": "codeLibrary_basepaths.chunk-27-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1561,
+            "endIndex": 1620,
+            "languageChunkFile": "codeLibrary_languages.chunk-27-of-29.json"
+          },
+          {
+            "index": 28,
+            "file": "codeLibrary_basepaths.chunk-28-of-29.json",
+            "itemCount": 60,
+            "startIndex": 1621,
+            "endIndex": 1680,
+            "languageChunkFile": "codeLibrary_languages.chunk-28-of-29.json"
+          },
+          {
+            "index": 29,
+            "file": "codeLibrary_basepaths.chunk-29-of-29.json",
+            "itemCount": 27,
+            "startIndex": 1681,
+            "endIndex": 1707,
+            "languageChunkFile": "codeLibrary_languages.chunk-29-of-29.json"
+          }
+        ],
+        "languageChunks": [
+          {
+            "index": 1,
+            "file": "codeLibrary_languages.chunk-1-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 1,
+            "endIndex": 1320,
+            "correspondingBaseChunk": 1,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-1-of-29.json"
+          },
+          {
+            "index": 2,
+            "file": "codeLibrary_languages.chunk-2-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 1321,
+            "endIndex": 2640,
+            "correspondingBaseChunk": 2,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-2-of-29.json"
+          },
+          {
+            "index": 3,
+            "file": "codeLibrary_languages.chunk-3-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 2641,
+            "endIndex": 3960,
+            "correspondingBaseChunk": 3,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-3-of-29.json"
+          },
+          {
+            "index": 4,
+            "file": "codeLibrary_languages.chunk-4-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 3961,
+            "endIndex": 5280,
+            "correspondingBaseChunk": 4,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-4-of-29.json"
+          },
+          {
+            "index": 5,
+            "file": "codeLibrary_languages.chunk-5-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 5281,
+            "endIndex": 6600,
+            "correspondingBaseChunk": 5,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-5-of-29.json"
+          },
+          {
+            "index": 6,
+            "file": "codeLibrary_languages.chunk-6-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 6601,
+            "endIndex": 7920,
+            "correspondingBaseChunk": 6,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-6-of-29.json"
+          },
+          {
+            "index": 7,
+            "file": "codeLibrary_languages.chunk-7-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 7921,
+            "endIndex": 9240,
+            "correspondingBaseChunk": 7,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-7-of-29.json"
+          },
+          {
+            "index": 8,
+            "file": "codeLibrary_languages.chunk-8-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 9241,
+            "endIndex": 10560,
+            "correspondingBaseChunk": 8,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-8-of-29.json"
+          },
+          {
+            "index": 9,
+            "file": "codeLibrary_languages.chunk-9-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 10561,
+            "endIndex": 11880,
+            "correspondingBaseChunk": 9,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-9-of-29.json"
+          },
+          {
+            "index": 10,
+            "file": "codeLibrary_languages.chunk-10-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 11881,
+            "endIndex": 13200,
+            "correspondingBaseChunk": 10,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-10-of-29.json"
+          },
+          {
+            "index": 11,
+            "file": "codeLibrary_languages.chunk-11-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 13201,
+            "endIndex": 14520,
+            "correspondingBaseChunk": 11,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-11-of-29.json"
+          },
+          {
+            "index": 12,
+            "file": "codeLibrary_languages.chunk-12-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 14521,
+            "endIndex": 15840,
+            "correspondingBaseChunk": 12,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-12-of-29.json"
+          },
+          {
+            "index": 13,
+            "file": "codeLibrary_languages.chunk-13-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 15841,
+            "endIndex": 17160,
+            "correspondingBaseChunk": 13,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-13-of-29.json"
+          },
+          {
+            "index": 14,
+            "file": "codeLibrary_languages.chunk-14-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 17161,
+            "endIndex": 18480,
+            "correspondingBaseChunk": 14,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-14-of-29.json"
+          },
+          {
+            "index": 15,
+            "file": "codeLibrary_languages.chunk-15-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 18481,
+            "endIndex": 19800,
+            "correspondingBaseChunk": 15,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-15-of-29.json"
+          },
+          {
+            "index": 16,
+            "file": "codeLibrary_languages.chunk-16-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 19801,
+            "endIndex": 21120,
+            "correspondingBaseChunk": 16,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-16-of-29.json"
+          },
+          {
+            "index": 17,
+            "file": "codeLibrary_languages.chunk-17-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 21121,
+            "endIndex": 22440,
+            "correspondingBaseChunk": 17,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-17-of-29.json"
+          },
+          {
+            "index": 18,
+            "file": "codeLibrary_languages.chunk-18-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 22441,
+            "endIndex": 23760,
+            "correspondingBaseChunk": 18,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-18-of-29.json"
+          },
+          {
+            "index": 19,
+            "file": "codeLibrary_languages.chunk-19-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 23761,
+            "endIndex": 25080,
+            "correspondingBaseChunk": 19,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-19-of-29.json"
+          },
+          {
+            "index": 20,
+            "file": "codeLibrary_languages.chunk-20-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 25081,
+            "endIndex": 26400,
+            "correspondingBaseChunk": 20,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-20-of-29.json"
+          },
+          {
+            "index": 21,
+            "file": "codeLibrary_languages.chunk-21-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 26401,
+            "endIndex": 27720,
+            "correspondingBaseChunk": 21,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-21-of-29.json"
+          },
+          {
+            "index": 22,
+            "file": "codeLibrary_languages.chunk-22-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 27721,
+            "endIndex": 29040,
+            "correspondingBaseChunk": 22,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-22-of-29.json"
+          },
+          {
+            "index": 23,
+            "file": "codeLibrary_languages.chunk-23-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 29041,
+            "endIndex": 30360,
+            "correspondingBaseChunk": 23,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-23-of-29.json"
+          },
+          {
+            "index": 24,
+            "file": "codeLibrary_languages.chunk-24-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 30361,
+            "endIndex": 31680,
+            "correspondingBaseChunk": 24,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-24-of-29.json"
+          },
+          {
+            "index": 25,
+            "file": "codeLibrary_languages.chunk-25-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 31681,
+            "endIndex": 33000,
+            "correspondingBaseChunk": 25,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-25-of-29.json"
+          },
+          {
+            "index": 26,
+            "file": "codeLibrary_languages.chunk-26-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 33001,
+            "endIndex": 34320,
+            "correspondingBaseChunk": 26,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-26-of-29.json"
+          },
+          {
+            "index": 27,
+            "file": "codeLibrary_languages.chunk-27-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 34321,
+            "endIndex": 35640,
+            "correspondingBaseChunk": 27,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-27-of-29.json"
+          },
+          {
+            "index": 28,
+            "file": "codeLibrary_languages.chunk-28-of-29.json",
+            "itemCount": 1320,
+            "startIndex": 35641,
+            "endIndex": 36960,
+            "correspondingBaseChunk": 28,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-28-of-29.json"
+          },
+          {
+            "index": 29,
+            "file": "codeLibrary_languages.chunk-29-of-29.json",
+            "itemCount": 594,
+            "startIndex": 36961,
+            "endIndex": 37554,
+            "correspondingBaseChunk": 29,
+            "baseChunkFile": "codeLibrary_basepaths.chunk-29-of-29.json"
+          }
+        ],
+        "mainFile": "codeLibrary.json"
+      }
+    },
+    {
+      "name": "comparisons",
+      "path": "/compare",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Comparisons"
+      ],
+      "total_pages": 229,
+      "child_pattern": "/compare/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Comparisons",
+          "position": "header"
+        },
+        {
+          "from": "/indicators",
+          "anchor": "Compare Indicators",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/indicators/rsi",
+          "anchor": "RSI Details",
+          "position": "content"
+        },
+        {
+          "to": "/indicators/macd",
+          "anchor": "MACD Details",
+          "position": "content"
+        },
+        {
+          "to": "/risk/sharpe-ratio",
+          "anchor": "Sharpe Ratio Details",
+          "position": "content"
+        }
+      ],
+      "_chunkFile": "comparisons.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Comparisons",
+        "path": "/compare",
+        "total_pages": 229,
+        "totalItems": 229,
+        "chunkSize": 60,
+        "totalChunks": 4,
+        "mainFile": "comparisons.json",
+        "chunks": [
+          {
+            "index": 1,
+            "file": "comparisons.chunk-1-of-4.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60
+          },
+          {
+            "index": 2,
+            "file": "comparisons.chunk-2-of-4.json",
+            "itemCount": 60,
+            "startIndex": 61,
+            "endIndex": 120
+          },
+          {
+            "index": 3,
+            "file": "comparisons.chunk-3-of-4.json",
+            "itemCount": 60,
+            "startIndex": 121,
+            "endIndex": 180
+          },
+          {
+            "index": 4,
+            "file": "comparisons.chunk-4-of-4.json",
+            "itemCount": 49,
+            "startIndex": 181,
+            "endIndex": 229
+          }
+        ]
+      }
+    },
+    {
+      "name": "benchmarks",
+      "path": "/benchmarks",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Benchmarks"
+      ],
+      "total_pages": 253,
+      "child_pattern": "/benchmarks/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Benchmarks",
+          "position": "header"
+        },
+        {
+          "from": "/code",
+          "anchor": "Code Performance",
+          "position": "related"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/code/rsi/python",
+          "anchor": "Python Implementation",
+          "position": "content"
+        },
+        {
+          "to": "/code/rsi/rust",
+          "anchor": "Rust Implementation",
+          "position": "content"
+        },
+        {
+          "to": "/code",
+          "anchor": "All Implementations",
+          "position": "footer"
+        }
+      ],
+      "_chunkFile": "benchmarks.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Benchmarks",
+        "path": "/benchmarks",
+        "total_pages": 253,
+        "totalItems": 253,
+        "chunkSize": 60,
+        "totalChunks": 5,
+        "mainFile": "benchmarks.json",
+        "chunks": [
+          {
+            "index": 1,
+            "file": "benchmarks.chunk-1-of-5.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60
+          },
+          {
+            "index": 2,
+            "file": "benchmarks.chunk-2-of-5.json",
+            "itemCount": 60,
+            "startIndex": 61,
+            "endIndex": 120
+          },
+          {
+            "index": 3,
+            "file": "benchmarks.chunk-3-of-5.json",
+            "itemCount": 60,
+            "startIndex": 121,
+            "endIndex": 180
+          },
+          {
+            "index": 4,
+            "file": "benchmarks.chunk-4-of-5.json",
+            "itemCount": 60,
+            "startIndex": 181,
+            "endIndex": 240
+          },
+          {
+            "index": 5,
+            "file": "benchmarks.chunk-5-of-5.json",
+            "itemCount": 13,
+            "startIndex": 241,
+            "endIndex": 253
+          }
+        ]
+      }
+    },
+    {
+      "name": "examples",
+      "path": "/examples",
+      "depth": 1,
+      "breadcrumb": [
+        "Home",
+        "Examples"
+      ],
+      "total_pages": 265,
+      "child_pattern": "/examples/{slug}",
+      "incoming_backlinks": [
+        {
+          "from": "/",
+          "anchor": "Examples",
+          "position": "header"
+        },
+        {
+          "from": "/code",
+          "anchor": "Code Examples",
+          "position": "cta"
+        }
+      ],
+      "outgoing_backlinks": [
+        {
+          "to": "/trading",
+          "anchor": "Trading Strategies",
+          "position": "content"
+        },
+        {
+          "to": "/indicators/rsi",
+          "anchor": "RSI Indicator",
+          "position": "sidebar"
+        },
+        {
+          "to": "/code",
+          "anchor": "Example Code",
+          "position": "footer"
+        }
+      ],
+      "_chunkFile": "examples.json",
+      "_chunkInfo": {
+        "type": "category",
+        "displayName": "Examples",
+        "path": "/examples",
+        "total_pages": 265,
+        "totalItems": 265,
+        "chunkSize": 60,
+        "totalChunks": 5,
+        "mainFile": "examples.json",
+        "chunks": [
+          {
+            "index": 1,
+            "file": "examples.chunk-1-of-5.json",
+            "itemCount": 60,
+            "startIndex": 1,
+            "endIndex": 60
+          },
+          {
+            "index": 2,
+            "file": "examples.chunk-2-of-5.json",
+            "itemCount": 60,
+            "startIndex": 61,
+            "endIndex": 120
+          },
+          {
+            "index": 3,
+            "file": "examples.chunk-3-of-5.json",
+            "itemCount": 60,
+            "startIndex": 121,
+            "endIndex": 180
+          },
+          {
+            "index": 4,
+            "file": "examples.chunk-4-of-5.json",
+            "itemCount": 60,
+            "startIndex": 181,
+            "endIndex": 240
+          },
+          {
+            "index": 5,
+            "file": "examples.chunk-5-of-5.json",
+            "itemCount": 25,
+            "startIndex": 241,
+            "endIndex": 265
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "name": "{slug}",
+  "path": "/options/{slug}",
+  "depth_level": 2,
+  "breadcrumb": ["Home", "Options Trading", "{display_name}"],
+  "parent": "/options",
+  "category": "options",
+
+  "meta": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 55
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "minLength": 120,
+      "maxLength": 155
+    },
+    "canonical": { "type": "string", "required": true, "format": "uri" }
+  },
+
+  "seo_schema": {
+    "@context": {
+      "type": "string",
+      "required": true,
+      "const": "https://schema.org"
+    },
+    "@type": { "type": "string", "required": true, "const": "TechArticle" },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "minLength": 35,
+      "maxLength": 100
+    },
+    "datePublished": { "type": "string", "required": true, "format": "date" },
+    "dateModified": { "type": "string", "required": true, "format": "date" }
+  },
+
+  "aeo": {
+    "direct_answer": {
+      "type": "string",
+      "required": true,
+      "minLength": 100,
+      "maxLength": 200
+    },
+    "key_takeaways": {
+      "type": "array",
+      "required": true,
+      "minItems": 3,
+      "maxItems": 4,
+      "items": { "type": "string", "minLength": 40, "maxLength": 100 }
+    },
+    "people_also_ask": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": { "type": "string", "minLength": 30, "maxLength": 90 },
+          "answer": { "type": "string", "minLength": 60, "maxLength": 200 }
+        }
+      }
+    }
+  },
+
+  "options_specific": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "greek",
+        "volatility",
+        "strategy",
+        "exotic",
+        "spread",
+        "arbitrage",
+        "hedging",
+        "valuation",
+        "risk_measure",
+        "index_option",
+        "future_option",
+        "crypto_option",
+        "interest_rate_option",
+        "exotic_option"
+      ]
+    },
+    "option_style": {
+      "type": "string",
+      "required": false,
+      "enum": ["american", "european", "bermudan", "asian", "binary", "barrier"]
+    },
+    "underlying_asset": {
+      "type": "string",
+      "required": false,
+      "enum": [
+        "equity",
+        "index",
+        "future",
+        "forex",
+        "commodity",
+        "crypto",
+        "bond",
+        "volatility"
+      ]
+    },
+    "risk_profile": {
+      "type": "string",
+      "required": true,
+      "enum": [
+        "bullish",
+        "bearish",
+        "neutral",
+        "volatility_bullish",
+        "volatility_bearish",
+        "mixed"
+      ]
+    },
+    "max_loss": {
+      "type": "string",
+      "required": true,
+      "enum": ["limited", "unlimited", "premium_only", "defined"]
+    },
+    "max_profit": {
+      "type": "string",
+      "required": true,
+      "enum": ["limited", "unlimited", "defined"]
+    },
+    "breakeven_points": {
+      "type": "integer",
+      "required": true,
+      "minimum": 1,
+      "maximum": 4
+    },
+    "probability_of_profit": {
+      "type": "number",
+      "required": false,
+      "minimum": 0,
+      "maximum": 100
+    },
+    "theta_sensitive": { "type": "boolean", "required": true },
+    "vega_sensitive": { "type": "boolean", "required": true },
+    "gamma_sensitive": { "type": "boolean", "required": true },
+    "capital_requirement": {
+      "type": "string",
+      "required": true,
+      "enum": ["low", "medium", "high", "very_high"]
+    },
+
+    "interactive_config": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "enabled": { "type": "boolean", "default": false },
+        "simulator_type": {
+          "type": "string",
+          "enum": [
+            "payoff_simulator",
+            "greeks_calculator",
+            "strategy_builder",
+            "profit_loss_analyzer"
+          ]
+        },
+        "real_time": { "type": "boolean", "default": false },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "label": { "type": "string" },
+              "type": {
+                "type": "string",
+                "enum": ["range", "select", "boolean", "number", "price_range"]
+              },
+              "default": { "type": "number" },
+              "min": { "type": "number" },
+              "max": { "type": "number" },
+              "step": { "type": "number" },
+              "unit": { "type": "string" },
+              "description": { "type": "string" },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "value": { "type": "string" },
+                    "label": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "presets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "params": { "type": "object" },
+              "description": { "type": "string" }
+            }
+          }
+        },
+        "default_stock_price": { "type": "number", "default": 100 },
+        "default_volatility": { "type": "number", "default": 0.2 },
+        "show_payoff_chart": { "type": "boolean", "default": true },
+        "show_risk_metrics": { "type": "boolean", "default": true }
+      }
+    },
+
+    "strategy_components": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "leg_type": {
+            "type": "string",
+            "enum": ["long_call", "long_put", "short_call", "short_put"]
+          },
+          "strike": { "type": "number" },
+          "premium": { "type": "number" },
+          "quantity": { "type": "integer", "default": 1 }
+        }
+      }
+    },
+
+    "greek_metrics": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "delta_range": { "type": "string" },
+        "gamma_exposure": { "type": "string" },
+        "theta_decay_rate": { "type": "string" },
+        "vega_sensitivity": { "type": "string" }
+      }
+    }
+  },
+
+  "authority_assets": {
+    "calculator": { "type": "string", "required": true, "format": "uri" },
+    "code_hub": { "type": "string", "required": true, "format": "uri" },
+    "interactive_simulator": {
+      "type": "string",
+      "required": false,
+      "format": "uri"
+    },
+    "comparisons": {
+      "type": "array",
+      "required": false,
+      "maxItems": 4,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "examples": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "benchmarks": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "related_options_concepts": {
+      "type": "array",
+      "required": false,
+      "maxItems": 5,
+      "items": { "type": "string", "format": "uri" }
+    },
+    "pricing_models": {
+      "type": "array",
+      "required": false,
+      "maxItems": 3,
+      "items": { "type": "string", "format": "uri" }
+    }
+  },
+
+  "content_sections": {
+    "required": {
+      "minItems": 5,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": { "type": "string", "const": "quick_answer" },
+          "type": { "type": "string", "const": "highlight_box" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 30
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 80,
+            "maxLength": 150
+          }
+        },
+        {
+          "id": { "type": "string", "const": "interactive_strategy" },
+          "type": { "type": "string", "const": "interactive_widget" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "widget_type": { "type": "string", "const": "option_simulator" }
+        },
+        {
+          "id": { "type": "string", "const": "formula" },
+          "type": { "type": "string", "const": "code_block" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 20
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 50,
+            "maxLength": 300
+          }
+        },
+        {
+          "id": { "type": "string", "const": "interpretation" },
+          "type": { "type": "string", "const": "signal_table" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 35
+          },
+          "rows": {
+            "type": "array",
+            "required": true,
+            "minItems": 3,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "properties": {
+                "value_range": {
+                  "type": "string",
+                  "minLength": 20,
+                  "maxLength": 40
+                },
+                "market_outlook": {
+                  "type": "string",
+                  "minLength": 30,
+                  "maxLength": 80
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": { "type": "string", "const": "code_implementations" },
+          "type": { "type": "string", "const": "language_grid" },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 15,
+            "maxLength": 30
+          },
+          "languages": {
+            "type": "array",
+            "required": true,
+            "minItems": 6,
+            "maxItems": 22,
+            "items": {
+              "type": "string",
+              "enum": [
+                "python",
+                "rust",
+                "go",
+                "cpp",
+                "java",
+                "javascript",
+                "typescript",
+                "csharp",
+                "ruby",
+                "swift",
+                "kotlin",
+                "php",
+                "r",
+                "julia",
+                "scala",
+                "haskell",
+                "ocaml",
+                "fsharp",
+                "matlab",
+                "zig",
+                "dotnet",
+                "sql"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "recommended": {
+      "minItems": 0,
+      "maxItems": 5,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "how_it_works",
+              "practical_example",
+              "risk_analysis",
+              "pros_cons",
+              "entry_exit_guide",
+              "volatility_impact",
+              "time_decay_analysis"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["text", "step_by_step", "cards", "two_columns", "chart"]
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 10,
+            "maxLength": 35
+          },
+          "content": {
+            "type": "string",
+            "required": false,
+            "minLength": 150,
+            "maxLength": 400
+          },
+          "items": {
+            "type": "array",
+            "required": false,
+            "minItems": 2,
+            "maxItems": 5
+          },
+          "chart_config": {
+            "type": "object",
+            "required": false,
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["payoff", "greeks", "surface"]
+              },
+              "x_axis": { "type": "string" },
+              "y_axis": { "type": "string" }
+            }
+          }
+        }
+      ]
+    },
+    "optional": {
+      "minItems": 0,
+      "maxItems": 4,
+      "items": [
+        {
+          "id": {
+            "type": "string",
+            "enum": [
+              "greeks_impact",
+              "volatility_impact",
+              "time_decay_impact",
+              "assignment_risk",
+              "margin_requirements"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["text", "warning_box", "code_block"]
+          },
+          "title": {
+            "type": "string",
+            "required": true,
+            "minLength": 5,
+            "maxLength": 25
+          },
+          "content": {
+            "type": "string",
+            "required": true,
+            "minLength": 100,
+            "maxLength": 300
+          },
+          "code": { "type": "string", "required": false },
+          "language": { "type": "string", "required": false }
+        }
+      ]
+    }
+  },
+
+  "engagement_widgets": {
+    "interactive_strategy": { "type": "boolean", "required": true },
+    "calculator_preview": { "type": "boolean", "required": true },
+    "code_language_selector": { "type": "boolean", "required": true },
+    "comparison_links": { "type": "boolean", "required": true },
+    "related_options_concepts": { "type": "boolean", "required": true },
+    "faq_accordion": { "type": "boolean", "required": true },
+    "payoff_diagram": { "type": "boolean", "required": true },
+    "greeks_display": { "type": "boolean", "required": false },
+    "probability_calculator": { "type": "boolean", "required": false },
+    "export_strategy": { "type": "boolean", "required": false }
+  },
+
+  "visualization_config": {
+    "type": "object",
+    "required": false,
+    "properties": {
+      "default_chart": {
+        "type": "string",
+        "enum": ["payoff_diagram", "greeks_surface", "profit_heatmap"]
+      },
+      "color_scheme": {
+        "type": "string",
+        "enum": ["default", "profit_loss", "greeks"]
+      },
+      "show_breakeven": { "type": "boolean", "default": true },
+      "animate_payoff": { "type": "boolean", "default": true },
+      "show_greeks": { "type": "boolean", "default": true }
+    }
+  },
+
+  "faq": {
+    "type": "array",
+    "required": true,
+    "minItems": 2,
+    "maxItems": 4,
+    "items": {
+      "type": "object",
+      "properties": {
+        "q": { "type": "string", "minLength": 20, "maxLength": 90 },
+        "a": { "type": "string", "minLength": 80, "maxLength": 250 }
+      }
+    }
+  },
+
+  "metadata": {
+    "estimated_read_time": {
+      "type": "string",
+      "required": true,
+      "pattern": "^\\d+ min read$"
+    },
+    "last_updated": { "type": "string", "required": true, "format": "date" },
+    "difficulty": {
+      "type": "string",
+      "required": true,
+      "enum": ["beginner", "intermediate", "advanced", "expert"]
+    },
+    "content_type": {
+      "type": "string",
+      "required": true,
+      "const": "options_guide"
+    },
+    "tags": {
+      "type": "array",
+      "required": true,
+      "minItems": 2,
+      "maxItems": 5,
+      "items": { "type": "string", "minLength": 3, "maxLength": 15 }
+    },
+    "featured": { "type": "boolean", "required": false, "default": false },
+    "popularity_score": {
+      "type": "number",
+      "required": false,
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}

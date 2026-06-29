@@ -1,0 +1,164 @@
+{
+  "name": "",
+  "path": "/code/{indicator}/{code}",
+  "depth_level": 3,
+  "breadcrumb": ["Home", "Code Library", "{indicator}", "{code}"],
+  "parent": "/code/{indicator}",
+  "category": "codeLibrary",
+  "language": "{code}",
+  "indicator": "{indicator}",
+
+  "meta": {
+    "title": "",
+    "description": "",
+    "canonical": "",
+    "ogImage": ""
+  },
+
+  "code_implementation": {
+    "full_code": "",
+    "key_lines": [
+      {
+        "line_number": 0,
+        "code": "",
+        "explanation": ""
+      }
+    ],
+    "dependencies": [],
+    "patterns_used": [],
+    "optimization_style": "",
+    "error_handling_style": "",
+    "complexity": {
+      "time": {
+        "best": "",
+        "average": "",
+        "worst": ""
+      },
+      "space": {
+        "best": "",
+        "average": "",
+        "worst": ""
+      },
+      "explanation": ""
+    },
+    "input_format": {
+      "data_structure": "",
+      "required_columns": [],
+      "sample": ""
+    },
+    "output_format": {
+      "return_type": "",
+      "description": "",
+      "sample": ""
+    }
+  },
+
+  "validation": {
+    "test_cases": [
+      {
+        "scenario": "",
+        "input": "",
+        "expected_output": "",
+        "description": ""
+      }
+    ],
+    "validation_methodology": {
+      "approach": "",
+      "data_sources": [],
+      "verification_steps": []
+    }
+  },
+
+  "production_guide": {
+    "deployment_options": [],
+    "security_checks": [],
+    "logging_practices": [],
+    "error_handling_strategy": "",
+    "performance_benchmarks": {
+      "local": "",
+      "cloud": ""
+    }
+  },
+
+  "troubleshooting": {
+    "common_errors": [
+      {
+        "error": "",
+        "cause": "",
+        "fix": ""
+      }
+    ],
+    "debugging_steps": [],
+    "known_limitations": []
+  },
+
+  "interactive": {
+    "live_demo": {
+      "enabled": false,
+      "platform": "",
+      "sample_data_url": "",
+      "input_fields": [],
+      "outputs": []
+    },
+    "parameter_explorer": {
+      "enabled": false,
+      "parameters": []
+    }
+  },
+
+  "expert_notes": {
+    "why_this_approach": "",
+    "alternatives": [
+      {
+        "name": "",
+        "pros": "",
+        "cons": ""
+      }
+    ],
+    "tradeoffs": [],
+    "design_decisions": []
+  },
+
+  "authority_assets": {
+    "calculator": "",
+    "code_hub": "",
+    "related_indicators": [],
+    "comparisons": [],
+    "benchmarks": [],
+    "examples": []
+  },
+
+  "trust_signals": {
+    "code_review_status": "",
+    "test_coverage": "",
+    "production_usage": "",
+    "last_updated": "",
+    "version": "",
+    "maintainer": ""
+  },
+
+  "faq": [
+    {
+      "question": "",
+      "answer": ""
+    }
+  ],
+
+  "seo_aeo": {
+    "primary_keyword": "",
+    "secondary_keywords": [],
+    "intent_class": "",
+    "answer_targets": [
+      {
+        "question": "",
+        "answer": ""
+      }
+    ],
+    "snippet_candidates": [
+      {
+        "title": "",
+        "content": ""
+      }
+    ]
+  }
+}

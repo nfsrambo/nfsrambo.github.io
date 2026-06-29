@@ -1,0 +1,69 @@
+{
+  "name": "models",
+  "path": "/models",
+  "depth": 1,
+  "breadcrumb": [
+    "Home",
+    "Financial Models"
+  ],
+  "total_pages": 94,
+  "child_pattern": "/models/{slug}",
+  "children_list": {
+    "_type": "chunked",
+    "total": 94,
+    "chunkSize": 60,
+    "chunks": [
+      {
+        "index": 1,
+        "file": "models.chunk-1-of-2.json",
+        "itemCount": 60,
+        "startIndex": 1,
+        "endIndex": 60
+      },
+      {
+        "index": 2,
+        "file": "models.chunk-2-of-2.json",
+        "itemCount": 34,
+        "startIndex": 61,
+        "endIndex": 94
+      }
+    ]
+  },
+  "incoming_backlinks": [
+    {
+      "from": "/",
+      "anchor": "Financial Models",
+      "position": "header"
+    },
+    {
+      "from": "/calculators",
+      "anchor": "Model Calculators",
+      "position": "related"
+    }
+  ],
+  "outgoing_backlinks": [
+    {
+      "to": "/forecasting",
+      "anchor": "Forecasting Methods",
+      "position": "content"
+    },
+    {
+      "to": "/risk",
+      "anchor": "Model Risk",
+      "position": "sidebar"
+    },
+    {
+      "to": "/code",
+      "anchor": "Model Implementations",
+      "position": "cta"
+    }
+  ],
+  "_metadata": {
+    "categoryName": "models",
+    "displayName": "Financial Models",
+    "totalItems": 94,
+    "chunkSize": 60,
+    "totalChunks": 2,
+    "chunkFiles": []
+  }
+}
